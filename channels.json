@@ -2957,15 +2957,15 @@
     "logo": "https://picsum.photos/seed/movie/200/300",
     "url": "http://index2.circleftp.net/FILE/English%20Movies/2026/Send%20Help%20%282026%29%201080p%20WEBRip%20x264/Send%20Help%20%282026%29%201080p%20WEBRip%20x264.mp4",
     "category": "english movie",
-    "type": "live"
+    "type": "VOD"
   },
   {
     "id": "371",
     "name": "WWE Friday Night SmackDown (2026-04-10)",
     "logo": "https://picsum.photos/seed/wwe/200/300",
     "url": "http://ftp5.circleftp.net/FILE/WWE%20Wrestling/WWE%20Friday%20Night%20SmackDown%202026%2004%2010%20720p%20HDTV%20x264/WWE%20Friday%20Night%20SmackDown%202026%2004%2010%20720p%20HDTV%20x264.mp4",
-    "category": "wwe",
-    "type": "live"
+    "category": "ENGLISH",
+    "type": "VOD"
   },
   {
     "id": "372",
@@ -2973,6 +2973,6 @@
     "logo": "https://picsum.photos/seed/raw/200/300",
     "url": "http://ftp5.circleftp.net/FILE/WWE%20Wrestling/WWE%20Monday%20Night%20RAW%202026%2004%2006%20720p%20HDTV%20x264/WWE%20Monday%20Night%20RAW%202026%2004%2006%20720p%20HDTV%20x264.mp4",
     "category": "wwe",
-    "type": "live"
+    "type": "VOD"
   }
 ]
