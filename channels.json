@@ -3,7 +3,7 @@
     "data_source_url": "https://cloudlyakash.unaux.com/channels.json",
     "backup_url": "https://raw.githubusercontent.com/your-backup/data.json",
     "maintenance": false,
-    "maintenance_msg": "সার্ভার আপডেট হচ্ছে, কিছুক্ষণ পর চেষ্টা করুন।",
+    "maintenance_msg": "The server is updating, please try again later.",
     "latest_version": "1.0.2"
   }
 }
