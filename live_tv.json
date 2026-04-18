@@ -25,6 +25,14 @@
       "type": "live"
     },
     {
+    "id": "400",
+    "name": "Jamuna TV",
+    "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkgxrAG9T6n17HV0eusUzIz4y93pF6pmT0W3WjunhaM-0ge5x82Y3JH5gqq9CTkqbFKq3C2VEUrvQMXAVZ-BQmTDg8KRGwZ_2S-QPDLiHWfC3hn4y_dq-KCgdxMnM3V6UMkc0bE6adKLqtSV-5AggAnnwHVDWiNCf6Qic1R5i_o569Zde9QtTgocD5dQ/s600/Nur_20251107_155850_0000.png",
+    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/1701-audio_113312_eng=113200-video=1692000.m3u8",
+    "category": "Bangladeshi TV Channel",
+    "type": "LIVE"
+  },
+  {
       "id": "4",
       "name": "NTV UK",
       "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/NTV.png",
@@ -41,6 +49,86 @@
       "type": "live"
     },
     {
+    "id": "401",
+    "name": "FIFA+",
+    "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho4KofCp6EO6222z4-lsF_PTIAT-cjb5cBGPPVQ8nsY5Q9E4seSlXVoOIZVxGqgmA99gozBuFoALrOG-geSuGMWqhrPEUassrEv6GiokQQoSkUXWBMx-f-0Sl71B9MQqSPcsyc2n7MpAxMcAUuNqlmQ8rcrcd0pY6uamuUdciBmKjcPnHqab7V55qTug/s1080/1000023507.png",
+    "url": "https://a62dad94.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/d8c35d3c-b303-44d6-a1d2-c454b6ebd837/3.m3u8",
+    "category": "sports",
+    "type": "LIVE"
+  },
+  {
+    "id": "402",
+    "name": "DD Sports",
+    "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvJ1HtheTbTZjOoXTO9KRK1fIhh1uXhyvSckbf05J7yIcdT4ZucX1fvfjnyiv9QK-m0pBK6MoY6KhcVPQpsRSXdgBFU612nmbKpY864gsoMvMaCyu_fOdNVbx6ADMbz2dftZ7-0Arzx81kC8nqbeduSEsquwrPpzNGm2wZw6rXHe79vlF7DokCavubWA/s600/Nur_20251107_160202_0000.png",
+    "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index_3.m3u8",
+    "category": "sports",
+    "type": "LIVE"
+  },
+  {
+    "id": "403",
+    "name": "D Sports",
+    "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfw1SdojRL5Ce00-Up9w5XN97jTYNfT3qZIXHzurK7i5azpXQrN8m12XVleYpF5lT_PqltjL3kZy7QYazftT9UDlSCBOL8SAx76Rq8Vjgk7RkMB_kQLFZEw3ErrUkvbWMhtYsuN-yF_KEHw88gCqOICMp7uPxRnEoKe0SinvMogK5CYHn3T5oJsaZSEg/s1080/1000057886.png",
+    "url": "https://latam-cache-sv2-cdn.latamlive.net/DS1_ENC_LIVE/tracks-v1a1/mono.m3u8",
+    "category": "sports",
+    "type": "LIVE"
+  },
+  {
+    "id": "404",
+    "name": "Premier League",
+    "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggALPjRyvL1P2P5tscUTQmFzD2-W0lfCb0wMtEfSWo-ZxHpbJtV_nGQwskPxayJdbvTpUgRoVBiVcatDfm6Ik99fgiXKo7ctjJYkVQPym8teoSiyy3R8WO-sPJNpAzp35LDyOIeSwWYSUpQprqLWy01SGxz2_7o0AUFfblSugnXSt6-znRFJ8w4-gE8w/s1080/1000058092.png",
+    "url": "https://ml-pull-hwc.myco.io/PROMO/hls/PROMO_H264-240p.m3u8?pkg_media=video&pkg_hm=index.m3u8&pkg_svc=1&pkg_vcodec=avc1",
+    "category": "sports",
+    "type": "LIVE"
+  },
+  {
+    "id": "405",
+    "name": "Fubo Sports",
+    "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN2-O4MHJ08c5sEQRS2P0lkInX9N9vAFT0mQLjOZpaCRGxSGe0Bij9GWQvqRwNUY5RrM09hhIx2dHs_BRGeyzrIcfxi7Zuq4egAtZRTEbxBQIQ-otv0FTmSDKjF48faqzoRkeqyKSIskgpokY_hq9aAE9UheeCGyPFT_3-eMoLg6I-Q7ISHG0mI8us/s600/Nur_20251103_234916_0000.png",
+    "url": "https://wurlfubo.global.transmit.live/us-east-1-b/manifest/67f42332d3dd98936978f581/a34704d7-eb2b-4227-8be0-5438d3b022ba/v1/fubotv_fubo_sports_network_1/lg_us/latest/main/hls/video-avc1.640028-mp4a.40.2-0.m3u8?h=1080&playlistUri=https%253A%252F%252Fad993ce7.wurl.com%252Fv1%252Ffubotv_fubo_sports_network_1%252Flg_us%252FV00000001%252F0%252FHLS%252F1.m3u8&sessionStart=1776540355166&streamPath=v1%2Ffubotv_fubo_sports_network_1%2Flg_us%2Flatest%2Fmain%2Fhls%2Fplaylist.m3u8",
+    "category": "sports",
+    "type": "LIVE"
+  },
+  {
+    "id": "406",
+    "name": "A Spor",
+    "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9MDiEy9-qG4ARtsmp6ze-OEzdYpPphVK_pa73xKmVBZ7skEM5Wn09km7Oqsc-SETTlEDsUGmLHtjYwmst6KjGZp1olA8dHnPXCUQHPYOwJv0MdeiVSxoFuXLPFSL-wGxNPTKhBED5edzZpKxi-AUT-SNMLKmEixlJQoy9Hi_Sfx4R4-HuUvRe1JRWQQ/s1080/1000057884.png",
+    "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor_1080p.m3u8",
+    "category": "sports",
+    "type": "LIVE"
+  },
+  {
+    "id": "407",
+    "name": "Bein ESP",
+    "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE6RtSjn2ub1pivbZGmHJTMlDi9NhTRKBevAExhVo-Eyi_HF9aIAwiXCdnhf6WnizyYznxPAKdmJIaepIZ52T8otyH-iL9ImGrK0zwyMuYS3SeYNmS2a70cz5gE9sHnfOHcPUDUqVdPn1il8ROdjUAJVCem6XSZNlyIxdWQmS-1PcBn7hq5Hdqpxm1lw/s1080/1000057888.png",
+    "url": "https://bein-esp-xumo.amagi.tv/playlistR480p.m3u8",
+    "category": "sports",
+    "type": "LIVE"
+  },
+  {
+    "id": "408",
+    "name": "Xtream Sports",
+    "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh20UHe_DMceL98clzG0TUBYwvo_3aOHtN3mI6qAJnONQL6i3OYr7OVVzLtnw5qkTNVD7D_EjZbsHYe4GMx3bPzuiEwWXbRz6Ryo8FPCoZTG_BvfBPgBuxbJSwswY8jiTpv36e1bXZnGDkaAOwpD1QmaIuf95bVUB_NMvinUnqO_RsEqxij3pfVSOHi-Q/s1080/1000010077.png",
+    "url": "https://streams2.sofast.tv/ptnr-yupptv/title-XTREM-SPORTS-ENG_yupptv/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/e0b81a5c-6ab5-48cd-aaa9-f82de4ab5bf9/cbe0b9f2-9a8f-4e7d-935e-4b4edeb13901/2.m3u8",
+    "category": "sports",
+    "type": "LIVE"
+  },
+  {
+    "id": "409",
+    "name": "Ten Cricket",
+    "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimoHCxm4QLPBf0oczRfaNZmD2IDiBUZvp8Jc58F9cBil4Iw8aqxsx1C-IRgdCfWCR0T0WbY8GvPiWpqSLRXZXl3fcFfkSBydfwO-hXHMXDq8w4q24FJjDS3RdGYt6-Jv_U_72ppYopRcySpEMX7OKPFjeE3eRukyL0PhZffGb798S9w8B_Y2JTu8NNpg/s1080/1000019372.png",
+    "url": "https://iptv.outflanktv.workers.dev/live/ten_cricket_hd_abr/live/ten_cricket_hd_720/chunks.m3u8",
+    "category": "sports",
+    "type": "sports"
+  },
+  {
+    "id": "410",
+    "name": "Euro Sports",
+    "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirWpGtNoXEImEsBvrMeKO31Llaeu-4VWoQ35oZVF6gc98x9_rLkGj1B-wiv5P99v4ZxQpMl44RVSmDJ9IjkmQRZG5DWEvM7xBusVGuyRXWDFR0zJl1jWYphnTTpBlliwPu1WZ7V5bVeEM6E1TgtnK4IYFLyF3ttQoWRrzEaKSC9phcJo7nNMWhHFQRpg/s600/Nur_20251215_124106_0000.png",
+    "url": "https://iptv.outflanktv.workers.dev/live/euro_sports_hd_abr/live/euro_sports_hd/chunks.m3u8?nimblesessionid=151483",
+    "category": "sports",
+    "type": "LIVE"
+  },
+  {
       "id": "5",
       "name": "Deepto TV",
       "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Deepto%20TV.jpeg",
