@@ -1,1 +1,11 @@
-NULL
+{"series":[
+{
+    "id": "1",
+    "name": "The.Yeti.2026.720p.WEB-DL.x264.ESub-MsMod",
+    "logo": "http://172.16.50.7/DHAKA-FLIX-7/English%20Movies/%282026%29/The%20Yeti%20%282026%29%20720p%20WEBRip/a_AL_.jpg",
+    "url": "http://172.16.50.7/DHAKA-FLIX-7/English%20Movies/%282026%29/The%20Yeti%20%282026%29%20720p%20WEBRip/The.Yeti.2026.720p.WEB-DL.x264.ESub-MsMod.mkv",
+    "category": "English Movie 2026",
+    "type": "vod"
+  }
+ ]
+}
