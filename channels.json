@@ -1,9 +1,8 @@
 {
   "api_config": {
-    "data_source_url": "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/live_tv_data.json",
-    "backup_url": "https://cloudlyakash.unaux.com/channels.json",
-    "maintenance": false,
-    "maintenance_msg": "The server is updating, please try again later.",
-    "latest_version": "1.0.2"
+    "live_tv_url": "https://raw.githubusercontent.com/faria2177/.../live_tv.json",
+    "movies_url": "https://raw.githubusercontent.com/faria2177/.../movies.json",
+    "series_url": "https://raw.githubusercontent.com/faria2177/.../series.json",
+    "maintenance": false
   }
 }
