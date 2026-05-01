@@ -43,7 +43,7 @@
     {
       "id": "88",
       "name": "T-Sports",
-      "logo": "https://images.seeklogo.com/logo-png/64/1/t-sports-logo-png_seeklogo-640172.png",
+      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirWpGtNoXEImEsBvrMeKO31Llaeu-4VWoQ35oZVF6gc98x9_rLkGj1B-wiv5P99v4ZxQpMl44RVSmDJ9IjkmQRZG5DWEvM7xBusVGuyRXWDFR0zJl1jWYphnTTpBlliwPu1WZ7V5bVeEM6E1TgtnK4IYFLyF3ttQoWRrzEaKSC9phcJo7nNMWhHFQRpg/s600/Nur_20251215_124106_0000.png",
       "url": "http://198.195.239.50:8095/Tsports/tracks-v1a1/mono.m3u8",
       "category": "SPORTS",
       "type": "live"
@@ -3053,6 +3053,30 @@
     "url": "https://iptv.outflanktv.workers.dev/live/ten_cricket_hd_abr/live/ten_cricket_hd_720/chunks.m3u8",
     "category": "SPORTS",
     "type": "sports"
+  },
+    {
+    "id": "1",
+    "name": "1143_2",
+    "logo": "https://c.kmpr.in/assets/tv_channels_150/5224.jpg",
+    "url": "https://cdn-4.pishow.tv/live/1143/1143_2.m3u8",
+    "category": "MUSIC",
+    "type": "live"
+  },
+    {
+    "id": "1",
+    "name": "main_stream",
+    "logo": "https://cdn6.aptoide.com/imgs/0/7/3/073f6e27b3a16c3acf96695598baeed8_icon.png",
+    "url": "https://stream.snexus.co/live/SHARQ_GAME_TV/main_stream.m3u8",
+    "category": "SPORTS",
+    "type": "live"
+  },
+    {
+    "id": "1",
+    "name": "STAR SPORTS HINDI 720p",
+    "logo": "https://i.ytimg.com/vi/CXTxw-69Ch8/maxresdefault.jpg",
+    "url": "https://starsportshindiii.pages.dev/720p.m3u8",
+    "category": "SPORTS",
+    "type": "live"
   },
   {
     "id": "410",
