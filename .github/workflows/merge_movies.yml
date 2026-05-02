@@ -2,13 +2,9 @@ name: Auto Merge Movies Data
 
 on:
   push:
-    branches:
-      - main
-      - master
-  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
-
-permissions:
-  contents: write # নতুন ফাইল পুশ করার জন্য এই পারমিশনটি জরুরি
+    paths:
+      - 'Movies/**' # Movies ফোল্ডারে কোনো পরিবর্তন হলেই এই অ্যাকশন চলবে
+  workflow_dispatch: # আপনি চাইলে ম্যানুয়ালিও রান করতে পারবেন
 
 jobs:
   build:
