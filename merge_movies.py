@@ -2,28 +2,29 @@ import os
 import json
 
 def merge_all_movies():
-    # আপনার মূল ফোল্ডারের নাম
-    base_dir = 'Movies'
+    # আপনার রিপোজিটরিতে থাকা ফোল্ডারগুলোর সঠিক নাম
+    target_folders = ['Bollywood', 'Hollywood', 'Private', 'SecretWorld', 'VOD', 'WorldCollection', 'Worldwide']
     all_merged_data = []
 
-    # Movies ফোল্ডার এবং এর ভেতরের সব সাব-ফোল্ডার খুঁজবে
-    for root, dirs, files in os.walk(base_dir):
-        for file in files:
-            if file.endswith('.json'):
-                file_path = os.path.join(root, file)
-                try:
-                    with open(file_path, 'r', encoding='utf-8') as f:
-                        data = json.load(f)
-                        # ডেটা যদি লিস্ট (Array) হয়, তবে মূল লিস্টে যোগ করবে
-                        if isinstance(data, list):
-                            all_merged_data.extend(data)
-                        # ডেটা যদি অবজেক্ট (Dictionary) হয় এবং ভেতরে লিস্ট থাকে
-                        elif isinstance(data, dict):
-                            for key, value in data.items():
-                                if isinstance(value, list):
-                                    all_merged_data.extend(value)
-                except Exception as e:
-                    print(f"Error reading {file_path}: {e}")
+    for folder in target_folders:
+        if os.path.exists(folder):
+            for root, dirs, files in os.walk(folder):
+                for file in files:
+                    if file.endswith('.json'):
+                        file_path = os.path.join(root, file)
+                        try:
+                            with open(file_path, 'r', encoding='utf-8') as f:
+                                data = json.load(f)
+                                # ডেটা যদি লিস্ট (Array) হয়
+                                if isinstance(data, list):
+                                    all_merged_data.extend(data)
+                                # ডেটা যদি অবজেক্ট (Dictionary) হয়
+                                elif isinstance(data, dict):
+                                    for key, value in data.items():
+                                        if isinstance(value, list):
+                                            all_merged_data.extend(value)
+                        except Exception as e:
+                            print(f"Error reading {file_path}: {e}")
 
     # মার্জ করা ডেটা সেভ করার ফাইলের নাম
     output_file = 'all_movies.json'
