@@ -2,11 +2,15 @@ import os
 import json
 
 def merge_all_movies():
-    # আপনার মূল ফোল্ডারের নাম
+    # ফোল্ডারগুলো যেহেতু এখন 'Movies' এর ভেতর, তাই আমরা সেখানে খুঁজবো
     base_dir = 'Movies'
     all_merged_data = []
 
-    # Movies ফোল্ডার এবং এর ভেতরের সব সাব-ফোল্ডার খুঁজবে
+    if not os.path.exists(base_dir):
+        print(f"Error: '{base_dir}' folder not found!")
+        return
+
+    # Movies ফোল্ডার এবং এর ভেতরের সব সাব-ফোল্ডার ও ফাইল স্ক্যান করবে
     for root, dirs, files in os.walk(base_dir):
         for file in files:
             if file.endswith('.json'):
@@ -14,24 +18,23 @@ def merge_all_movies():
                 try:
                     with open(file_path, 'r', encoding='utf-8') as f:
                         data = json.load(f)
-                        # ডেটা যদি লিস্ট (Array) হয়, তবে মূল লিস্টে যোগ করবে
+                        
+                        # ডেটা যদি সরাসরি লিস্ট [{}, {}] হয়
                         if isinstance(data, list):
                             all_merged_data.extend(data)
-                        # ডেটা যদি অবজেক্ট (Dictionary) হয় এবং ভেতরে লিস্ট থাকে
+                        # ডেটা যদি ডিকশনারি বা অবজেক্ট হয় যার ভেতরে লিস্ট আছে
                         elif isinstance(data, dict):
-                            for key, value in data.items():
-                                if isinstance(value, list):
-                                    all_merged_data.extend(value)
+                            for key in data:
+                                if isinstance(data[key], list):
+                                    all_merged_data.extend(data[key])
                 except Exception as e:
                     print(f"Error reading {file_path}: {e}")
 
-    # মার্জ করা ডেটা সেভ করার ফাইলের নাম
     output_file = 'all_movies.json'
-    
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(all_merged_data, f, indent=4, ensure_ascii=False)
         
-    print(f"✅ Successfully merged {len(all_merged_data)} movies into {output_file}")
+    print(f"✅ Successfully merged {len(all_merged_data)} items into {output_file}")
 
 if __name__ == "__main__":
     merge_all_movies()
