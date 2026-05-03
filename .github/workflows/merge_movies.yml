@@ -1,62 +1,39 @@
-import os
-import json
-import requests
-from concurrent.futures import ThreadPoolExecutor
+name: Auto Merge and Status Check
 
-def check_link(item):
-    url = item.get('url') or item.get('stream_url')
-    if not url: return item, False
-    try:
-        # ৫ সেকেন্ডের মধ্যে রেসপন্স না দিলে অফলাইন
-        response = requests.head(url, timeout=5, allow_redirects=True)
-        return item, response.status_code == 200
-    except:
-        return item, False
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch: 
 
-def merge_process():
-    base_dir = 'Movies'
-    all_unique_items = []
-    seen_urls = set()
+permissions:
+  contents: write 
 
-    if not os.path.exists(base_dir):
-        print(f"❌ Error: '{base_dir}' folder not found!")
-        return
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-    # সব সাব-ফোল্ডার থেকে movies.json ফাইল পড়া
-    for root, dirs, files in os.walk(base_dir):
-        for file in files:
-            if file.lower() == 'movies.json':
-                file_path = os.path.join(root, file)
-                try:
-                    with open(file_path, 'r', encoding='utf-8') as f:
-                        data = json.load(f)
-                        items = data if isinstance(data, list) else [data]
-                        for item in items:
-                            url = item.get('url') or item.get('stream_url')
-                            if url and url not in seen_urls:
-                                seen_urls.add(url)
-                                all_unique_items.append(item)
-                except Exception as e:
-                    print(f"❌ Error reading {file_path}: {e}")
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-    online_movies = []
-    offline_movies = []
-    
-    print(f"Checking {len(all_unique_items)} links...")
-    with ThreadPoolExecutor(max_workers=15) as executor:
-        results = list(executor.map(check_link, all_unique_items))
-        for item, is_online in results:
-            if is_online: online_movies.append(item)
-            else: offline_movies.append(item)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-    # সচল এবং অচল ফাইল সেভ করা
-    with open('all_movies.json', 'w', encoding='utf-8') as f:
-        json.dump(online_movies, f, indent=4, ensure_ascii=False)
-        
-    with open('offline.json', 'w', encoding='utf-8') as f:
-        json.dump(offline_movies, f, indent=4, ensure_ascii=False)
+      - name: Install Dependencies
+        run: pip install requests
 
-    print(f"Done! Online: {len(online_movies)}, Offline: {len(offline_movies)}")
+      - name: Run Python Script
+        run: python merge_movies.py
 
-if __name__ == "__main__":
-    merge_process()
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # এখানে দুটি ফাইলই অ্যাড করা হয়েছে
+          git add all_movies.json offline.json
+          git commit -m "Auto-update: Movie lists generated 🚀 [skip ci]" || echo "No changes to commit"
+          git push
