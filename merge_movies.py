@@ -13,24 +13,224 @@ OUTPUT_ONLINE = 'all_movies.json'
 OUTPUT_OFFLINE = 'offline.json'
 
 # =============================================
-# ডিবাগ — ফোল্ডার স্ট্রাকচার দেখানো
+# Standard ফরম্যাট — যেকোনো item কে normalize করা
+# =============================================
+def normalize_item(item):
+    """
+    যেকোনো ফরম্যাটের item কে standard ফরম্যাটে রূপান্তর করা।
+    
+    Standard output:
+    {
+        "title": "...",
+        "url": "...",
+        "thumbnail": "...",
+        "category": "...",
+        "year": "...",
+        "description": "...",
+        "quality": "...",
+        "language": "..."
+    }
+    """
+    if not isinstance(item, dict):
+        return None
+
+    # URL বের করা — সব সম্ভাব্য ফিল্ড নাম চেক
+    url = (
+        item.get('url') or
+        item.get('stream_url') or
+        item.get('streamUrl') or
+        item.get('stream') or
+        item.get('link') or
+        item.get('src') or
+        item.get('source') or
+        item.get('videoUrl') or
+        item.get('video_url') or
+        item.get('playUrl') or
+        item.get('play_url') or
+        item.get('hls_url') or
+        item.get('hlsUrl') or
+        item.get('mp4') or
+        item.get('file') or
+        ''
+    ).strip()
+
+    if not url:
+        return None
+
+    # Title বের করা
+    title = (
+        item.get('title') or
+        item.get('name') or
+        item.get('movie_name') or
+        item.get('movieName') or
+        item.get('label') or
+        item.get('channel_name') or
+        item.get('channelName') or
+        item.get('show_name') or
+        'Unknown'
+    ).strip()
+
+    # Thumbnail বের করা
+    thumbnail = (
+        item.get('thumbnail') or
+        item.get('poster') or
+        item.get('image') or
+        item.get('img') or
+        item.get('cover') or
+        item.get('banner') or
+        item.get('logo') or
+        item.get('icon') or
+        item.get('thumb') or
+        item.get('backdrop') or
+        ''
+    ).strip()
+
+    # Category বের করা
+    category = (
+        item.get('category') or
+        item.get('genre') or
+        item.get('type') or
+        item.get('genres') or
+        item.get('group') or
+        item.get('group_title') or
+        item.get('section') or
+        ''
+    )
+    if isinstance(category, list):
+        category = ', '.join(str(c) for c in category)
+    category = str(category).strip()
+
+    # Year বের করা
+    year = (
+        item.get('year') or
+        item.get('release_year') or
+        item.get('releaseYear') or
+        item.get('release_date') or
+        item.get('releaseDate') or
+        ''
+    )
+    year = str(year).strip()[:4] if year else ''
+
+    # Description বের করা
+    description = (
+        item.get('description') or
+        item.get('desc') or
+        item.get('overview') or
+        item.get('plot') or
+        item.get('synopsis') or
+        item.get('summary') or
+        ''
+    ).strip()
+
+    # Quality বের করা
+    quality = (
+        item.get('quality') or
+        item.get('resolution') or
+        item.get('hd') or
+        ''
+    )
+    quality = str(quality).strip()
+
+    # Language বের করা
+    language = (
+        item.get('language') or
+        item.get('lang') or
+        item.get('audio') or
+        ''
+    ).strip()
+
+    # Standard ফরম্যাটে return
+    normalized = {
+        'title': title,
+        'url': url,
+    }
+
+    # খালি না হলেই যোগ করা
+    if thumbnail:
+        normalized['thumbnail'] = thumbnail
+    if category:
+        normalized['category'] = category
+    if year:
+        normalized['year'] = year
+    if description:
+        normalized['description'] = description
+    if quality:
+        normalized['quality'] = quality
+    if language:
+        normalized['language'] = language
+
+    return normalized
+
+# =============================================
+# যেকোনো JSON স্ট্রাকচার থেকে আইটেম বের করা
+# =============================================
+def extract_items(data, depth=0):
+    """
+    যেকোনো JSON structure থেকে সব মুভি/স্ট্রিম আইটেম বের করা।
+    Recursive — nested structure ও handle করবে।
+    """
+    if depth > 5:  # অনেক গভীরে গেলে থামবে
+        return []
+
+    items = []
+
+    if isinstance(data, list):
+        for element in data:
+            if isinstance(element, dict):
+                # এটি কি একটি মিডিয়া আইটেম?
+                url = (
+                    element.get('url') or element.get('stream_url') or
+                    element.get('link') or element.get('src') or
+                    element.get('source') or element.get('streamUrl') or
+                    element.get('videoUrl') or element.get('video_url') or
+                    element.get('hls_url') or element.get('mp4') or
+                    element.get('file') or element.get('play_url')
+                )
+                if url:
+                    items.append(element)
+                else:
+                    # nested list বা dict হতে পারে
+                    items.extend(extract_items(element, depth + 1))
+            elif isinstance(element, list):
+                items.extend(extract_items(element, depth + 1))
+
+    elif isinstance(data, dict):
+        # সরাসরি URL আছে কিনা চেক
+        url = (
+            data.get('url') or data.get('stream_url') or
+            data.get('link') or data.get('src') or
+            data.get('source') or data.get('streamUrl') or
+            data.get('videoUrl') or data.get('video_url') or
+            data.get('hls_url') or data.get('mp4') or
+            data.get('file') or data.get('play_url')
+        )
+        if url:
+            items.append(data)
+        else:
+            # সব value এর মধ্যে খোঁজা
+            for key, value in data.items():
+                if isinstance(value, (list, dict)):
+                    items.extend(extract_items(value, depth + 1))
+
+    return items
+
+# =============================================
+# ডিবাগ স্ক্যান
 # =============================================
 def debug_scan():
     print("\n" + "="*60)
-    print("🔎 DEBUG: রুট ডিরেক্টরিতে যা আছে:")
+    print("🔎 DEBUG: রুট ডিরেক্টরি:")
     for item in sorted(os.listdir('.')):
-        size = ''
-        if os.path.isfile(item):
-            size = f"  ({os.path.getsize(item)} bytes)"
         kind = '📁' if os.path.isdir(item) else '📄'
+        size = f" ({os.path.getsize(item)} bytes)" if os.path.isfile(item) else ''
         print(f"  {kind} {item}{size}")
 
-    print("\n🔎 DEBUG: Movies ফোল্ডারের সম্পূর্ণ স্ট্রাকচার:")
-    found_any = False
+    print("\n🔎 DEBUG: Movies ফোল্ডার স্ট্রাকচার:")
+    found = False
     for base in BASE_DIRS:
         if not os.path.exists(base):
             continue
-        found_any = True
+        found = True
         for root, dirs, files in os.walk(base):
             dirs[:] = [d for d in dirs if not d.startswith('.')]
             level = root.replace(base, '').count(os.sep)
@@ -39,24 +239,23 @@ def debug_scan():
             for f in files:
                 fpath = os.path.join(root, f)
                 size = os.path.getsize(fpath)
-                print(f"{indent}  📄 {f}  ({size} bytes)")
+                print(f"{indent}  📄 {f} ({size} bytes)")
                 if f.endswith('.json') and size > 0:
                     try:
                         with open(fpath, 'r', encoding='utf-8', errors='replace') as fp:
                             preview = fp.read(200).replace('\n', ' ')
-                        print(f"{indent}     👀 Preview: {preview[:120]!r}")
+                        print(f"{indent}     👀 {preview[:120]!r}")
                     except Exception as e:
-                        print(f"{indent}     ❌ পড়া যায়নি: {e}")
-    if not found_any:
-        print("  ❌ কোনো Movies ফোল্ডার পাওয়া যায়নি!")
+                        print(f"{indent}     ❌ {e}")
+    if not found:
+        print("  ❌ Movies ফোল্ডার নেই!")
     print("="*60 + "\n")
 
 # =============================================
-# স্ট্রিম URL চেক (HEAD + GET fallback)
+# URL অনলাইন চেক (HEAD + GET fallback)
 # =============================================
 def check_link(item):
-    url = (item.get('url') or item.get('stream_url') or
-           item.get('link') or item.get('src') or '').strip()
+    url = item.get('url', '').strip()
     if not url or not url.startswith('http'):
         return item, False, "no_url"
 
@@ -66,13 +265,11 @@ def check_link(item):
     }
 
     try:
-        # প্রথমে HEAD চেষ্টা
         resp = requests.head(url, timeout=TIMEOUT, headers=headers,
                              allow_redirects=True)
         if resp.status_code < 400:
             return item, True, resp.status_code
 
-        # HEAD কাজ না করলে GET দিয়ে চেক
         resp = requests.get(
             url, timeout=TIMEOUT,
             headers={**headers, 'Range': 'bytes=0-0'},
@@ -92,7 +289,6 @@ def check_link(item):
         except:
             pass
         return item, False, "ssl_error"
-
     except requests.exceptions.ConnectionError:
         return item, False, "connection_error"
     except requests.exceptions.Timeout:
@@ -101,27 +297,11 @@ def check_link(item):
         return item, False, str(e)[:50]
 
 # =============================================
-# JSON থেকে আইটেম বের করা
-# =============================================
-def extract_items(data):
-    if isinstance(data, list):
-        return data
-    if isinstance(data, dict):
-        for key in ['movies', 'items', 'data', 'channels', 'list', 'results']:
-            if key in data and isinstance(data[key], list):
-                return data[key]
-        if any(k in data for k in ['url', 'stream_url', 'link', 'title', 'name']):
-            return [data]
-    return []
-
-# =============================================
 # মূল প্রসেস
 # =============================================
 def merge_process():
-    # প্রথমেই ডিবাগ স্ক্যান
     debug_scan()
 
-    # বেস ডিরেক্টরি খোঁজা
     base_dir = None
     for d in BASE_DIRS:
         if os.path.exists(d) and os.path.isdir(d):
@@ -129,42 +309,38 @@ def merge_process():
             break
 
     if not base_dir:
-        print("❌ কোনো Movies ফোল্ডার পাওয়া যায়নি!")
+        print("❌ Movies ফোল্ডার পাওয়া যায়নি!")
         for f in [OUTPUT_ONLINE, OUTPUT_OFFLINE]:
             with open(f, 'w', encoding='utf-8') as fp:
-                json.dump([], fp)
+                json.dump([], fp, indent=2)
         return
 
-    print(f"📂 স্ক্যান শুরু: '{base_dir}' ফোল্ডার")
+    print(f"📂 স্ক্যান: '{base_dir}'")
     print("="*50)
 
-    all_items = []
+    all_normalized = []
     seen_urls = set()
-    scanned_files = 0
+    scanned = 0
 
     for root, dirs, files in os.walk(base_dir):
-        # লুকানো ফোল্ডার স্কিপ
         dirs[:] = [d for d in dirs if not d.startswith('.')]
 
         for file in files:
-            # ✅ যেকোনো .json ফাইল পড়বে — নাম যাই হোক
             if not file.lower().endswith('.json'):
-                print(f"  ⏭️  স্কিপ (.json নয়): {os.path.join(root, file)}")
                 continue
 
             file_path = os.path.join(root, file)
-            scanned_files += 1
-            print(f"  🔍 [{scanned_files}] পড়ছি: {file_path}")
+            scanned += 1
+            print(f"\n  🔍 [{scanned}] {file_path}")
 
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     content = f.read().strip()
 
                 if not content:
-                    print(f"      ⚠️  খালি ফাইল — স্কিপ")
+                    print(f"      ⚠️  খালি ফাইল")
                     continue
 
-                # BOM সরানো
                 if content.startswith('\ufeff'):
                     content = content[1:]
 
@@ -174,87 +350,84 @@ def merge_process():
                     print(f"      ❌ JSON ত্রুটি: {e}")
                     continue
 
-                items = extract_items(data)
-                new_count = 0
+                # যেকোনো ফরম্যাট থেকে আইটেম বের করা
+                raw_items = extract_items(data)
+                print(f"      📦 Raw আইটেম পাওয়া গেছে: {len(raw_items)}টি")
 
-                for item in items:
-                    if not isinstance(item, dict):
+                new_count = 0
+                for raw in raw_items:
+                    normalized = normalize_item(raw)
+                    if normalized is None:
                         continue
-                    url = (item.get('url') or item.get('stream_url') or
-                           item.get('link') or item.get('src') or '').strip()
-                    if url and url not in seen_urls:
+                    url = normalized['url']
+                    if url not in seen_urls:
                         seen_urls.add(url)
-                        all_items.append(item)
+                        all_normalized.append(normalized)
                         new_count += 1
 
-                print(f"      ✅ {new_count} নতুন আইটেম (ফাইলে মোট: {len(items)})")
+                print(f"      ✅ {new_count} নতুন unique আইটেম যোগ হলো")
 
             except Exception as e:
                 print(f"      ❌ সমস্যা: {e}")
 
     print(f"\n{'='*50}")
-    print(f"📊 মোট অনন্য আইটেম: {len(all_items)}")
+    print(f"📊 মোট unique আইটেম: {len(all_normalized)}")
 
-    if not all_items:
+    if not all_normalized:
         print("\n⚠️  কোনো আইটেম পাওয়া যায়নি!")
-        print("   সম্ভাব্য কারণ:")
-        print("   ➡️  JSON ফাইলে 'url' বা 'stream_url' ফিল্ড নেই")
-        print("   ➡️  JSON ফাইল খালি বা ভুল ফরম্যাটে আছে")
-        print(f"\n   Movies ফোল্ডারের ফাইল লিস্ট:")
-        for root, dirs, files in os.walk(base_dir):
-            dirs[:] = [d for d in dirs if not d.startswith('.')]
-            for f in files:
-                fpath = os.path.join(root, f)
-                print(f"   📄 {fpath}  ({os.path.getsize(fpath)} bytes)")
+        print("   ➡️  JSON এ url/stream_url/link/src ফিল্ড থাকতে হবে")
         for fname in [OUTPUT_ONLINE, OUTPUT_OFFLINE]:
             with open(fname, 'w', encoding='utf-8') as fp:
-                json.dump([], fp)
+                json.dump([], fp, indent=2)
         return
 
-    # =============================================
-    # লিঙ্ক চেক (Parallel)
-    # =============================================
-    print(f"\n🌐 লিঙ্ক চেক করছি ({len(all_items)}টি) — {MAX_WORKERS} থ্রেড...")
+    # লিঙ্ক চেক
+    print(f"\n🌐 লিঙ্ক চেক ({len(all_normalized)}টি) — {MAX_WORKERS} থ্রেড...")
 
-    online_movies = []
-    offline_movies = []
+    online = []
+    offline = []
     errors = {}
     checked = 0
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = {executor.submit(check_link, item): item for item in all_items}
+        futures = {executor.submit(check_link, item): item
+                   for item in all_normalized}
         for future in as_completed(futures):
             checked += 1
-            if checked % 10 == 0 or checked == len(all_items):
-                print(f"   ⏳ {checked}/{len(all_items)} চেক হয়েছে "
-                      f"(অনলাইন: {len(online_movies)}, "
-                      f"অফলাইন: {len(offline_movies)})")
+            if checked % 20 == 0 or checked == len(all_normalized):
+                print(f"   ⏳ {checked}/{len(all_normalized)} "
+                      f"| ✅ {len(online)} | ❌ {len(offline)}")
             try:
                 item, is_online, status = future.result()
                 if is_online:
-                    online_movies.append(item)
+                    online.append(item)
                 else:
-                    offline_movies.append(item)
-                    err_key = str(status)
-                    errors[err_key] = errors.get(err_key, 0) + 1
-            except Exception as e:
-                offline_movies.append(futures[future])
+                    offline.append(item)
+                    errors[str(status)] = errors.get(str(status), 0) + 1
+            except Exception:
+                offline.append(futures[future])
 
-    # ফলাফল সেভ
+    # Standard ফরম্যাটে সেভ
     with open(OUTPUT_ONLINE, 'w', encoding='utf-8') as f:
-        json.dump(online_movies, f, indent=2, ensure_ascii=False)
+        json.dump(online, f, indent=2, ensure_ascii=False)
 
     with open(OUTPUT_OFFLINE, 'w', encoding='utf-8') as f:
-        json.dump(offline_movies, f, indent=2, ensure_ascii=False)
+        json.dump(offline, f, indent=2, ensure_ascii=False)
 
     print(f"\n{'='*50}")
     print(f"🎉 সম্পন্ন!")
-    print(f"   ✅ অনলাইন  : {len(online_movies)} টি  →  {OUTPUT_ONLINE}")
-    print(f"   ❌ অফলাইন  : {len(offline_movies)} টি  →  {OUTPUT_OFFLINE}")
+    print(f"   ✅ অনলাইন  : {len(online)} টি  →  {OUTPUT_ONLINE}")
+    print(f"   ❌ অফলাইন  : {len(offline)} টি  →  {OUTPUT_OFFLINE}")
     if errors:
         print(f"   📋 ত্রুটির ধরন:")
         for err, count in sorted(errors.items(), key=lambda x: -x[1]):
             print(f"      {err}: {count}টি")
+
+    # Sample দেখানো
+    if online:
+        print(f"\n📋 প্রথম ৩টি অনলাইন আইটেম:")
+        for item in online[:3]:
+            print(f"   🎬 {item.get('title')} → {item.get('url', '')[:60]}...")
 
 if __name__ == "__main__":
     merge_process()
