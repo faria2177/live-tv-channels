@@ -7,7 +7,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # কনফিগারেশন
 # =============================================
 BASE_DIRS = ['Movies', 'movies', 'Movie', 'movie']
-VALID_JSON_NAMES = ['movies.json', 'Movies.json', 'data.json', 'movie.json']
 TIMEOUT = 8
 MAX_WORKERS = 20
 OUTPUT_ONLINE = 'all_movies.json'
@@ -44,8 +43,8 @@ def debug_scan():
                 if f.endswith('.json') and size > 0:
                     try:
                         with open(fpath, 'r', encoding='utf-8', errors='replace') as fp:
-                            preview = fp.read(150).replace('\n', ' ')
-                        print(f"{indent}     👀 Preview: {preview!r}")
+                            preview = fp.read(200).replace('\n', ' ')
+                        print(f"{indent}     👀 Preview: {preview[:120]!r}")
                     except Exception as e:
                         print(f"{indent}     ❌ পড়া যায়নি: {e}")
     if not found_any:
@@ -67,10 +66,13 @@ def check_link(item):
     }
 
     try:
-        resp = requests.head(url, timeout=TIMEOUT, headers=headers, allow_redirects=True)
+        # প্রথমে HEAD চেষ্টা
+        resp = requests.head(url, timeout=TIMEOUT, headers=headers,
+                             allow_redirects=True)
         if resp.status_code < 400:
             return item, True, resp.status_code
 
+        # HEAD কাজ না করলে GET দিয়ে চেক
         resp = requests.get(
             url, timeout=TIMEOUT,
             headers={**headers, 'Range': 'bytes=0-0'},
@@ -116,7 +118,7 @@ def extract_items(data):
 # মূল প্রসেস
 # =============================================
 def merge_process():
-    # প্রথমেই ডিবাগ স্ক্যান চালানো
+    # প্রথমেই ডিবাগ স্ক্যান
     debug_scan()
 
     # বেস ডিরেক্টরি খোঁজা
@@ -141,10 +143,13 @@ def merge_process():
     scanned_files = 0
 
     for root, dirs, files in os.walk(base_dir):
+        # লুকানো ফোল্ডার স্কিপ
         dirs[:] = [d for d in dirs if not d.startswith('.')]
+
         for file in files:
-            if file.lower() not in [n.lower() for n in VALID_JSON_NAMES]:
-                print(f"  ⏭️  স্কিপ (নাম মিলছে না): {os.path.join(root, file)}")
+            # ✅ যেকোনো .json ফাইল পড়বে — নাম যাই হোক
+            if not file.lower().endswith('.json'):
+                print(f"  ⏭️  স্কিপ (.json নয়): {os.path.join(root, file)}")
                 continue
 
             file_path = os.path.join(root, file)
@@ -156,13 +161,19 @@ def merge_process():
                     content = f.read().strip()
 
                 if not content:
-                    print(f"      ⚠️  ফাইলটি খালি — স্কিপ")
+                    print(f"      ⚠️  খালি ফাইল — স্কিপ")
                     continue
 
+                # BOM সরানো
                 if content.startswith('\ufeff'):
                     content = content[1:]
 
-                data = json.loads(content)
+                try:
+                    data = json.loads(content)
+                except json.JSONDecodeError as e:
+                    print(f"      ❌ JSON ত্রুটি: {e}")
+                    continue
+
                 items = extract_items(data)
                 new_count = 0
 
@@ -178,8 +189,6 @@ def merge_process():
 
                 print(f"      ✅ {new_count} নতুন আইটেম (ফাইলে মোট: {len(items)})")
 
-            except json.JSONDecodeError as e:
-                print(f"      ❌ JSON ত্রুটি: {e}")
             except Exception as e:
                 print(f"      ❌ সমস্যা: {e}")
 
@@ -188,15 +197,25 @@ def merge_process():
 
     if not all_items:
         print("\n⚠️  কোনো আইটেম পাওয়া যায়নি!")
-        print(f"   ➡️  JSON ফাইলের নাম এগুলোর মধ্যে একটি হতে হবে: {VALID_JSON_NAMES}")
-        print(f"   ➡️  JSON এ 'url' বা 'stream_url' ফিল্ড থাকতে হবে")
+        print("   সম্ভাব্য কারণ:")
+        print("   ➡️  JSON ফাইলে 'url' বা 'stream_url' ফিল্ড নেই")
+        print("   ➡️  JSON ফাইল খালি বা ভুল ফরম্যাটে আছে")
+        print(f"\n   Movies ফোল্ডারের ফাইল লিস্ট:")
+        for root, dirs, files in os.walk(base_dir):
+            dirs[:] = [d for d in dirs if not d.startswith('.')]
+            for f in files:
+                fpath = os.path.join(root, f)
+                print(f"   📄 {fpath}  ({os.path.getsize(fpath)} bytes)")
         for fname in [OUTPUT_ONLINE, OUTPUT_OFFLINE]:
             with open(fname, 'w', encoding='utf-8') as fp:
                 json.dump([], fp)
         return
 
-    # লিঙ্ক চেক
+    # =============================================
+    # লিঙ্ক চেক (Parallel)
+    # =============================================
     print(f"\n🌐 লিঙ্ক চেক করছি ({len(all_items)}টি) — {MAX_WORKERS} থ্রেড...")
+
     online_movies = []
     offline_movies = []
     errors = {}
@@ -207,7 +226,9 @@ def merge_process():
         for future in as_completed(futures):
             checked += 1
             if checked % 10 == 0 or checked == len(all_items):
-                print(f"   ⏳ {checked}/{len(all_items)} চেক হয়েছে")
+                print(f"   ⏳ {checked}/{len(all_items)} চেক হয়েছে "
+                      f"(অনলাইন: {len(online_movies)}, "
+                      f"অফলাইন: {len(offline_movies)})")
             try:
                 item, is_online, status = future.result()
                 if is_online:
@@ -219,7 +240,7 @@ def merge_process():
             except Exception as e:
                 offline_movies.append(futures[future])
 
-    # সেভ করা
+    # ফলাফল সেভ
     with open(OUTPUT_ONLINE, 'w', encoding='utf-8') as f:
         json.dump(online_movies, f, indent=2, ensure_ascii=False)
 
@@ -228,8 +249,8 @@ def merge_process():
 
     print(f"\n{'='*50}")
     print(f"🎉 সম্পন্ন!")
-    print(f"   ✅ অনলাইন : {len(online_movies)} → {OUTPUT_ONLINE}")
-    print(f"   ❌ অফলাইন : {len(offline_movies)} → {OUTPUT_OFFLINE}")
+    print(f"   ✅ অনলাইন  : {len(online_movies)} টি  →  {OUTPUT_ONLINE}")
+    print(f"   ❌ অফলাইন  : {len(offline_movies)} টি  →  {OUTPUT_OFFLINE}")
     if errors:
         print(f"   📋 ত্রুটির ধরন:")
         for err, count in sorted(errors.items(), key=lambda x: -x[1]):
