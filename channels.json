@@ -1,6 +1,6 @@
 {
   "api_config": {
-    "live_tv_url": "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/live_tv.json",
+    "live_tv_url": "https://cloudlyakash.unaux.com/channels.json?i=1",
     "movies_url": "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/all_movies.json",
     "series_url": "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series.json",
     "maintenance": false
