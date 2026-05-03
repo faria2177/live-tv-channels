@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - master
-  workflow_dispatch:
+  workflow_dispatch: # এটি থাকলে আপনি মেনু থেকে ম্যানুয়ালি রান করতে পারবেন
 
 permissions:
   contents: write 
@@ -13,6 +13,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout Repository
@@ -34,5 +36,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add all_movies.json offline.json
-          git commit -m "Auto-update: Online & Offline files generated 🚀 [skip ci]" || echo "No changes to commit"
+          git commit -m "Auto-update: Files generated 🚀 [skip ci]" || echo "No changes to commit"
           git push
