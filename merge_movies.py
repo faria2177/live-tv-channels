@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # =============================================
 # কনফিগারেশন
 # =============================================
-BASE_DIRS = ['Movies', 'movies', 'Movie', 'movie']  # সব সম্ভাব্য ফোল্ডার নাম
+BASE_DIRS = ['Movies', 'movies', 'Movie', 'movie']
 VALID_JSON_NAMES = ['movies.json', 'Movies.json', 'data.json', 'movie.json']
 TIMEOUT = 8
 MAX_WORKERS = 20
@@ -14,10 +14,50 @@ OUTPUT_ONLINE = 'all_movies.json'
 OUTPUT_OFFLINE = 'offline.json'
 
 # =============================================
-# স্ট্রিম URL চেক করা (HEAD + GET fallback)
+# ডিবাগ — ফোল্ডার স্ট্রাকচার দেখানো
+# =============================================
+def debug_scan():
+    print("\n" + "="*60)
+    print("🔎 DEBUG: রুট ডিরেক্টরিতে যা আছে:")
+    for item in sorted(os.listdir('.')):
+        size = ''
+        if os.path.isfile(item):
+            size = f"  ({os.path.getsize(item)} bytes)"
+        kind = '📁' if os.path.isdir(item) else '📄'
+        print(f"  {kind} {item}{size}")
+
+    print("\n🔎 DEBUG: Movies ফোল্ডারের সম্পূর্ণ স্ট্রাকচার:")
+    found_any = False
+    for base in BASE_DIRS:
+        if not os.path.exists(base):
+            continue
+        found_any = True
+        for root, dirs, files in os.walk(base):
+            dirs[:] = [d for d in dirs if not d.startswith('.')]
+            level = root.replace(base, '').count(os.sep)
+            indent = '  ' * level
+            print(f"{indent}📁 {os.path.basename(root)}/")
+            for f in files:
+                fpath = os.path.join(root, f)
+                size = os.path.getsize(fpath)
+                print(f"{indent}  📄 {f}  ({size} bytes)")
+                if f.endswith('.json') and size > 0:
+                    try:
+                        with open(fpath, 'r', encoding='utf-8', errors='replace') as fp:
+                            preview = fp.read(150).replace('\n', ' ')
+                        print(f"{indent}     👀 Preview: {preview!r}")
+                    except Exception as e:
+                        print(f"{indent}     ❌ পড়া যায়নি: {e}")
+    if not found_any:
+        print("  ❌ কোনো Movies ফোল্ডার পাওয়া যায়নি!")
+    print("="*60 + "\n")
+
+# =============================================
+# স্ট্রিম URL চেক (HEAD + GET fallback)
 # =============================================
 def check_link(item):
-    url = item.get('url') or item.get('stream_url') or item.get('link') or item.get('src')
+    url = (item.get('url') or item.get('stream_url') or
+           item.get('link') or item.get('src') or '').strip()
     if not url or not url.startswith('http'):
         return item, False, "no_url"
 
@@ -27,14 +67,13 @@ def check_link(item):
     }
 
     try:
-        # প্রথমে HEAD চেষ্টা
         resp = requests.head(url, timeout=TIMEOUT, headers=headers, allow_redirects=True)
         if resp.status_code < 400:
             return item, True, resp.status_code
 
-        # HEAD কাজ না করলে GET দিয়ে চেক (শুধু প্রথম ১ বাইট)
         resp = requests.get(
-            url, timeout=TIMEOUT, headers={**headers, 'Range': 'bytes=0-0'},
+            url, timeout=TIMEOUT,
+            headers={**headers, 'Range': 'bytes=0-0'},
             stream=True, allow_redirects=True
         )
         if resp.status_code in (200, 206):
@@ -42,11 +81,10 @@ def check_link(item):
         return item, False, resp.status_code
 
     except requests.exceptions.SSLError:
-        # SSL error হলে HTTP দিয়ে retry
         try:
             http_url = url.replace('https://', 'http://', 1)
             resp = requests.head(http_url, timeout=TIMEOUT, headers=headers,
-                                  allow_redirects=True, verify=False)
+                                 allow_redirects=True, verify=False)
             if resp.status_code < 400:
                 return item, True, f"ssl_fallback_{resp.status_code}"
         except:
@@ -61,28 +99,27 @@ def check_link(item):
         return item, False, str(e)[:50]
 
 # =============================================
-# JSON ফাইল থেকে আইটেম বের করা
+# JSON থেকে আইটেম বের করা
 # =============================================
 def extract_items(data):
     if isinstance(data, list):
         return data
-
     if isinstance(data, dict):
-        # সাধারণ কী নামগুলো চেক করা
         for key in ['movies', 'items', 'data', 'channels', 'list', 'results']:
             if key in data and isinstance(data[key], list):
                 return data[key]
-        # যদি নিজেই একটা মুভি অবজেক্ট হয়
         if any(k in data for k in ['url', 'stream_url', 'link', 'title', 'name']):
             return [data]
-
     return []
 
 # =============================================
 # মূল প্রসেস
 # =============================================
 def merge_process():
-    # সঠিক বেস ডিরেক্টরি খোঁজা
+    # প্রথমেই ডিবাগ স্ক্যান চালানো
+    debug_scan()
+
+    # বেস ডিরেক্টরি খোঁজা
     base_dir = None
     for d in BASE_DIRS:
         if os.path.exists(d) and os.path.isdir(d):
@@ -90,28 +127,24 @@ def merge_process():
             break
 
     if not base_dir:
-        print(f"❌ কোনো Movies ফোল্ডার পাওয়া যায়নি!")
-        print(f"📁 বর্তমান ডিরেক্টরিতে যা আছে: {sorted(os.listdir('.'))}")
-        # খালি ফাইল তৈরি করা যাতে workflow ভাঙে না
+        print("❌ কোনো Movies ফোল্ডার পাওয়া যায়নি!")
         for f in [OUTPUT_ONLINE, OUTPUT_OFFLINE]:
             with open(f, 'w', encoding='utf-8') as fp:
                 json.dump([], fp)
         return
 
     print(f"📂 স্ক্যান শুরু: '{base_dir}' ফোল্ডার")
-    print(f"{'='*50}")
+    print("="*50)
 
     all_items = []
     seen_urls = set()
     scanned_files = 0
 
-    # সব সাবফোল্ডার ও ফাইল স্ক্যান
     for root, dirs, files in os.walk(base_dir):
-        # লুকানো ফোল্ডার স্কিপ
         dirs[:] = [d for d in dirs if not d.startswith('.')]
-
         for file in files:
             if file.lower() not in [n.lower() for n in VALID_JSON_NAMES]:
+                print(f"  ⏭️  স্কিপ (নাম মিলছে না): {os.path.join(root, file)}")
                 continue
 
             file_path = os.path.join(root, file)
@@ -123,19 +156,13 @@ def merge_process():
                     content = f.read().strip()
 
                 if not content:
-                    print(f"      ⚠️  ফাইলটি খালি — স্কিপ করা হলো")
+                    print(f"      ⚠️  ফাইলটি খালি — স্কিপ")
                     continue
 
-                # BOM থাকলে সরানো
                 if content.startswith('\ufeff'):
                     content = content[1:]
 
-                try:
-                    data = json.loads(content)
-                except json.JSONDecodeError as e:
-                    print(f"      ❌ JSON পার্স ত্রুটি: {e}")
-                    continue
-
+                data = json.loads(content)
                 items = extract_items(data)
                 new_count = 0
 
@@ -149,38 +176,27 @@ def merge_process():
                         all_items.append(item)
                         new_count += 1
 
-                print(f"      ✅ {new_count} নতুন আইটেম যোগ হলো (ফাইলে মোট: {len(items)})")
+                print(f"      ✅ {new_count} নতুন আইটেম (ফাইলে মোট: {len(items)})")
 
+            except json.JSONDecodeError as e:
+                print(f"      ❌ JSON ত্রুটি: {e}")
             except Exception as e:
-                print(f"      ❌ পড়তে সমস্যা: {e}")
+                print(f"      ❌ সমস্যা: {e}")
 
     print(f"\n{'='*50}")
-    print(f"📊 মোট অনন্য আইটেম: {len(all_items)} (ডুপ্লিকেট বাদে)")
+    print(f"📊 মোট অনন্য আইটেম: {len(all_items)}")
 
     if not all_items:
         print("\n⚠️  কোনো আইটেম পাওয়া যায়নি!")
-        print(f"   সম্ভাব্য কারণ:")
-        print(f"   - JSON ফাইলের নাম {VALID_JSON_NAMES} এর মধ্যে নেই")
-        print(f"   - JSON ফাইলে url/stream_url ফিল্ড নেই")
-        print(f"   Movies ফোল্ডারের স্ট্রাকচার:")
-        for root, dirs, files in os.walk(base_dir):
-            level = root.replace(base_dir, '').count(os.sep)
-            indent = '  ' * level
-            print(f"   {indent}📁 {os.path.basename(root)}/")
-            for f in files:
-                print(f"   {indent}  📄 {f}")
-
+        print(f"   ➡️  JSON ফাইলের নাম এগুলোর মধ্যে একটি হতে হবে: {VALID_JSON_NAMES}")
+        print(f"   ➡️  JSON এ 'url' বা 'stream_url' ফিল্ড থাকতে হবে")
         for fname in [OUTPUT_ONLINE, OUTPUT_OFFLINE]:
             with open(fname, 'w', encoding='utf-8') as fp:
                 json.dump([], fp)
         return
 
-    # =============================================
-    # লিঙ্ক চেক করা (Parallel)
-    # =============================================
-    print(f"\n🌐 লিঙ্ক অনলাইন চেক করছি ({len(all_items)}টি)...")
-    print(f"   (সময় লাগতে পারে — {MAX_WORKERS}টি থ্রেড ব্যবহার করছি)")
-
+    # লিঙ্ক চেক
+    print(f"\n🌐 লিঙ্ক চেক করছি ({len(all_items)}টি) — {MAX_WORKERS} থ্রেড...")
     online_movies = []
     offline_movies = []
     errors = {}
@@ -191,7 +207,7 @@ def merge_process():
         for future in as_completed(futures):
             checked += 1
             if checked % 10 == 0 or checked == len(all_items):
-                print(f"   ⏳ চেক করা হয়েছে: {checked}/{len(all_items)}")
+                print(f"   ⏳ {checked}/{len(all_items)} চেক হয়েছে")
             try:
                 item, is_online, status = future.result()
                 if is_online:
@@ -203,9 +219,7 @@ def merge_process():
             except Exception as e:
                 offline_movies.append(futures[future])
 
-    # =============================================
-    # ফলাফল সেভ করা
-    # =============================================
+    # সেভ করা
     with open(OUTPUT_ONLINE, 'w', encoding='utf-8') as f:
         json.dump(online_movies, f, indent=2, ensure_ascii=False)
 
@@ -214,8 +228,8 @@ def merge_process():
 
     print(f"\n{'='*50}")
     print(f"🎉 সম্পন্ন!")
-    print(f"   ✅ অনলাইন  : {len(online_movies)} টি → {OUTPUT_ONLINE}")
-    print(f"   ❌ অফলাইন  : {len(offline_movies)} টি → {OUTPUT_OFFLINE}")
+    print(f"   ✅ অনলাইন : {len(online_movies)} → {OUTPUT_ONLINE}")
+    print(f"   ❌ অফলাইন : {len(offline_movies)} → {OUTPUT_OFFLINE}")
     if errors:
         print(f"   📋 ত্রুটির ধরন:")
         for err, count in sorted(errors.items(), key=lambda x: -x[1]):
