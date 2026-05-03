@@ -1,4 +1,4 @@
-name: Auto Merge and Clean Movies Data
+name: Auto Merge and Status Check
 
 on:
   push:
@@ -24,8 +24,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install Dependencies
-        run: |
-          pip install requests
+        run: pip install requests
 
       - name: Run Python Script
         run: python merge_movies.py
@@ -34,6 +33,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add all_movies.json
-          git commit -m "Auto-clean: Duplicates removed & Offline links filtered 🚀 [skip ci]" || echo "No changes to commit"
+          git add all_movies.json offline.json
+          git commit -m "Auto-update: Online & Offline files generated 🚀 [skip ci]" || echo "No changes to commit"
           git push
