@@ -1,111 +1,85 @@
 {
-  "date": "2026-05-04 03:07:00",
-  "channels": {
-    "Series": [
-  {
-    "id": "1",
-    "name": "Genie, make a wish (2025), Season 1, EP-1",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E01%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
-  },
-  {
-    "id": "2",
-    "name": "Genie, make a wish (2025), Season 1, EP-",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E02%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
-  },
-  {
-    "id": "3",
-    "name": "Genie, make a wish (2025), Season 1, EP-3",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E03%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
-  },
-  {
-    "id": "4",
-    "name": "Genie Make a Wish S01E04",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E04%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
-  },
-  {
-    "id": "5",
-    "name": "Genie Make a Wish S01E05",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E05%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
-  },
-  {
-    "id": "6",
-    "name": "Genie Make a Wish S01E06",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E06%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
-  },
-  {
-    "id": "7",
-    "name": "Genie Make a Wish S01E07",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E07%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
-  },
-  {
-    "id": "8",
-    "name": "Genie Make a Wish S01E08",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E08%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
-  },
-  {
-    "id": "9",
-    "name": "Genie Make a Wish S01E09",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E09%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
-  },
-  {
-    "id": "10",
-    "name": "Genie Make a Wish S01E10",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E10%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
-  },
-  {
-    "id": "11",
-    "name": "Genie Make a Wish S01E11",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E11%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
-  },
-  {
-    "id": "12",
-    "name": "Genie Make a Wish S01E12",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E12%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
-  },
-  {
-    "id": "13",
-    "name": "Genie Make a Wish S01E13",
-    "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
-    "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E13%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv",
-    "category": "Genie Make a Wish S01",
-    "type": "Series"
+  "date": "2026-05-04 04:10:52",
+  "type": "series",
+  "total": 13,
+  "channels": [
+    {
+      "name": "Genie, make a wish (2025), Season 1, EP-1",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E01%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
+    },
+    {
+      "name": "Genie, make a wish (2025), Season 1, EP-",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E02%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
+    },
+    {
+      "name": "Genie, make a wish (2025), Season 1, EP-3",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E03%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
+    },
+    {
+      "name": "Genie Make a Wish S01E04",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E04%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
+    },
+    {
+      "name": "Genie Make a Wish S01E05",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E05%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
+    },
+    {
+      "name": "Genie Make a Wish S01E06",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E06%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
+    },
+    {
+      "name": "Genie Make a Wish S01E07",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E07%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
+    },
+    {
+      "name": "Genie Make a Wish S01E08",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E08%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
+    },
+    {
+      "name": "Genie Make a Wish S01E09",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E09%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
+    },
+    {
+      "name": "Genie Make a Wish S01E10",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E10%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
+    },
+    {
+      "name": "Genie Make a Wish S01E11",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E11%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
+    },
+    {
+      "name": "Genie Make a Wish S01E12",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E12%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
+    },
+    {
+      "name": "Genie Make a Wish S01E13",
+      "logo": "https://image.tmdb.org/t/p/original//opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "group": "Series",
+      "url": "https://fmftp.net/data/disk-1/tvseries/korean/Genie,%20make%20a%20wish/s01/Genie%20Make%20a%20Wish%20S01E13%20%20720p%20NF%20WEBRip%20x265%20HEVC%20MSubs%20[Multi%20Audio][Hindi%205.1+English%205.1+Korean%205.1]%20-MsMod.mkv"
     }
-   ]
-  }
+  ]
 }
