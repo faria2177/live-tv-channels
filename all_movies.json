@@ -149,64 +149,6 @@
         "url": "http://ftp.ctgfun.com/Indian/South%20Indian%20Movies/Akhanda%202%20Thaandavam%20%282025%29%20Hindi%20720p%20HDTS%20x264%20%5BDDN%5D/Akhanda%202%20Thaandavam%20%282025%29%20Hindi%20720p%20HDTS%20x264%20%5BDDN%5D.mp4"
       }
     ],
-    "Web Series": [
-      {
-        "name": "Episode 2 - Gyaarah Gyaarah",
-        "logo": "https://m.media-amazon.com/images/M/MV5BYTkwZTFjYjItZTdlYi00OGQ3LTg4NWItOTc4MGY0MmI4YjU0XkEyXkFqcGc@._V1_QL75_UX123_.jpg",
-        "group": "Web Series",
-        "source": "https://raw.githubusercontent.com/Mahabubulalammim/New/refs/heads/main/Mim%20New%20Movie%20Collection",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=19587"
-      },
-      {
-        "name": "Episode 1 - Gyaarah Gyaarah",
-        "logo": "https://m.media-amazon.com/images/M/MV5BYTkwZTFjYjItZTdlYi00OGQ3LTg4NWItOTc4MGY0MmI4YjU0XkEyXkFqcGc@._V1_QL75_UX123_.jpg",
-        "group": "Web Series",
-        "source": "https://raw.githubusercontent.com/Mahabubulalammim/New/refs/heads/main/Mim%20New%20Movie%20Collection",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=19586"
-      },
-      {
-        "name": "Episode 3 - Gyaarah Gyaarah",
-        "logo": "https://m.media-amazon.com/images/M/MV5BYTkwZTFjYjItZTdlYi00OGQ3LTg4NWItOTc4MGY0MmI4YjU0XkEyXkFqcGc@._V1_QL75_UX123_.jpg",
-        "group": "Web Series",
-        "source": "https://raw.githubusercontent.com/Mahabubulalammim/New/refs/heads/main/Mim%20New%20Movie%20Collection",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=19588"
-      },
-      {
-        "name": "Episode 4 - Gyaarah Gyaarah",
-        "logo": "https://m.media-amazon.com/images/M/MV5BYTkwZTFjYjItZTdlYi00OGQ3LTg4NWItOTc4MGY0MmI4YjU0XkEyXkFqcGc@._V1_QL75_UX123_.jpg",
-        "group": "Web Series",
-        "source": "https://raw.githubusercontent.com/Mahabubulalammim/New/refs/heads/main/Mim%20New%20Movie%20Collection",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=19589"
-      },
-      {
-        "name": "Episode 5 - Gyaarah Gyaarah",
-        "logo": "https://m.media-amazon.com/images/M/MV5BYTkwZTFjYjItZTdlYi00OGQ3LTg4NWItOTc4MGY0MmI4YjU0XkEyXkFqcGc@._V1_QL75_UX123_.jpg",
-        "group": "Web Series",
-        "source": "https://raw.githubusercontent.com/Mahabubulalammim/New/refs/heads/main/Mim%20New%20Movie%20Collection",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=19590"
-      },
-      {
-        "name": "Episode 7 - Gyaarah Gyaarah",
-        "logo": "https://m.media-amazon.com/images/M/MV5BYTkwZTFjYjItZTdlYi00OGQ3LTg4NWItOTc4MGY0MmI4YjU0XkEyXkFqcGc@._V1_QL75_UX123_.jpg",
-        "group": "Web Series",
-        "source": "https://raw.githubusercontent.com/Mahabubulalammim/New/refs/heads/main/Mim%20New%20Movie%20Collection",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=19592"
-      },
-      {
-        "name": "Episode 6 - Gyaarah Gyaarah",
-        "logo": "https://m.media-amazon.com/images/M/MV5BYTkwZTFjYjItZTdlYi00OGQ3LTg4NWItOTc4MGY0MmI4YjU0XkEyXkFqcGc@._V1_QL75_UX123_.jpg",
-        "group": "Web Series",
-        "source": "https://raw.githubusercontent.com/Mahabubulalammim/New/refs/heads/main/Mim%20New%20Movie%20Collection",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=19591"
-      },
-      {
-        "name": "Episode 8 - Gyaarah Gyaarah",
-        "logo": "https://m.media-amazon.com/images/M/MV5BYTkwZTFjYjItZTdlYi00OGQ3LTg4NWItOTc4MGY0MmI4YjU0XkEyXkFqcGc@._V1_QL75_UX123_.jpg",
-        "group": "Web Series",
-        "source": "https://raw.githubusercontent.com/Mahabubulalammim/New/refs/heads/main/Mim%20New%20Movie%20Collection",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=19593"
-      }
-    ],
     "Hollywood Hindi Movies": [
       {
         "name": "Intimate stranger",
