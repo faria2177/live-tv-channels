@@ -7651,15 +7651,9 @@
       "url": "https://mprod-cdn.toffeelive.com/live/match-18/index.m3u8"
     },
     {
-      "name": "Gopal Bhar",
-      "logo": "https://i.postimg.cc/T10jC1zQ/1000086945.jpg",
-      "group": "All Cartoon",
-      "url": "https://cloudfrontnet.vercel.app/tplay/playout/209611/master.m3u8"
-    },
-    {
       "name": "0. Toon Goggles",
       "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBB1900004J9_20240520T214715SQUARE.png",
-      "group": "All Cartoon",
+      "group": "KIDS",
       "url": "https://d1eg24xrsfr6kv.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-b4b1bzxkt1uzo-prod/tg/tg/tg.m3u8"
     },
     {
