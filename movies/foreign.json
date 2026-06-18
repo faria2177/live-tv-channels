@@ -1,0 +1,127 @@
+{
+  "type": "category_collection",
+  "source_url": "https://fmftp.net/movies?category=14",
+  "category_id": "14",
+  "category_name": "foreign",
+  "total_items": 7,
+  "collected_at": "2026-06-18T19:12:15.657181Z",
+  "items": {
+    "Capernaum": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/mFnfTVADj8yOxwzprYOmTPselk8.jpg",
+      "rating": 8.1,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20755",
+          "language": "foreign",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20755"
+        }
+      ]
+    },
+    "Cook Up a Storm": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/jHMVa4VWLxggvbDo2Ol1ln4obJs.jpg",
+      "rating": 7.4,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20758",
+          "language": "foreign",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20758"
+        }
+      ]
+    },
+    "Blue Is The Warmest Color": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/kgUk1wti2cvrptIgUz0VTAtSF6w.jpg",
+      "rating": 7.071,
+      "genre": [
+        "Romance",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20754",
+          "language": "foreign",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20754"
+        }
+      ]
+    },
+    "Bekas": {
+      "year": "2012",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/A4iOMaO2Y2udxSmLq3ifZ6A8n0J.jpg",
+      "rating": 7.5,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20753",
+          "language": "foreign",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20753"
+        }
+      ]
+    },
+    "Irreversible": {
+      "year": "2002",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/rxeDxo8FvZpLu6iplNpxdtAVnfu.jpg",
+      "rating": 7.176,
+      "genre": [
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20759",
+          "language": "foreign",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20759"
+        }
+      ]
+    },
+    "Taste Of Cherry": {
+      "year": "1997",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/u6GYH4HyR0BVwpqFuTOc2g4KB1L.jpg",
+      "rating": 7.688,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20757",
+          "language": "foreign",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20757"
+        }
+      ]
+    },
+    "Close-Up": {
+      "year": "1992",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/m9HG2N9ZKCmNN9qOHJTNyy18wn3.jpg",
+      "rating": 7.938,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20756",
+          "language": "foreign",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20756"
+        }
+      ]
+    }
+  }
+}

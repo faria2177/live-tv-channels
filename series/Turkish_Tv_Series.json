@@ -1,0 +1,34 @@
+{
+  "type": "series_collection",
+  "source_url": "https://fmftp.net/tv-shows?category=13",
+  "category_id": "13",
+  "category_name": "Turkish Tv Series",
+  "total_items": 2,
+  "collected_at": "2026-06-18T19:12:25.154766Z",
+  "items": {
+    "Dirilis Ertugrul": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/rOar34cNLn2sgDH5FmAa1bvMpBv.jpg",
+      "rating": 7.79,
+      "genre": [
+        "War & Politics",
+        "Action & Adventure",
+        "Drama"
+      ],
+      "language": "Turkish Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=882",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=882"
+    },
+    "Farouk Omar": {
+      "year": "None",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "language": "Turkish Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=883",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=883"
+    }
+  }
+}

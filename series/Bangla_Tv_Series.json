@@ -1,0 +1,901 @@
+{
+  "type": "series_collection",
+  "source_url": "https://fmftp.net/tv-shows?category=12",
+  "category_id": "12",
+  "category_name": "Bangla Tv Series",
+  "total_items": 83,
+  "collected_at": "2026-06-18T19:12:22.887288Z",
+  "items": {
+    "Byomkesh Bakshi": {
+      "year": "2010",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/6Hudn4jiJArcg89UEDsF6gAvgWo.jpg",
+      "rating": 8.6,
+      "genre": [
+        "Crime",
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=786",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=786"
+    },
+    "Kuheli": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/hpfxxQ4q2eqBdBqH9SWpNuFrq1N.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8669",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8669"
+    },
+    "Roktofolok": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/25roIjrV6SXDo9rnfE9LpeVUZ3i.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8499",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8499"
+    },
+    "Nishir Daak": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/l6m83h7uULbhXFD8u3B3P61B85u.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=5822",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=5822"
+    },
+    "Bibhishon": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nHCLNkF9OLScj6W9TAKWBh11znd.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=6133",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=6133"
+    },
+    "Paap Kahini": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/oqsRCD6bdGv930yeorckETDDTvO.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8305",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8305"
+    },
+    "Gulmohor": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vDSNPiaYZ4pFxTiXNLglaLXDEgO.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=801",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=801"
+    },
+    "JImmi": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vBUo0d5v40dtdBU7FQGakAP91GT.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Crime"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=806",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=806"
+    },
+    "Khakee The Bengal Chapter": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/fasJ27kLhHdzF9cBDq0vGXFVkvI.jpg",
+      "rating": 8.4,
+      "genre": [
+        "Drama",
+        "Crime"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=814",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=814"
+    },
+    "Dainee": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/IrUk2a1Hk3Rcv2Wuhf1H0G8XyK.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=793",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=793"
+    },
+    "Bohemian Ghora": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/K5fpqDqlgGM38hQ97GoVH3MrIs.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=779",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=779"
+    },
+    "AKA": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/ljy6fcxY3U5wCZ28sQmnPNMXj6Z.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Crime",
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=4479",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=4479"
+    },
+    "Kaalratri": {
+      "year": "2024",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/fnAuKr5bp74A3SHaV7lUhpoVVEv.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Mystery",
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=811",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=811"
+    },
+    "Chokro": {
+      "year": "2024",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/azs5gFDWiHKh64NxMPHReuPgTnB.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8180",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8180"
+    },
+    "Myself Allen Swapan": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/3ew3uTW9qlzHHafyXDWLHoXoqyX.jpg",
+      "rating": 7.5,
+      "genre": [
+        "Crime"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=828",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=828"
+    },
+    "REKKA": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/7DVaLyUbLpzIMdkiMRqiByp5ngs.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Reality"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=838",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=838"
+    },
+    "Phone-X": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/ymfdXLvNp6cPDcLCKoNY84YRZ9X.jpg",
+      "rating": 3.0,
+      "genre": [
+        "Drama",
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=837",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=837"
+    },
+    "Mismatch": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/5evWTtxslEY2thvWBFHoyTTyka.jpg",
+      "rating": 8.2,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=822",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=822"
+    },
+    "Hello!": {
+      "year": "2022",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/h44AoZWEO6xenzNBQ4dJWMeGKsn.jpg",
+      "rating": 8.1,
+      "genre": [
+        "Comedy",
+        "Crime",
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=803",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=803"
+    },
+    "Taqdeer": {
+      "year": "2022",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xkjMr3fq1Umi8NHYqsSQEVOAhKy.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=849",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=849"
+    },
+    "Srikanto": {
+      "year": "2022",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4Cf78yRqOxGCS7wUkv9toFuhhy0.jpg",
+      "rating": 5.3,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=5570",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=5570"
+    },
+    "Mohanagar": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/bhmI8l62JIc0AuURN4ZL7i6t82K.jpg",
+      "rating": 8.1,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=823",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=823"
+    },
+    "Mandaar": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4Bug1HjgPQwFPVhngIJw4SBGqvq.jpg",
+      "rating": 7.6,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=819",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=819"
+    },
+    "Mohomaya": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/3ci8YVO1wVch1EudQrsLhIdr4dG.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=826",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=826"
+    },
+    "Subharambha": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/a9fMZmumMBKe75mOtgAEbXHHHke.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=846",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=846"
+    },
+    "Maradonar Juto": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xwVs854rxdJVFjT3bu5yIN0ILVK.jpg",
+      "rating": 4.0,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=829",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=829"
+    },
+    "Turu Love": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dBkZUQKcUqR0dgVhTB3SSozDvqz.jpg",
+      "rating": 6.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=857",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=857"
+    },
+    "Kavita Bhabhi": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/90klBhJAEFAtNskA5NUWsaK9BFt.jpg",
+      "rating": 3.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=813",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=813"
+    },
+    "Damayanti": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/ma7FVNeF0DR75AzU7REV59eO1Bi.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=795",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=795"
+    },
+    "Tansener Tanpura": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vIpk2IH1QyEgrtXh1aQW52KLEXI.jpg",
+      "rating": 5.5,
+      "genre": [
+        "Mystery",
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=848",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=848"
+    },
+    "Bonyo Premer Golpo": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/jXvWAJ8tQ022mYG72M26vsV6qTo.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Crime",
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=780",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=780"
+    },
+    "The Reunion": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/q0eijnpfbPFbv1Xoxkn034oH4pu.jpg",
+      "rating": 7.5,
+      "genre": [
+        "Mystery",
+        "Action & Adventure"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=854",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=854"
+    },
+    "Lalbazaar": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/yB4Ck4W5hSuuppXsx2H1QBS7nrp.jpg",
+      "rating": 2.7,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=816",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=816"
+    },
+    "Ekattor": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/1nUN25WUa80U3FLCGhQokVjkCLO.jpg",
+      "rating": 10.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=792",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=792"
+    },
+    "Mentalhood": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/l7TeiLO0btcrw2ZB97gBdS2D1K7.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=821",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=821"
+    },
+    "Kashmakash Kya Sahi Kya Galat": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/5AdlyKkDHDxV5ZgsqFPoXkKUXjP.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=812",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=812"
+    },
+    "Shobdo Jobdo": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/7IkpQcklhD47uP4E1mbBSUu7wc7.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=843",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=843"
+    },
+    "Montu Pilot": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/9aEjjXQmf2t5bgWvs246qHxuznC.jpg",
+      "rating": 4.5,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=827",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=827"
+    },
+    "Paap": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/A677LssSIVv4oZRhkSfs40aTPw9.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Drama",
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=834",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=834"
+    },
+    "Hello Mini": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4ATvjCvlg5WcrDMiQb4RFohrDkz.jpg",
+      "rating": 5.5,
+      "genre": [
+        "Mystery",
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=807",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=807"
+    },
+    "Rahasya Romancha Series": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/lBlG6VsFhd9HsHROvT2gfW0aVXk.jpg",
+      "rating": 8.0,
+      "genre": [
+        "Mystery",
+        "Crime"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=839",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=839"
+    },
+    "Chupkotha 2": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/8T5lbQQYbpxzxmbqtEVQGaPsi3n.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=789",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=789"
+    },
+    "Paanch Phoron": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/qfgrp9dyDhkPp2Rdh5vsdqReSaC.jpg",
+      "rating": 7.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=833",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=833"
+    },
+    "Paranoia": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/lGGL8S1ctE7Ly0C1tohm2jhtlmm.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Comedy",
+        "Reality"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=835",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=835"
+    },
+    "Oddbhuturey": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/5T1o3Klp8pl80UIRYIUQX4cKzlK.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=830",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=830"
+    },
+    "Kaale Dhande": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/b5ydl4JaKNAVdfswAl1kEBnutkj.jpg",
+      "rating": 6.5,
+      "genre": [
+        "Comedy"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=809",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=809"
+    },
+    "The Stoneman Murders": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/7UvGVG26M8O5rvu0wnjw3GEwkQe.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Crime",
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=855",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=855"
+    },
+    "Beauty and The Bullet": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/8qINXF2kfFqYixutPd534VsJYop.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=777",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=777"
+    },
+    "Manbhanjan": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/jCGWdZOqUmhmYhdd2ShTJCnbuyR.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=818",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=818"
+    },
+    "Kuwasha": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dav81QkUYoWcHDZcdSbsZ2Swnkd.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=815",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=815"
+    },
+    "Britto": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/m79eXhhvngQwZ5sXRUne2c6mNLI.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=784",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=784"
+    },
+    "Garden Game": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/wWKEyndMPQEFXprqWfBfg6iE0oj.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=798",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=798"
+    },
+    "Dhaka Metro": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/zTyzzA34xcGR4NizNyrFVrYKb0U.jpg",
+      "rating": 10.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=791",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=791"
+    },
+    "Sharate Aaj": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/9KeBDpga5gPv3QTEHPeuvVDSYJS.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=840",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=840"
+    },
+    "Astey Ladies": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dkHEwvBrfom12xKhV2B61ahwnpn.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=778",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=778"
+    },
+    "Bou Keno Psycho": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/tP4sqN7w6s9jpQRWI7RIgPXrypO.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=781",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=781"
+    },
+    "Taranath Tantrik": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/mS8vXYs0t2qVnXJHXzU8r4fPIoA.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=851",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=851"
+    },
+    "Phoringer Bou": {
+      "year": "2019",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=841",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=841"
+    },
+    "Eken Babu": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dJuwqd3dmU3FieEucld48LNW1C5.jpg",
+      "rating": 5.8,
+      "genre": [
+        "Action & Adventure",
+        "Comedy",
+        "Crime",
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=799",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=799"
+    },
+    "Damaged": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/umjQelfaDe428bLH7tBT8sS1vfV.jpg",
+      "rating": 6.1,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=794",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=794"
+    },
+    "Shei Je Holud Pakhi": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nssPxdnS2aWRrIFy1qJK720HhmK.jpg",
+      "rating": 5.7,
+      "genre": [
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=842",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=842"
+    },
+    "Charitraheen": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nGZjU7kGn8KlC6ASaWtYh2MZtsQ.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=788",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=788"
+    },
+    "Kaali": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/uDVSYenWNhIFLfA49fjida5Hwf4.jpg",
+      "rating": 9.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=7698",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=7698"
+    },
+    "Oh! Mother": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/867q2tZ4lL8Tm2akjAu1EOhFwwk.jpg",
+      "rating": 3.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=832",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=832"
+    },
+    "Japani Toy": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/64Q2HKPYLgVzu8YXMLgd26FhKKR.jpg",
+      "rating": 6.5,
+      "genre": [
+        "Comedy"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=808",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=808"
+    },
+    "Dark Web": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/rqDwDcOBwOwSiu5iC37NvTx5B3M.jpg",
+      "rating": 6.3,
+      "genre": [
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=790",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=790"
+    },
+    "Dhanbad Blues": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/47Z1MsJz2ZP1U7ibtpfBsVyii8K.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Crime"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=796",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=796"
+    },
+    "The Adventures of Gogol": {
+      "year": "2018",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=852",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=852"
+    },
+    "Six": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/wIoHyQqILrA5IDVsZLbp2CfDDbM.jpg",
+      "rating": 1.0,
+      "genre": [
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=844",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=844"
+    },
+    "Gariahater Ganglords": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/6VgsOywGzGLJmckcjxHzVPS2AWX.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Comedy"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=800",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=800"
+    },
+    "Byomkesh": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/aFQKRML4ttKLTRXbZbtEsOq5qcX.jpg",
+      "rating": 6.5,
+      "genre": [
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=785",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=785"
+    },
+    "Dupur Thakurpo": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/c8CZ6vvKceU6yMUGkcGbVXCmlod.jpg",
+      "rating": 4.2,
+      "genre": [
+        "Comedy"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=802",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=802"
+    },
+    "Maaya": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vmrwinqL8QBgimeEtlgTYzyRjKx.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=817",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=817"
+    },
+    "Holy Faak": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/mA1oL3wAuPl93hTmVOu58fELsyv.jpg",
+      "rating": 6.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=804",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=804"
+    },
+    "Sufiyana": {
+      "year": "2017",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=847",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=847"
+    },
+    "Bouma Detective": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/39Uzvc9kkRoYsGxOjcEu5Vg0iRG.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=782",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=782"
+    },
+    "Cartoon": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/20HS6QjZE1n0TCl8D5Z8GTOhXo4.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=787",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=787"
+    },
+    "Eternal Gift": {
+      "year": "2006",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/3xu6bzySucozxC9M3Lcup5EoDom.jpg",
+      "rating": 5.0,
+      "genre": [
+        "Animation"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=797",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=797"
+    },
+    "Neel Dorja": {
+      "year": "None",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=831",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=831"
+    },
+    "Noyon Rohossho - Feluda": {
+      "year": "None",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=836",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=836"
+    },
+    "Mohanagar mkv": {
+      "year": "None",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=824",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=824"
+    },
+    "BreakUp Story": {
+      "year": "None",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=783",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=783"
+    },
+    "Shondeher Obokash": {
+      "year": "None",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=845",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=845"
+    }
+  }
+}

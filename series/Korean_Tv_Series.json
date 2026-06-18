@@ -1,0 +1,1158 @@
+{
+  "type": "series_collection",
+  "source_url": "https://fmftp.net/tv-shows?category=11",
+  "category_id": "11",
+  "category_name": "korean Tv Series",
+  "total_items": 95,
+  "collected_at": "2026-06-18T19:12:22.152949Z",
+  "items": {
+    "perfect crown": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nNYwETsj4XxZ4tnouiYCPBQNO2L.jpg",
+      "rating": 8.7,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8721",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8721"
+    },
+    "If Wishes Could Kill": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/2CfTNVaR8kZQkWtWWE3Cntaiq33.jpg",
+      "rating": 8.2,
+      "genre": [
+        "Mystery",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8512",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8512"
+    },
+    "Dear X": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/wZEKHPaeMCihLZWqjOaEtXFA87x.jpg",
+      "rating": 8.6,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=6841",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=6841"
+    },
+    "Genie, make a wish": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/opop2u7Jav6lMNL8fSBTzOeFBDz.jpg",
+      "rating": 7.4,
+      "genre": [
+        "Sci-Fi & Fantasy",
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=5339",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=5339"
+    },
+    "Bon Appetit, Your Majesty": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/bzYSIw9FTzQXUcWsnDSwlcwok3C.jpg",
+      "rating": 8.84,
+      "genre": [
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=6807",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=6807"
+    },
+    "Trigger": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/9eDF8Z4iFFCmQROiuej54rSK9LT.jpg",
+      "rating": 6.9,
+      "genre": [
+        "Action & Adventure",
+        "Drama",
+        "Crime"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8282",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8282"
+    },
+    "S Line": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/7TGolwcia6AI6uvInBOoedAi9Il.jpg",
+      "rating": 7.69,
+      "genre": [
+        "Sci-Fi & Fantasy",
+        "Drama",
+        "Mystery"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=4468",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=4468"
+    },
+    "Suspicious Partner": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/bTyp56ZWKsm9hAVJzBU7xRtBSAx.jpg",
+      "rating": 10.0,
+      "genre": [
+        "Comedy",
+        "Mystery"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=731",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=731"
+    },
+    "Mercy for None": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/AjL335mFBe7LgCqo3w0RNBSbbZU.jpg",
+      "rating": 8.0,
+      "genre": [
+        "Action & Adventure",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=717",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=717"
+    },
+    "Healer": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/gSgYTi6DxmmZTIHklS8h8alDluo.jpg",
+      "rating": 7.62,
+      "genre": [
+        "Action & Adventure",
+        "Animation",
+        "Comedy",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=697",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=697"
+    },
+    "Undercover High School": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/qLWqaHiJpUbtlUKVxRneWBnTKTd.jpg",
+      "rating": 7.9,
+      "genre": [
+        "Action & Adventure",
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=754",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=754"
+    },
+    "When life gives you tangerines": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/q29q6AByug53pnylCytwLA7m6AY.jpg",
+      "rating": 8.7,
+      "genre": [
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=1604",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=1604"
+    },
+    "What's Wrong with Secretary Kim": {
+      "year": "2024",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/2NUtA4ODZphAknsXna84Nk9rq6F.jpg",
+      "rating": 8.8,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=757",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=757"
+    },
+    "Lovely runner": {
+      "year": "2024",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xJQyrif5M4UMoVBrBlwUabtaRxB.jpg",
+      "rating": 8.57,
+      "genre": [
+        "Sci-Fi & Fantasy",
+        "Drama",
+        "Comedy",
+        "Mystery"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=713",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=713"
+    },
+    "Marry My Husband": {
+      "year": "2024",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dvmnUM7SqMu84lBcECLQ7Ho77oj.jpg",
+      "rating": 8.45,
+      "genre": [
+        "Drama",
+        "Sci-Fi & Fantasy",
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=6450",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=6450"
+    },
+    "A Shop for Killers": {
+      "year": "2024",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
+      "rating": 8.0,
+      "genre": [
+        "Drama",
+        "Action & Adventure",
+        "Mystery",
+        "Crime"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=680",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=680"
+    },
+    "The Devil's Plan": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/2lJjsUrLjEsE5JFExjYLsuCyO83.jpg",
+      "rating": 7.62,
+      "genre": [
+        "Reality"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=734",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=734"
+    },
+    "Gyeongseong Creature": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/5wliFAD8Pjjj0YYSmupqjOldnWt.jpg",
+      "rating": 8.05,
+      "genre": [
+        "Sci-Fi & Fantasy",
+        "Mystery",
+        "Action & Adventure",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=696",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=696"
+    },
+    "Night Has Come": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/qdolS77C0DXGZmchR6imcy4LiJf.jpg",
+      "rating": 7.8,
+      "genre": [
+        "Drama",
+        "Mystery"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8434",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8434"
+    },
+    "My Demon": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/ciRcOqVWR4wiSQRPCPml1X9PaAp.jpg",
+      "rating": 7.2,
+      "genre": [
+        "Drama",
+        "Comedy",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=720",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=720"
+    },
+    "Twinkling Watermelon": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/m56EaJ4zLG84F8jpNT7ZmaL0IAS.jpg",
+      "rating": 8.84,
+      "genre": [
+        "Sci-Fi & Fantasy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=751",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=751"
+    },
+    "The Worst of Evil": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/uZJGMFgE1Q9xpncVAu1G3Vce4nP.jpg",
+      "rating": 8.2,
+      "genre": [
+        "Crime",
+        "Action & Adventure",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=745",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=745"
+    },
+    "Hidden love": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/riGzESa9N9toumP9OhMmg0QvFPD.jpg",
+      "rating": 8.51,
+      "genre": [
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=700",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=700"
+    },
+    "Tale of the Nine Tailed": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xB55oDrJiIYn2yeC9YNy1KJ4rl5.jpg",
+      "rating": 8.04,
+      "genre": [
+        "Drama",
+        "Sci-Fi & Fantasy",
+        "Action & Adventure"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=732",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=732"
+    },
+    "Delivery Man": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xX91zTytXcS6ugFe1WcXsSe5uFH.jpg",
+      "rating": 7.1,
+      "genre": [
+        "Drama",
+        "Comedy",
+        "Mystery"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=694",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=694"
+    },
+    "Start-Up": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/2jQyZ13Wbld0DoBQkjt8BBZzAs5.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=738",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=738"
+    },
+    "The Heavenly Idol": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/glbtrvaluqaybHnQ7GV3ckHWmpt.jpg",
+      "rating": 7.3,
+      "genre": [
+        "Drama",
+        "Comedy",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=735",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=735"
+    },
+    "Love to Hate You": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/ifOXQyDvpVnZvKq7pR8fujtbeQk.jpg",
+      "rating": 8.18,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8229",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8229"
+    },
+    "Alchemy of Souls": {
+      "year": "2022",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/q2IiPRSXPOZ6qVRj36WRAYEQyHs.jpg",
+      "rating": 8.53,
+      "genre": [
+        "Drama",
+        "Sci-Fi & Fantasy",
+        "Action & Adventure",
+        "Mystery"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=681",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=681"
+    },
+    "First Love": {
+      "year": "2022",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/yYCefcDMt5A5OJe8Q6iiU866Oxr.jpg",
+      "rating": 8.11,
+      "genre": [
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=7885",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=7885"
+    },
+    "Business Proposal": {
+      "year": "2022",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/iLh7L8ZuvgdxFaM9sImyv2iKYLe.jpg",
+      "rating": 8.47,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=687",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=687"
+    },
+    "Twenty five twenty one": {
+      "year": "2022",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/yCQFnmYhYf7XALMka2EoBRAFmPO.jpg",
+      "rating": 8.4,
+      "genre": [
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=749",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=749"
+    },
+    "All of Us Are Dead": {
+      "year": "2022",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/pTEFqAjLd5YTsMD6NSUxV6Dq7A6.jpg",
+      "rating": 8.29,
+      "genre": [
+        "Action & Adventure",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=682",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=682"
+    },
+    "Hellbound": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/5NYdSAnDVIXePrSG2dznHdiibMk.jpg",
+      "rating": 7.3,
+      "genre": [
+        "Drama",
+        "Mystery",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=698",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=698"
+    },
+    "My Name": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/cikhUdZD5T6B9JyAg9TtlhNAiCI.jpg",
+      "rating": 9.5,
+      "genre": [
+        "Documentary"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=724",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=724"
+    },
+    "Our Beloved Summer": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/bA15g6OLmhQ2HkURRaCztA2jwqI.jpg",
+      "rating": 8.4,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=725",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=725"
+    },
+    "The Silent Sea": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/fFT0IgqtCOks4munDTxQwkvNJkd.jpg",
+      "rating": 7.67,
+      "genre": [
+        "Drama",
+        "Sci-Fi & Fantasy",
+        "Mystery"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=743",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=743"
+    },
+    "Mad for Each Other": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/sav9luRrij21rBQfhUcbiI0e5XQ.jpg",
+      "rating": 8.2,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=715",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=715"
+    },
+    "So Not Worth It": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/wiByXTq5vaDppWnYCLt6fzDuu7x.jpg",
+      "rating": 7.7,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=728",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=728"
+    },
+    "Alice in Borderland": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+      "rating": 8.16,
+      "genre": [
+        "Mystery",
+        "Drama",
+        "Action & Adventure"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=5018",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=5018"
+    },
+    "Hospital Playlist": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/clYgUKk4CzmKpEukW2I2oDg9k1Q.jpg",
+      "rating": 8.51,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=702",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=702"
+    },
+    "True Beauty": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/sld43SJArZqlnANJabq8R5wdOZk.jpg",
+      "rating": 8.28,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=747",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=747"
+    },
+    "Kairos": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/cnThovHCzJ2YoKrZ0oBBZfkd26j.jpg",
+      "rating": 6.2,
+      "genre": [
+        "Action & Adventure",
+        "Crime",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=708",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=708"
+    },
+    "It's Okay to Not Be Okay": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/8XSJfLeImX8NszDUFnK1lbseCi8.jpg",
+      "rating": 8.52,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=706",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=706"
+    },
+    "The King Eternal Monarch": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/7SLlbkzOJb8v9wXVYIcqozx2hxe.jpg",
+      "rating": 8.29,
+      "genre": [
+        "Sci-Fi & Fantasy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=740",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=740"
+    },
+    "Descendants of the Sun": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/klUvf2qjRLOxJHW1r35qRvkBGu5.jpg",
+      "rating": 8.5,
+      "genre": [
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=695",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=695"
+    },
+    "Flower Of Evil": {
+      "year": "2020",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/yUKOxbcOfySNKRymJ6GlWG4VeH4.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=699",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=699"
+    },
+    "my name": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/kTU4D2yQ3x0wb314Qlx7etZlPe7.jpg",
+      "rating": 6.4,
+      "genre": [
+        "Drama",
+        "Family"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=5013",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=5013"
+    },
+    "Crash Landing on You": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/jTESfFcPm6TniFWpEBUnQnwtKTC.jpg",
+      "rating": 8.52,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=689",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=689"
+    },
+    "King the Land": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/wSYI27DZYe9yCANfssrxJYBGgt.jpg",
+      "rating": 10.0,
+      "genre": [
+        "Drama",
+        "War & Politics"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=710",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=710"
+    },
+    "Two Weeks": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/gpx2xhs7eNsQEsBU7lig3x0maE8.jpg",
+      "rating": 7.7,
+      "genre": [
+        "Action & Adventure",
+        "Crime"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=752",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=752"
+    },
+    "Hotel Del Luna": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/8bizZsXoAsOTbhyFKfBogC8mgG2.jpg",
+      "rating": 8.54,
+      "genre": [
+        "Sci-Fi & Fantasy",
+        "Drama",
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=703",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=703"
+    },
+    "Angel's Last Mission Love": {
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/ltoY1cMTdh5ovUe6JhEsuU5Twd3.jpg",
+      "rating": 8.1,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=683",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=683"
+    },
+    "The Smile Has Left Your Eyes": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/yj5KxpFh2qhB7qEJt94WpBTUKLJ.jpg",
+      "rating": 8.0,
+      "genre": [
+        "Mystery",
+        "Drama",
+        "Crime"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=744",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=744"
+    },
+    "Mr. Sunshine": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/uSavP0BSfnyUaJe62f0ZTXIHLs8.jpg",
+      "rating": 5.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=5608",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=5608"
+    },
+    "A Poem A Day": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/ogYCFZ0qTHbRGPYauOIVVOSPurj.jpg",
+      "rating": 6.6,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=679",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=679"
+    },
+    "Tomorrow": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/zMWldNZF0wS3L5XkDVFHxYhclcL.jpg",
+      "rating": 6.34,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Soap"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=746",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=746"
+    },
+    "goblin": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/e87xyEDWw6fsiRKfQBBCWboLQ90.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Reality",
+        "Talk"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=759",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=759"
+    },
+    "A Korean Odyssey": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/uJfF9m2bDXZf6Lng8kkyd0o0Qjz.jpg",
+      "rating": 8.0,
+      "genre": [
+        "Comedy",
+        "Mystery",
+        "Sci-Fi & Fantasy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=678",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=678"
+    },
+    "Mad Dog": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dFgYTNvzvPUpHrK92GRP9xZlZSi.jpg",
+      "rating": 6.9,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=714",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=714"
+    },
+    "Because This Is My First Life": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/tEGLv0BdgvJN7K4Me4fpuhdPLRg.jpg",
+      "rating": 8.19,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=684",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=684"
+    },
+    "Fight For My Way": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/55w33JzFKBkz1evjBjqeF0enDd1.jpg",
+      "rating": 8.0,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=693",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=693"
+    },
+    "Heirs": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xyufasqx3ZaKRWtz1XqJNqEqA69.jpg",
+      "rating": 5.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=701",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=701"
+    },
+    "Defendant": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/qoFTJi6b5Q5eNOArLOTe1Hi1fui.jpg",
+      "rating": 8.2,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=690",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=690"
+    },
+    "The Legend of the Blue Sea": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vhBdwKSYOvops4o68X1zNXqEDF1.jpg",
+      "rating": 7.38,
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=741",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=741"
+    },
+    "Weightlifting Fairy Kim Bok-Joo": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/oARcy8kubYekRqii04obOlvw442.jpg",
+      "rating": 8.52,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=756",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=756"
+    },
+    "The K2": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/egziV2hfeNcDTQwZCGgtbKfUEpD.jpg",
+      "rating": 7.6,
+      "genre": [
+        "Action & Adventure",
+        "Drama",
+        "Crime"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=739",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=739"
+    },
+    "Moon Lovers: Scarlet Heart Ryeo": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/pjdPGHqUe60ZGQJR1TItVNaV4it.jpg",
+      "rating": 8.5,
+      "genre": [
+        "Drama",
+        "Sci-Fi & Fantasy",
+        "War & Politics"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=719",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=719"
+    },
+    "Uncontrollably Fond": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/oFi7YZuLWRE2K5ggkfBjVb60jrb.jpg",
+      "rating": 7.3,
+      "genre": [
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=753",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=753"
+    },
+    "Madame Antoine": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vArW0WiXx0Rdf5pzVxuISR2led6.jpg",
+      "rating": 6.47,
+      "genre": [
+        "Comedy",
+        "Romance"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=716",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=716"
+    },
+    "Reply 1988": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/mqhYVbe20pB0PQXVZVdtbMakOCF.jpg",
+      "rating": 8.75,
+      "genre": [
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=727",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=727"
+    },
+    "Kill Me Heal Me": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dNH6NO0akHMIqbq5EC4qnCeeuC6.jpg",
+      "rating": 8.09,
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Mystery"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=709",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=709"
+    },
+    "Kingdom": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xkRyopANOnO60KWm6DjozXlq9w4.jpg",
+      "rating": 6.89,
+      "genre": [
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=711",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=711"
+    },
+    "Its Okay Thats Love": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/hpl7yK4xv2I37Ozlse9rf09YgO5.jpg",
+      "rating": 8.07,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=707",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=707"
+    },
+    "Doctor Stranger": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/odH9cebqUNHKh1p6BKVSs0gsD34.jpg",
+      "rating": 8.1,
+      "genre": [
+        "Drama",
+        "Crime"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=691",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=691"
+    },
+    "My Love from Another Star": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/qijIMHLDHbHiyCY8WDd2HfU8pLt.jpg",
+      "rating": 8.3,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=722",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=722"
+    },
+    "I Hear Your Voice": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/6GDBPHkvUEbYO4HqPbWmwLVTvPl.jpg",
+      "rating": 8.1,
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Mystery",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=704",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=704"
+    },
+    "The Moon Embracing the Sun": {
+      "year": "2012",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/zr6XJUtT61gWhWwjPIraY13SkAE.jpg",
+      "rating": 7.9,
+      "genre": [
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=742",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=742"
+    },
+    "Dream High": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vqlPVNTnYNoXTqyIaW2oN1qV2lZ.jpg",
+      "rating": 6.72,
+      "genre": [
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=692",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=692"
+    },
+    "City Hunter": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dbvXhmKr18oHdY7kwkeRXAbfDvD.jpg",
+      "rating": 7.43,
+      "genre": [
+        "Action & Adventure",
+        "Drama",
+        "Crime"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=688",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=688"
+    },
+    "While You Were Sleeping": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/94701d378Ib5cfvUepVS87CthyP.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=758",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=758"
+    },
+    "Karma": {
+      "year": "2011",
+      "tvg_logo": "",
+      "rating": 2.0,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=718",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=718"
+    },
+    "Playful Kiss": {
+      "year": "2010",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/7VIAQ9nc29od35NytFiEHSlTlkZ.jpg",
+      "rating": 7.76,
+      "genre": [
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=726",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=726"
+    },
+    "My Girlfriend Is a Nine Tailed Fox": {
+      "year": "2010",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/6GutxlEAvmc9GNKO6cwZ01JiRqt.jpg",
+      "rating": 7.2,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=721",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=721"
+    },
+    "Pinocchio": {
+      "year": "2009",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/zaxiLuiV4kpybMVnDVPcBjxe5i9.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Comedy",
+        "Action & Adventure"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=733",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=733"
+    },
+    "Boys Before Flower": {
+      "year": "2009",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/keQx2lpwTgvd7CjYXzAblFXWxB7.jpg",
+      "rating": 8.3,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=686",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=686"
+    },
+    "Love Next Door": {
+      "year": "2008",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/8k54HLt78ifpswXX5jaNuP0tkAr.jpg",
+      "rating": 9.0,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=712",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=712"
+    },
+    "Big": {
+      "year": "2005",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/3TEX73koX9NroUA9lVwFDMTZtaC.jpg",
+      "rating": 7.4,
+      "genre": [
+        "Animation",
+        "Kids",
+        "Action & Adventure",
+        "Comedy",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=685",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=685"
+    },
+    "Extracurricular": {
+      "year": "1998",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/3Csu6Hk7FlFaepdUBT3FhCCLf6n.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Documentary"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=705",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=705"
+    },
+    "Vagabond": {
+      "year": "1998",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/hd9gxF7vsAlofzSOHJNnq76g44Z.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=755",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=755"
+    },
+    "The Heirs": {
+      "year": "1986",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/zVC799BYlmn3CM9UJzjuoJTpzoC.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=2389",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=2389"
+    },
+    "Moving": {
+      "year": "1985",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/9G0rQojL1PdJ7PFJQXSOfROY1sB.jpg",
+      "rating": 9.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=729",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=729"
+    },
+    "The Judge from Hell": {
+      "year": "1973",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/qc0SUtlfLLQPAnm0z47pd5mF7s3.jpg",
+      "rating": 5.5,
+      "genre": [
+        "Animation",
+        "Comedy"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=737",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=737"
+    },
+    "Mouse": {
+      "year": "None",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/u8IQ8uzD27tqj7WfBwOG9zweRlM.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=723",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=723"
+    },
+    "The.Glory": {
+      "year": "None",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "language": "korean Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=748",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=748"
+    }
+  }
+}
