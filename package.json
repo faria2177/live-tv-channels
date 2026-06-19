@@ -1,0 +1,23 @@
+{
+  "name": "circleftp-tv-scraper",
+  "version": "1.0.0",
+  "description": "CircleFTP TV Series auto scraper - ported from Chrome Extension",
+  "main": "scraper.js",
+  "scripts": {
+    "scrape": "node scraper.js",
+    "scrape:english": "node scraper.js English_Tv_Series",
+    "scrape:dubbed": "node scraper.js Dubbed_Tv_Series",
+    "scrape:hindi": "node scraper.js Hindi_Tv_Series"
+  },
+  "author": "faria2177",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "circleftp",
+    "tv-series",
+    "scraper",
+    "automated"
+  ]
+}
