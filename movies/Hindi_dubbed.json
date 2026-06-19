@@ -3393,7 +3393,7 @@
       ]
     },
     "Mangalavaaram": {
-      "year": "2023",
+      "year": "2024",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/zZxBWGqdoQ3lX7oPjtI41Yby59j.jpg",
       "rating": 5.1,
       "genre": [
@@ -3402,10 +3402,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1240",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1241",
           "language": "Hindi dubbed",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1240"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1241"
         }
       ]
     },
@@ -21899,5 +21899,6 @@
         }
       ]
     }
-  }
+  },
+  "last_updated": "2026-06-19T02:38:32.244925Z"
 }

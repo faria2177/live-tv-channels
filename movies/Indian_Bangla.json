@@ -3286,18 +3286,19 @@
       ]
     },
     "Charulata": {
-      "year": "2011",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/19XDWzXFlV6WNJNpjzBUspC2jMe.jpg",
-      "rating": 0.0,
+      "year": "1964",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4kznHLoJGN3OBZunQvZwy26it8z.jpg",
+      "rating": 7.562,
       "genre": [
+        "Drama",
         "Romance"
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18137",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18136",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18137"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18136"
         }
       ]
     },
@@ -8993,5 +8994,6 @@
         }
       ]
     }
-  }
+  },
+  "last_updated": "2026-06-19T02:38:35.771676Z"
 }
