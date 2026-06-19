@@ -1,0 +1,120 @@
+name: CircleFTP TV Series Auto Scraper
+
+on:
+  # প্রতি ২ দিন পর পর - রাত ২টায় (UTC+6 = রাত ৮টা UTC)
+  schedule:
+    - cron: '0 20 */2 * *'
+
+  # হাতে trigger করার জন্য
+  workflow_dispatch:
+    inputs:
+      category:
+        description: 'Specific category to scrape (leave empty for all)'
+        required: false
+        default: ''
+        type: choice
+        options:
+          - ''
+          - English_Tv_Series
+          - Dubbed_Tv_Series
+          - Hindi_Tv_Series
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180   # ৩ ঘণ্টা max (৩টা category × ৭০ pages)
+
+    permissions:
+      contents: write      # Git push করার permission
+
+    steps:
+      # ─── 1. Repo checkout ──────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      # ─── 2. Node.js setup ──────────────────────────────────────────────
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # ─── 3. Output directory তৈরি ────────────────────────────────────
+      - name: Create output directories
+        run: mkdir -p series/CF
+
+      # ─── 4. Scraper চালানো ────────────────────────────────────────────
+      - name: Run scraper
+        run: |
+          CATEGORY="${{ github.event.inputs.category }}"
+          if [ -n "$CATEGORY" ]; then
+            echo "🎯 Scraping single category: $CATEGORY"
+            node scraper.js "$CATEGORY"
+          else
+            echo "🌐 Scraping all categories"
+            node scraper.js
+          fi
+        env:
+          NODE_OPTIONS: '--max-old-space-size=512'
+
+      # ─── 5. Change detect ────────────────────────────────────────────
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet series/CF/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+          
+          # কতটা পরিবর্তন হলো সেটা log করা
+          if git diff --quiet series/CF/; then
+            echo "📭 No changes detected"
+          else
+            echo "📬 Changes detected:"
+            git diff --stat series/CF/
+          fi
+
+      # ─── 6. Auto commit & push ────────────────────────────────────────
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          DATE=$(date '+%Y-%m-%d %H:%M UTC')
+          
+          # কতটা series আছে count করা
+          ENGLISH_COUNT=$(cat series/CF/English_Tv_Series.json 2>/dev/null | python3 -c "import sys,json; data=json.load(sys.stdin); print(len(data))" 2>/dev/null || echo "?")
+          DUBBED_COUNT=$(cat series/CF/Dubbed_Tv_Series.json 2>/dev/null | python3 -c "import sys,json; data=json.load(sys.stdin); print(len(data))" 2>/dev/null || echo "?")
+          HINDI_COUNT=$(cat series/CF/Hindi_Tv_Series.json 2>/dev/null | python3 -c "import sys,json; data=json.load(sys.stdin); print(len(data))" 2>/dev/null || echo "?")
+          
+          git add series/CF/
+          git commit -m "🤖 Auto update: $DATE
+
+          📺 English: $ENGLISH_COUNT series
+          🎬 Dubbed:  $DUBBED_COUNT series  
+          🇮🇳 Hindi:   $HINDI_COUNT series
+          
+          [skip ci]"
+          
+          git push
+
+      # ─── 7. Summary ──────────────────────────────────────────────────
+      - name: Print summary
+        if: always()
+        run: |
+          echo "## 📊 Scrape Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          for file in series/CF/English_Tv_Series.json series/CF/Dubbed_Tv_Series.json series/CF/Hindi_Tv_Series.json; do
+            if [ -f "$file" ]; then
+              COUNT=$(python3 -c "import sys,json; data=json.load(open('$file')); print(len(data))" 2>/dev/null || echo "error")
+              NAME=$(basename $file .json)
+              echo "- **$NAME**: $COUNT series" >> $GITHUB_STEP_SUMMARY
+            fi
+          done
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.changes.outputs.changed }}" == "true" ]; then
+            echo "✅ **Changes committed and pushed**" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "📭 **No new content found**" >> $GITHUB_STEP_SUMMARY
+          fi
