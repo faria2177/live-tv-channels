@@ -1,22 +1,29 @@
-name: Build Series Output JSON
+name: build-series-output
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 2 * * *"
+  pull_request:
+  push:
+    branches:
+      - main
+    paths:
+      - "series/*.json"
+      - "scripts/build_series_output.py"
+      - "build_series_index.py"
+      - ".github/workflows/build-series-output.yml"
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -26,14 +33,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run builder
+      - name: Build output
+        env:
+          OUTPUT_MODE: legacy
         run: |
           python scripts/build_series_output.py
+          python build_series_index.py
 
-      - name: Commit generated files
+      - name: Validate JSON files
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add generated_series/*.json
-          git commit -m "Update generated series output" || echo "No changes to commit"
-          git push
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          for p in Path("output_series").glob("*.json"):
+              with p.open("r", encoding="utf-8") as f:
+                  json.load(f)
+              print("OK:", p)
+          PY
