@@ -1,1 +1,39 @@
-[]
+{
+  "category": "English_Tv_Series",
+  "base_url": "http://main.circleftp.net/category/english-foreign-tv-series/",
+  "pages_scanned": 70,
+  "last_scan": "2026-06-20T06:00:00+00:00",
+  "series_count": 1,
+  "episode_count": 2,
+  "series": {
+    "Breaking Bad": {
+      "title": "Breaking Bad",
+      "year": "2008",
+      "tvg_logo": "http://main.circleftp.net/wp-content/uploads/breaking-bad-poster.jpg",
+      "posters": [
+        "http://main.circleftp.net/wp-content/uploads/breaking-bad-poster.jpg",
+        "http://main.circleftp.net/wp-content/uploads/breaking-bad-banner.jpg"
+      ],
+      "source_url": "http://main.circleftp.net/breaking-bad-all-seasons/",
+      "links": [
+        {
+          "added": "2026-06-20",
+          "language": "English",
+          "season": 1,
+          "episode": 1,
+          "episode_title": "Breaking Bad S01E01 Pilot",
+          "url": "http://main.circleftp.net/download/breaking-bad-s01e01.mkv"
+        },
+        {
+          "added": "2026-06-20",
+          "language": "English",
+          "season": 1,
+          "episode": 2,
+          "episode_title": "Breaking Bad S01E02 Cat's in the Bag",
+          "url": "http://main.circleftp.net/download/breaking-bad-s01e02.mkv"
+        }
+      ],
+      "updated_at": "2026-06-20"
+    }
+  }
+}

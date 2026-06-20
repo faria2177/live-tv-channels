@@ -1,1 +1,30 @@
-[]
+{
+  "category": "Dubbed_Tv_Series",
+  "base_url": "http://main.circleftp.net/category/dubbed-tv-series-shows/",
+  "pages_scanned": 25,
+  "last_scan": "2026-06-20T06:00:00+00:00",
+  "series_count": 1,
+  "episode_count": 1,
+  "series": {
+    "Money Heist Hindi Dubbed": {
+      "title": "Money Heist Hindi Dubbed",
+      "year": "2017",
+      "tvg_logo": "http://main.circleftp.net/wp-content/uploads/money-heist-poster.jpg",
+      "posters": [
+        "http://main.circleftp.net/wp-content/uploads/money-heist-poster.jpg"
+      ],
+      "source_url": "http://main.circleftp.net/money-heist-hindi-dubbed-season-1/",
+      "links": [
+        {
+          "added": "2026-06-20",
+          "language": "Hindi Dual",
+          "season": 1,
+          "episode": 1,
+          "episode_title": "Money Heist S01E01",
+          "url": "http://main.circleftp.net/download/money-heist-s01e01.mkv"
+        }
+      ],
+      "updated_at": "2026-06-20"
+    }
+  }
+}
