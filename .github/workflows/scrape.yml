@@ -1,15 +1,14 @@
 name: CircleFTP TV Series Auto Scraper
 
 on:
-  # প্রতি ২ দিন পর পর - রাত ২টায় (UTC+6 = রাত ৮টা UTC)
   schedule:
+    # প্রতি ২ দিন পর পর রাত ২:০০ AM Bangladesh time (UTC 20:00 আগের দিন)
     - cron: '0 20 */2 * *'
 
-  # হাতে trigger করার জন্য
   workflow_dispatch:
     inputs:
       category:
-        description: 'Specific category to scrape (leave empty for all)'
+        description: 'Category to scrape (empty = all)'
         required: false
         default: ''
         type: choice
@@ -22,84 +21,74 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 180   # ৩ ঘণ্টা max (৩টা category × ৭০ pages)
+    timeout-minutes: 300
 
     permissions:
-      contents: write      # Git push করার permission
+      contents: write
 
     steps:
-      # ─── 1. Repo checkout ──────────────────────────────────────────────
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
-      # ─── 2. Node.js setup ──────────────────────────────────────────────
-      - name: Setup Node.js
+      - name: Setup Node.js 20
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # ─── 3. Output directory তৈরি ────────────────────────────────────
-      - name: Create output directories
+      - name: Create output directory
         run: mkdir -p series/CF
 
-      # ─── 4. Scraper চালানো ────────────────────────────────────────────
       - name: Run scraper
         run: |
-          CATEGORY="${{ github.event.inputs.category }}"
-          if [ -n "$CATEGORY" ]; then
-            echo "🎯 Scraping single category: $CATEGORY"
-            node scraper.js "$CATEGORY"
+          CAT="${{ github.event.inputs.category }}"
+          if [ -n "$CAT" ]; then
+            echo "▶ Single category: $CAT"
+            node scraper.js "$CAT"
           else
-            echo "🌐 Scraping all categories"
+            echo "▶ All categories"
             node scraper.js
           fi
         env:
           NODE_OPTIONS: '--max-old-space-size=512'
 
-      # ─── 5. Change detect ────────────────────────────────────────────
-      - name: Check for changes
-        id: changes
+      - name: Detect changes
+        id: diff
         run: |
           git diff --quiet series/CF/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
-          
-          # কতটা পরিবর্তন হলো সেটা log করা
-          if git diff --quiet series/CF/; then
-            echo "📭 No changes detected"
-          else
-            echo "📬 Changes detected:"
-            git diff --stat series/CF/
-          fi
 
-      # ─── 6. Auto commit & push ────────────────────────────────────────
-      - name: Commit and push changes
-        if: steps.changes.outputs.changed == 'true'
+      - name: Commit & push
+        if: steps.diff.outputs.changed == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          DATE=$(date '+%Y-%m-%d %H:%M UTC')
-          
-          # কতটা series আছে count করা
-          ENGLISH_COUNT=$(cat series/CF/English_Tv_Series.json 2>/dev/null | python3 -c "import sys,json; data=json.load(sys.stdin); print(len(data))" 2>/dev/null || echo "?")
-          DUBBED_COUNT=$(cat series/CF/Dubbed_Tv_Series.json 2>/dev/null | python3 -c "import sys,json; data=json.load(sys.stdin); print(len(data))" 2>/dev/null || echo "?")
-          HINDI_COUNT=$(cat series/CF/Hindi_Tv_Series.json 2>/dev/null | python3 -c "import sys,json; data=json.load(sys.stdin); print(len(data))" 2>/dev/null || echo "?")
-          
-          git add series/CF/
-          git commit -m "🤖 Auto update: $DATE
 
-          📺 English: $ENGLISH_COUNT series
-          🎬 Dubbed:  $DUBBED_COUNT series  
-          🇮🇳 Hindi:   $HINDI_COUNT series
-          
-          [skip ci]"
-          
+          EN=$(python3 -c "import json; d=json.load(open('series/CF/English_Tv_Series.json')); print(len(d))" 2>/dev/null || echo '?')
+          DU=$(python3 -c "import json; d=json.load(open('series/CF/Dubbed_Tv_Series.json'));  print(len(d))" 2>/dev/null || echo '?')
+          HI=$(python3 -c "import json; d=json.load(open('series/CF/Hindi_Tv_Series.json'));   print(len(d))" 2>/dev/null || echo '?')
+          DATE=$(date '+%Y-%m-%d %H:%M UTC')
+
+          git add series/CF/
+          git commit -m "🤖 Auto update $DATE | EN:$EN DU:$DU HI:$HI [skip ci]"
           git push
 
-      # ─── 7. Summary ──────────────────────────────────────────────────
-      - name: Print summary
+      - name: Summary
         if: always()
+        run: |
+          echo "## 📊 Scrape Result" >> $GITHUB_STEP_SUMMARY
+          for f in English_Tv_Series Dubbed_Tv_Series Hindi_Tv_Series; do
+            FILE="series/CF/${f}.json"
+            if [ -f "$FILE" ]; then
+              N=$(python3 -c "import json; print(len(json.load(open('$FILE'))))" 2>/dev/null || echo '?')
+              echo "- **$f**: $N series" >> $GITHUB_STEP_SUMMARY
+            fi
+          done
+          if [ "${{ steps.diff.outputs.changed }}" == "true" ]; then
+            echo "✅ Changes committed" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "📭 No new content" >> $GITHUB_STEP_SUMMARY
+          fi
         run: |
           echo "## 📊 Scrape Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
