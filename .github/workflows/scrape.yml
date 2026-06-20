@@ -1,109 +1,39 @@
-name: CircleFTP TV Series Auto Scraper
+name: CircleFTP Scraper
 
 on:
   schedule:
-    # প্রতি ২ দিন পর পর রাত ২:০০ AM Bangladesh time (UTC 20:00 আগের দিন)
     - cron: '0 20 */2 * *'
-
   workflow_dispatch:
-    inputs:
-      category:
-        description: 'Category to scrape (empty = all)'
-        required: false
-        default: ''
-        type: choice
-        options:
-          - ''
-          - English_Tv_Series
-          - Dubbed_Tv_Series
-          - Hindi_Tv_Series
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     timeout-minutes: 300
-
     permissions:
       contents: write
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js 20
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Create output directory
+      - name: Create output dir
         run: mkdir -p series/CF
 
       - name: Run scraper
-        run: |
-          CAT="${{ github.event.inputs.category }}"
-          if [ -n "$CAT" ]; then
-            echo "▶ Single category: $CAT"
-            node scraper.js "$CAT"
-          else
-            echo "▶ All categories"
-            node scraper.js
-          fi
-        env:
-          NODE_OPTIONS: '--max-old-space-size=512'
+        run: node scraper.js
 
-      - name: Detect changes
+      - name: Check changes
         id: diff
         run: |
           git diff --quiet series/CF/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
 
-      - name: Commit & push
+      - name: Commit and push
         if: steps.diff.outputs.changed == 'true'
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          EN=$(python3 -c "import json; d=json.load(open('series/CF/English_Tv_Series.json')); print(len(d))" 2>/dev/null || echo '?')
-          DU=$(python3 -c "import json; d=json.load(open('series/CF/Dubbed_Tv_Series.json'));  print(len(d))" 2>/dev/null || echo '?')
-          HI=$(python3 -c "import json; d=json.load(open('series/CF/Hindi_Tv_Series.json'));   print(len(d))" 2>/dev/null || echo '?')
-          DATE=$(date '+%Y-%m-%d %H:%M UTC')
-
           git add series/CF/
-          git commit -m "🤖 Auto update $DATE | EN:$EN DU:$DU HI:$HI [skip ci]"
+          git commit -m "Auto update $(date '+%Y-%m-%d') [skip ci]"
           git push
-
-      - name: Summary
-        if: always()
-        run: |
-          echo "## 📊 Scrape Result" >> $GITHUB_STEP_SUMMARY
-          for f in English_Tv_Series Dubbed_Tv_Series Hindi_Tv_Series; do
-            FILE="series/CF/${f}.json"
-            if [ -f "$FILE" ]; then
-              N=$(python3 -c "import json; print(len(json.load(open('$FILE'))))" 2>/dev/null || echo '?')
-              echo "- **$f**: $N series" >> $GITHUB_STEP_SUMMARY
-            fi
-          done
-          if [ "${{ steps.diff.outputs.changed }}" == "true" ]; then
-            echo "✅ Changes committed" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "📭 No new content" >> $GITHUB_STEP_SUMMARY
-          fi
-        run: |
-          echo "## 📊 Scrape Summary" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          
-          for file in series/CF/English_Tv_Series.json series/CF/Dubbed_Tv_Series.json series/CF/Hindi_Tv_Series.json; do
-            if [ -f "$file" ]; then
-              COUNT=$(python3 -c "import sys,json; data=json.load(open('$file')); print(len(data))" 2>/dev/null || echo "error")
-              NAME=$(basename $file .json)
-              echo "- **$NAME**: $COUNT series" >> $GITHUB_STEP_SUMMARY
-            fi
-          done
-          
-          echo "" >> $GITHUB_STEP_SUMMARY
-          if [ "${{ steps.changes.outputs.changed }}" == "true" ]; then
-            echo "✅ **Changes committed and pushed**" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "📭 **No new content found**" >> $GITHUB_STEP_SUMMARY
-          fi
