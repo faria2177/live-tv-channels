@@ -1,242 +1,396 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
 import json
-import re
+import os
 import time
+from copy import deepcopy
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import quote
+from typing import Any, Dict, List, Optional
+from urllib.parse import parse_qs, urlparse
 
 import requests
-from bs4 import BeautifulSoup
-
-REPO_OWNER = "faria2177"
-REPO_NAME = "live-tv-channels"
-BRANCH = "main"
-SERIES_DIR = "series"
-
-GITHUB_CONTENTS_API = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/{SERIES_DIR}"
-RAW_BASE = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/{BRANCH}/{SERIES_DIR}"
-
-OUTPUT_DIR = Path("generated_series")
-TIMEOUT = 25
-
-HEADERS = {
-    "User-Agent": "series-json-builder/1.0"
-}
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 
-def fetch_json(url: str):
-    r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-    r.raise_for_status()
-    return r.json()
+ROOT = Path(__file__).resolve().parents[1]
+SOURCE_DIR = ROOT / "series"
+OUTPUT_DIR = ROOT / "output_series"
+
+FMFTP_API_BASE = "https://fmftp.net/api"
+TV_SHOW_DETAIL_API = FMFTP_API_BASE + "/tv-shows/{show_id}"
+EPISODE_STREAM_API = FMFTP_API_BASE + "/stream/video/stream?type=tv_shows&id={episode_id}"
+
+# legacy = top-level { "Title": { ... } }
+# wrapped = keep source wrapper + items
+OUTPUT_MODE = os.getenv("OUTPUT_MODE", "legacy").strip().lower()
+
+REQUEST_TIMEOUT = 30
+SLEEP_BETWEEN_REQUESTS = 0.08
 
 
-def fetch_text(url: str):
-    r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-    r.raise_for_status()
-    return r.text
+def utc_now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
-def get_series_json_files():
-    data = fetch_json(GITHUB_CONTENTS_API)
-    files = []
-    for item in data:
-        if item.get("type") == "file" and item.get("name", "").endswith("_Tv_Series.json"):
-            files.append(item["name"])
-    return sorted(files)
-
-
-def get_raw_file_url(filename: str):
-    return f"{RAW_BASE}/{quote(filename)}"
-
-
-def today_utc():
+def utc_today_str() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
-def normalize_language(filename: str, source_obj: dict | None = None):
-    if source_obj:
-        category_name = str(source_obj.get("category_name", "")).strip()
-        if category_name:
-            if category_name.lower() == "indian tv series":
-                return "Indian"
-            return category_name.replace(" tv series", "").replace(" Tv Series", "").strip()
-
-    lower = filename.lower()
-    if "english" in lower:
-        return "English"
-    if "bangla" in lower:
-        return "Bangla"
-    if "indian" in lower:
-        return "Indian"
-    if "korean" in lower:
-        return "Korean"
-    if "turkish" in lower:
-        return "Turkish"
-    return "Unknown"
-
-
-def extract_episode_candidates(text: str):
-    found = {}
-
-    # Pattern: S01E02
-    for m in re.finditer(r"\bS(\d{1,2})E(\d{1,3})\b", text, flags=re.I):
-        season = int(m.group(1))
-        episode = int(m.group(2))
-        found[(season, episode)] = f"S{season:02d}E{episode:02d}"
-
-    # Pattern: Season 1 Episode 2
-    for m in re.finditer(r"\bSeason\s*(\d{1,2})\s*Episode\s*(\d{1,3})\b", text, flags=re.I):
-        season = int(m.group(1))
-        episode = int(m.group(2))
-        found[(season, episode)] = f"S{season:02d}E{episode:02d}"
-
-    # Fallback: Episode 1 / EP 1 / E01
-    if not found:
-        episode_nums = set()
-
-        for m in re.finditer(r"\bEpisode\s*(\d{1,3})\b", text, flags=re.I):
-            episode_nums.add(int(m.group(1)))
-
-        for m in re.finditer(r"\bEP\s*(\d{1,3})\b", text, flags=re.I):
-            episode_nums.add(int(m.group(1)))
-
-        for m in re.finditer(r"\bE(\d{1,3})\b", text, flags=re.I):
-            episode_nums.add(int(m.group(1)))
-
-        for ep in sorted(episode_nums):
-            found[(1, ep)] = f"S01E{ep:02d}"
-
-    items = []
-    for (season, episode), short_code in sorted(found.items()):
-        items.append({
-            "season": season,
-            "episode": episode,
-            "short_code": short_code
-        })
-
-    return items
+def make_session() -> requests.Session:
+    session = requests.Session()
+    retry = Retry(
+        total=4,
+        connect=4,
+        read=4,
+        backoff_factor=1.2,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["GET", "HEAD"],
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
+    session.headers.update(
+        {
+            "User-Agent": "live-tv-channels-series-builder/1.0",
+            "Accept": "application/json,text/plain,*/*",
+        }
+    )
+    return session
 
 
-def extract_text_blocks(soup: BeautifulSoup):
-    blocks = []
-
-    page_text = soup.get_text("\n", strip=True)
-    if page_text:
-        blocks.append(page_text)
-
-    for tag in soup.find_all(["a", "button", "li", "option", "span", "div", "script"]):
-        txt = tag.get_text(" ", strip=True)
-        if txt and len(txt) >= 2:
-            blocks.append(txt)
-
-    return "\n".join(blocks)
+SESSION = make_session()
 
 
-def scan_watch_page_for_episodes(watch_page: str):
-    """
-    watch_page থেকে episode count/labels detect করার চেষ্টা করে।
-    direct video link extract করে না।
-    """
-    result = {
-        "watch_page": watch_page,
-        "episodes": [],
-        "episode_count": 0,
-        "status": "not_scanned"
+def safe_json_load(path: Path) -> Dict[str, Any]:
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def safe_json_dump(path: Path, data: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+def normalize_language(value: Optional[str], fallback: str = "") -> str:
+    if value:
+        return value.strip()
+
+    text = fallback.strip()
+    if not text:
+        return "Unknown"
+
+    text_lower = text.lower()
+    text_lower = text_lower.replace("tv series", "").replace("series", "").strip()
+
+    mapping = {
+        "bangla": "Bangla",
+        "english": "English",
+        "indian": "Indian",
+        "korean": "Korean",
+        "turkish": "Turkish",
+    }
+    for k, v in mapping.items():
+        if k in text_lower:
+            return v
+
+    return text.title()
+
+
+def extract_show_id(item: Dict[str, Any]) -> Optional[int]:
+    # Preferred source: watch_page
+    watch_page = str(item.get("watch_page", "")).strip()
+    if watch_page:
+        parsed = urlparse(watch_page)
+        qs = parse_qs(parsed.query)
+        ids = qs.get("id")
+        if ids and ids[0].isdigit():
+            return int(ids[0])
+
+    # Fallback: source stream_url sometimes stores show id
+    stream_url = str(item.get("stream_url", "")).strip()
+    if stream_url:
+        parsed = urlparse(stream_url)
+        qs = parse_qs(parsed.query)
+        ids = qs.get("id")
+        if ids and ids[0].isdigit():
+            return int(ids[0])
+
+    return None
+
+
+def fetch_show_details(show_id: int) -> Dict[str, Any]:
+    url = TV_SHOW_DETAIL_API.format(show_id=show_id)
+    resp = SESSION.get(
+        url,
+        params={"fields": "episodes"},
+        timeout=REQUEST_TIMEOUT,
+    )
+    resp.raise_for_status()
+    return resp.json()
+
+
+def sort_and_clean_episodes(episodes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    cleaned: List[Dict[str, Any]] = []
+    seen_ids = set()
+
+    for ep in episodes or []:
+        ep_id = ep.get("id")
+        if ep_id is None:
+            continue
+        if ep_id in seen_ids:
+            continue
+        seen_ids.add(ep_id)
+        cleaned.append(ep)
+
+    cleaned.sort(
+        key=lambda x: (
+            int(x.get("season_number") or 0),
+            int(x.get("episode_number") or 0),
+            int(x.get("id") or 0),
+        )
+    )
+    return cleaned
+
+
+def build_episode_title(series_title: str, ep: Dict[str, Any]) -> str:
+    season = int(ep.get("season_number") or 1)
+    episode = int(ep.get("episode_number") or 1)
+    raw_name = str(ep.get("name") or ep.get("title") or "").strip()
+
+    generic_names = {
+        "",
+        "episode",
+        f"episode {episode}",
+        f"ep {episode}",
     }
 
-    if not watch_page:
-        result["status"] = "missing_watch_page"
-        return result
+    if raw_name.lower() in generic_names:
+        return f"{series_title} S{season}E{episode}"
 
+    return f"{series_title} S{season}E{episode} - {raw_name}"
+
+
+def episode_stream_url(episode_id: int) -> str:
+    return EPISODE_STREAM_API.format(episode_id=episode_id)
+
+
+def validate_stream_url(episode_id: int) -> bool:
+    """
+    Fallback validator for +1/+2 probing.
+    Valid if the endpoint is not HTML error page.
+    """
+    url = episode_stream_url(episode_id)
     try:
-        html = fetch_text(watch_page)
-    except Exception as e:
-        result["status"] = f"fetch_failed: {e}"
-        return result
+        resp = SESSION.get(url, allow_redirects=False, timeout=REQUEST_TIMEOUT)
+        ct = (resp.headers.get("content-type") or "").lower()
 
-    soup = BeautifulSoup(html, "html.parser")
-    text_blob = extract_text_blocks(soup)
-    episodes = extract_episode_candidates(text_blob)
+        if resp.status_code in {200, 206, 301, 302, 303, 307, 308} and "text/html" not in ct:
+            return True
+    except Exception:
+        return False
+    return False
 
-    result["episodes"] = episodes
-    result["episode_count"] = len(episodes)
-    result["status"] = "ok" if episodes else "no_episode_detected"
+
+def guess_sequential_episode_ids(first_episode_id: int, expected_count: int) -> List[int]:
+    """
+    Fallback only if exact episode list API fails.
+    User's requested heuristic: next episode may be +1 or +2.
+    """
+    if expected_count <= 0:
+        return [first_episode_id]
+
+    found = [first_episode_id]
+    current = first_episode_id
+
+    while len(found) < expected_count:
+        next_id = None
+
+        # Prefer +1 / +2 first, then small forward scan
+        for delta in [1, 2, 3, 4, 5]:
+            candidate = current + delta
+            if candidate in found:
+                continue
+            if validate_stream_url(candidate):
+                next_id = candidate
+                break
+
+        if next_id is None:
+            break
+
+        found.append(next_id)
+        current = next_id
+
+    return found
+
+
+def make_links_from_api(
+    series_title: str,
+    details: Dict[str, Any],
+    language: str,
+) -> List[Dict[str, Any]]:
+    episodes = sort_and_clean_episodes(details.get("episodes") or [])
+    added = utc_today_str()
+
+    if episodes:
+        links = []
+        for ep in episodes:
+            ep_id = int(ep["id"])
+            season = int(ep.get("season_number") or 1)
+            episode = int(ep.get("episode_number") or 1)
+            links.append(
+                {
+                    "added": added,
+                    "language": language,
+                    "season": season,
+                    "episode": episode,
+                    "episode_title": build_episode_title(series_title, ep),
+                    "url": episode_stream_url(ep_id),
+                }
+            )
+        return links
+
+    # Fallback mode if exact episode API ever breaks
+    first_episode_id = details.get("first_episode_id")
+    expected_count = int(details.get("number_of_episodes") or details.get("total_episodes") or 0)
+
+    if not first_episode_id:
+        return []
+
+    guessed_ids = guess_sequential_episode_ids(int(first_episode_id), expected_count or 1)
+    links = []
+
+    for idx, ep_id in enumerate(guessed_ids, start=1):
+        links.append(
+            {
+                "added": added,
+                "language": language,
+                "season": 1,
+                "episode": idx,
+                "episode_title": f"{series_title} S1E{idx}",
+                "url": episode_stream_url(ep_id),
+            }
+        )
+
+    return links
+
+
+def build_legacy_output(
+    source_data: Dict[str, Any],
+    source_name: str,
+) -> Dict[str, Any]:
+    source_items = source_data.get("items", {})
+    category_name = str(source_data.get("category_name", "")).strip()
+    out: Dict[str, Any] = {}
+
+    for idx, (series_title, item) in enumerate(source_items.items(), start=1):
+        show_id = extract_show_id(item)
+        entry = deepcopy(item)
+
+        if not show_id:
+            entry["links"] = []
+            entry["_error"] = "show_id_not_found"
+            out[series_title] = entry
+            continue
+
+        try:
+            details = fetch_show_details(show_id)
+            language = normalize_language(entry.get("language"), category_name)
+            links = make_links_from_api(series_title, details, language)
+
+            entry["links"] = links
+            entry["episode_count"] = len(links)
+            entry["series_id"] = show_id
+            out[series_title] = entry
+        except Exception as e:
+            entry["links"] = []
+            entry["_error"] = f"{type(e).__name__}: {e}"
+            entry["series_id"] = show_id
+            out[series_title] = entry
+
+        if idx % 20 == 0:
+            print(f"[{source_name}] processed {idx}/{len(source_items)}")
+        time.sleep(SLEEP_BETWEEN_REQUESTS)
+
+    return out
+
+
+def build_wrapped_output(
+    source_data: Dict[str, Any],
+    source_name: str,
+) -> Dict[str, Any]:
+    result = deepcopy(source_data)
+    source_items = source_data.get("items", {})
+    category_name = str(source_data.get("category_name", "")).strip()
+    new_items: Dict[str, Any] = {}
+
+    for idx, (series_title, item) in enumerate(source_items.items(), start=1):
+        show_id = extract_show_id(item)
+        entry = deepcopy(item)
+
+        if not show_id:
+            entry["links"] = []
+            entry["_error"] = "show_id_not_found"
+            new_items[series_title] = entry
+            continue
+
+        try:
+            details = fetch_show_details(show_id)
+            language = normalize_language(entry.get("language"), category_name)
+            links = make_links_from_api(series_title, details, language)
+
+            entry["links"] = links
+            entry["episode_count"] = len(links)
+            entry["series_id"] = show_id
+            new_items[series_title] = entry
+        except Exception as e:
+            entry["links"] = []
+            entry["_error"] = f"{type(e).__name__}: {e}"
+            entry["series_id"] = show_id
+            new_items[series_title] = entry
+
+        if idx % 20 == 0:
+            print(f"[{source_name}] processed {idx}/{len(source_items)}")
+        time.sleep(SLEEP_BETWEEN_REQUESTS)
+
+    result["items"] = new_items
+    result["built_at"] = utc_now_iso()
+    result["builder"] = "build_series_output.py"
     return result
 
 
-def build_links(series_title: str, watch_page: str, language: str, added_date: str):
-    scan_result = scan_watch_page_for_episodes(watch_page)
-    links = []
-
-    for ep in scan_result["episodes"]:
-        season = ep["season"]
-        episode = ep["episode"]
-        links.append({
-            "added": added_date,
-            "language": language,
-            "season": season,
-            "episode": episode,
-            "episode_title": f"{series_title} S{season}E{episode}",
-            "watch_page": watch_page
-        })
-
-    return links, scan_result
+def iter_source_files() -> List[Path]:
+    files = sorted(
+        p for p in SOURCE_DIR.glob("*_Tv_Series.json")
+        if p.is_file()
+    )
+    return files
 
 
-def transform_source_file(source_data: dict, filename: str):
-    output = {}
-    items = source_data.get("items", {})
-    language = normalize_language(filename, source_data)
-    added_date = today_utc()
-
-    for series_title, meta in items.items():
-        year = str(meta.get("year", "")).strip()
-        tvg_logo = meta.get("tvg_logo", "") or ""
-        watch_page = meta.get("watch_page", "") or ""
-
-        links, scan_result = build_links(
-            series_title=series_title,
-            watch_page=watch_page,
-            language=language,
-            added_date=added_date
-        )
-
-        output[series_title] = {
-            "year": year,
-            "tvg_logo": tvg_logo,
-            "watch_page": watch_page,
-            "episode_count": scan_result["episode_count"],
-            "links": links
-        }
-
-        # polite delay
-        time.sleep(0.4)
-
-    return output
-
-
-def main():
+def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    files = get_series_json_files()
-    print("Found files:", files)
+    files = iter_source_files()
+    if not files:
+        raise SystemExit("No *_Tv_Series.json files found in /series")
 
-    for filename in files:
-        raw_url = get_raw_file_url(filename)
-        print(f"Processing: {filename}")
+    print(f"Found {len(files)} source files")
 
-        try:
-            source_data = fetch_json(raw_url)
-            transformed = transform_source_file(source_data, filename)
-        except Exception as e:
-            print(f"Failed: {filename} -> {e}")
-            continue
+    for file_path in files:
+        print(f"Processing: {file_path.name}")
+        source_data = safe_json_load(file_path)
 
-        out_path = OUTPUT_DIR / filename
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(transformed, f, ensure_ascii=False, indent=2)
+        if OUTPUT_MODE == "wrapped":
+            output_data = build_wrapped_output(source_data, file_path.name)
+        else:
+            output_data = build_legacy_output(source_data, file_path.name)
 
-        print(f"Saved: {out_path}")
+        out_path = OUTPUT_DIR / file_path.name
+        safe_json_dump(out_path, output_data)
+        print(f"Written: {out_path}")
 
     print("Done.")
 
