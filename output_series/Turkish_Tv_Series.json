@@ -1,42 +1,282 @@
 {
-  "type": {
-    "year": "",
-    "tvg_logo": "",
-    "links": []
-  },
-  "source_url": {
-    "year": "",
-    "tvg_logo": "",
-    "links": []
-  },
-  "category_id": {
-    "year": "",
-    "tvg_logo": "",
-    "links": []
-  },
-  "category_name": {
-    "year": "",
-    "tvg_logo": "",
-    "links": []
-  },
-  "total_items": {
-    "year": "",
-    "tvg_logo": "",
-    "links": []
-  },
-  "collected_at": {
-    "year": "",
-    "tvg_logo": "",
-    "links": []
-  },
-  "items": {
+  "Dirilis Ertugrul": {
     "year": "2014",
     "tvg_logo": "https://fmftp.net/content-images/movies/posters/rOar34cNLn2sgDH5FmAa1bvMpBv.jpg",
-    "links": []
+    "rating": 7.79,
+    "genre": [
+      "War & Politics",
+      "Action & Adventure",
+      "Drama"
+    ],
+    "language": "Turkish Tv Series",
+    "watch_page": "https://fmftp.net/watch?type=SERIES&id=882",
+    "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=882",
+    "links": [
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Dirilis Ertugrul S1E1",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17237"
+      }
+    ],
+    "episode_count": 1,
+    "series_id": 882
   },
-  "last_updated": {
-    "year": "",
+  "Farouk Omar": {
+    "year": "None",
     "tvg_logo": "",
-    "links": []
+    "rating": 0.0,
+    "genre": [
+      "None"
+    ],
+    "language": "Turkish Tv Series",
+    "watch_page": "https://fmftp.net/watch?type=SERIES&id=883",
+    "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=883",
+    "links": [
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Farouk Omar S1E1",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18177"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 2,
+        "episode_title": "Farouk Omar S1E2",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18182"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 3,
+        "episode_title": "Farouk Omar S1E3",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18187"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 4,
+        "episode_title": "Farouk Omar S1E4",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18192"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 5,
+        "episode_title": "Farouk Omar S1E5",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18196"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 6,
+        "episode_title": "Farouk Omar S1E6",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18200"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 7,
+        "episode_title": "Farouk Omar S1E7",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18204"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 8,
+        "episode_title": "Farouk Omar S1E8",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18208"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 9,
+        "episode_title": "Farouk Omar S1E9",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18211"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 10,
+        "episode_title": "Farouk Omar S1E10",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18214"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 11,
+        "episode_title": "Farouk Omar S1E11",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18217"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 12,
+        "episode_title": "Farouk Omar S1E12",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18220"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 13,
+        "episode_title": "Farouk Omar S1E13",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18222"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 14,
+        "episode_title": "Farouk Omar S1E14",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18224"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 15,
+        "episode_title": "Farouk Omar S1E15",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18226"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 16,
+        "episode_title": "Farouk Omar S1E16",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18228"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 17,
+        "episode_title": "Farouk Omar S1E17",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18229"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 18,
+        "episode_title": "Farouk Omar S1E18",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18230"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 19,
+        "episode_title": "Farouk Omar S1E19",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18231"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 20,
+        "episode_title": "Farouk Omar S1E20",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18232"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 21,
+        "episode_title": "Farouk Omar S1E21",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18233"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 22,
+        "episode_title": "Farouk Omar S1E22",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18234"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 23,
+        "episode_title": "Farouk Omar S1E23",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18235"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 24,
+        "episode_title": "Farouk Omar S1E24",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18236"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 25,
+        "episode_title": "Farouk Omar S1E25",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18237"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 26,
+        "episode_title": "Farouk Omar S1E26",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18238"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 27,
+        "episode_title": "Farouk Omar S1E27",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18239"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 28,
+        "episode_title": "Farouk Omar S1E28",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18240"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 29,
+        "episode_title": "Farouk Omar S1E29",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18241"
+      },
+      {
+        "added": "2026-06-20",
+        "language": "Turkish Tv Series",
+        "season": 1,
+        "episode": 30,
+        "episode_title": "Farouk Omar S1E30",
+        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=18242"
+      }
+    ],
+    "episode_count": 30,
+    "series_id": 883
   }
 }
