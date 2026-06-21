@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/movies?category=1",
   "category_id": "1",
   "category_name": "Bollywood",
-  "total_items": 2824,
+  "total_items": 2827,
   "collected_at": "2026-06-18T19:11:09.661676Z",
   "items": {
     "Maa Behen": {
@@ -12217,7 +12217,7 @@
       ]
     },
     "Meri Nimmo": {
-      "year": "2017",
+      "year": "2018",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/ebW4SPm3wQlFsV7uvfy7gMxzed1.jpg",
       "rating": 8.0,
       "genre": [
@@ -12225,10 +12225,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16732",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16838",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16732"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16838"
         }
       ]
     },
@@ -16030,7 +16030,7 @@
       ]
     },
     "RX 100": {
-      "year": "2019",
+      "year": "2018",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/rGkTmRYQhdzBhpFjPi0lxchHgcn.jpg",
       "rating": 5.543,
       "genre": [
@@ -16040,10 +16040,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=17064",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16851",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=17064"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16851"
         }
       ]
     },
@@ -28415,7 +28415,7 @@
       ]
     },
     "Paan Singh Tomar": {
-      "year": "2010",
+      "year": "2012",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/ii2KMVvGmcmJrqwYcT5nKn92bD5.jpg",
       "rating": 7.3,
       "genre": [
@@ -28424,10 +28424,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=15581",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16387",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=15581"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16387"
         }
       ]
     },
@@ -48060,7 +48060,58 @@
           "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16335"
         }
       ]
+    },
+    "Cocktail 2": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vJq0vuEV2ksMVl0sxsdBaU06FQL.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Romance",
+        "Comedy"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20977",
+          "language": "Bollywood",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20977"
+        }
+      ]
+    },
+    "Bharat Bhhagya Viddhaata": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/tf5lLrrikOswHKHpzW0UiHycJEx.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20975",
+          "language": "Bollywood",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20975"
+        }
+      ]
+    },
+    "Main Vaapas Aaunga": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/8n7OeeyAqwmGS81Is2c6Ho65tgW.jpg",
+      "rating": 4.0,
+      "genre": [
+        "Romance",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20976",
+          "language": "Bollywood",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20976"
+        }
+      ]
     }
   },
-  "last_updated": "2026-06-19T02:37:52.506441Z"
+  "last_updated": "2026-06-21T02:11:30.235731Z"
 }

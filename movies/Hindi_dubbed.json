@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/movies?category=5",
   "category_id": "5",
   "category_name": "Hindi dubbed",
-  "total_items": 1258,
+  "total_items": 1268,
   "collected_at": "2026-06-18T19:12:03.599329Z",
   "items": {
     "Peddi": {
@@ -3393,7 +3393,7 @@
       ]
     },
     "Mangalavaaram": {
-      "year": "2024",
+      "year": "2023",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/zZxBWGqdoQ3lX7oPjtI41Yby59j.jpg",
       "rating": 5.1,
       "genre": [
@@ -3402,10 +3402,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1241",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1240",
           "language": "Hindi dubbed",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1241"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1240"
         }
       ]
     },
@@ -21898,7 +21898,181 @@
           "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1690"
         }
       ]
+    },
+    "Husbands in Action": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/rdmXkKPjGw43u4wp3aod4aIPiH.jpg",
+      "rating": 6.9,
+      "genre": [
+        "Comedy",
+        "Action"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20967",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20967"
+        }
+      ]
+    },
+    "Your Fault London": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nLxu237EJAisFCYKK48hN9Plobx.jpg",
+      "rating": 7.684,
+      "genre": [
+        "Romance",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20973",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20973"
+        }
+      ]
+    },
+    "Mareechika": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/huPugRFCfwTrJSN09B5Z4BKssye.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Romance",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20968",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20968"
+        }
+      ]
+    },
+    "Sattendru Maarudhu Vaanilai": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/tTgiNXkrg9LS6Qjvrnksev7ztIo.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Thriller",
+        "Drama",
+        "Comedy",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20972",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20972"
+        }
+      ]
+    },
+    "Athiradi": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/r0pLXWo7Tb7J3a7ywl9BxQUQxaY.jpg",
+      "rating": 6.4,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20974",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20974"
+        }
+      ]
+    },
+    "Kenatha Kanom": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4jFuUoddURp94ZvL7haeunK7fsm.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Family"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20971",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20971"
+        }
+      ]
+    },
+    "Euphoria": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/8URM569W1ETAeGd33CPkrc6KF1O.jpg",
+      "rating": 3.75,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20969",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20969"
+        }
+      ]
+    },
+    "Junior": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/75C9BmSkGWghozqjQF0fgX48lGz.jpg",
+      "rating": 4.1,
+      "genre": [
+        "Drama",
+        "Family"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20970",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20970"
+        }
+      ]
+    },
+    "Thalavan": {
+      "year": "2024",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/142iirjj2365WQTaXgMrmjC0tng.jpg",
+      "rating": 6.7,
+      "genre": [
+        "Thriller",
+        "Drama",
+        "Crime"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1457",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1457"
+        }
+      ]
+    },
+    "Sarangapani Jathakam": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/h7q2oskyTlhJPOVuvdk1GL2HNNZ.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20170",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20170"
+        }
+      ]
     }
   },
-  "last_updated": "2026-06-19T02:38:32.244925Z"
+  "last_updated": "2026-06-21T02:12:01.558119Z"
 }

@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/tv-shows?category=9",
   "category_id": "9",
   "category_name": "English tv series",
-  "total_items": 892,
+  "total_items": 894,
   "collected_at": "2026-06-18T19:12:19.840327Z",
   "items": {
     "Spider-Noir": {
@@ -10748,7 +10748,30 @@
       "language": "English tv series",
       "watch_page": "https://fmftp.net/watch?type=SERIES&id=1285",
       "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=1285"
+    },
+    "Every Year After": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nZGf0jnSJNXLf8o7iSzzX8qxHX9.jpg",
+      "rating": 8.32,
+      "genre": [
+        "Drama"
+      ],
+      "language": "English tv series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8765",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8765"
+    },
+    "Superman and Lois": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vlv1gn98GqMnKHLSh0dNciqGfBl.jpg",
+      "rating": 8.06,
+      "genre": [
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "English tv series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=4224",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=4224"
     }
   },
-  "last_updated": "2026-06-19T02:38:43.962874Z"
+  "last_updated": "2026-06-21T02:12:11.116896Z"
 }

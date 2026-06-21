@@ -5079,10 +5079,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=592",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=593",
           "language": "Korean",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=592"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=593"
         }
       ]
     },
@@ -6397,5 +6397,5 @@
       ]
     }
   },
-  "last_updated": "2026-06-19T02:38:28.575278Z"
+  "last_updated": "2026-06-21T02:11:58.529915Z"
 }
