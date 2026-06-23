@@ -12217,7 +12217,7 @@
       ]
     },
     "Meri Nimmo": {
-      "year": "2018",
+      "year": "2017",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/ebW4SPm3wQlFsV7uvfy7gMxzed1.jpg",
       "rating": 8.0,
       "genre": [
@@ -12225,10 +12225,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16838",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16732",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16838"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16732"
         }
       ]
     },
@@ -21071,7 +21071,7 @@
       ]
     },
     "Ankhon Dekhi": {
-      "year": "2013",
+      "year": "2014",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/yA0pvH3YnlvONPbAdRl0neYpMCo.jpg",
       "rating": 6.9,
       "genre": [
@@ -21080,10 +21080,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=15791",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=15792",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=15791"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=15792"
         }
       ]
     },
@@ -21154,7 +21154,7 @@
       ]
     },
     "Queen": {
-      "year": "2013",
+      "year": "2014",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/vKLp0X2RQOuA31R3AdaYtDdKIPK.jpg",
       "rating": 7.3,
       "genre": [
@@ -21163,10 +21163,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16138",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=15603",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16138"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=15603"
         }
       ]
     },
@@ -28415,7 +28415,7 @@
       ]
     },
     "Paan Singh Tomar": {
-      "year": "2012",
+      "year": "2010",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/ii2KMVvGmcmJrqwYcT5nKn92bD5.jpg",
       "rating": 7.3,
       "genre": [
@@ -28424,10 +28424,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16387",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=15581",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16387"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=15581"
         }
       ]
     },
@@ -48113,5 +48113,5 @@
       ]
     }
   },
-  "last_updated": "2026-06-21T02:11:30.235731Z"
+  "last_updated": "2026-06-23T01:53:51.512320Z"
 }

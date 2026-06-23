@@ -11788,7 +11788,7 @@
       ]
     },
     "Ek Tha Soldier": {
-      "year": "2011",
+      "year": "2013",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/eycV5IA0TFc5wHtWmke7SpqXI8u.jpg",
       "rating": 3.5,
       "genre": [
@@ -11797,10 +11797,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18914",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18915",
           "language": "Tamil",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18914"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18915"
         }
       ]
     },
@@ -18637,5 +18637,5 @@
       ]
     }
   },
-  "last_updated": "2026-06-21T02:12:07.912492Z"
+  "last_updated": "2026-06-23T01:54:30.065004Z"
 }
