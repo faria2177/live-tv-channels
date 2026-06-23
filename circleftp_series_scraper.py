@@ -2,25 +2,35 @@
 """
 circleftp_series_scraper.py
 ============================
-Advanced scraper for CircleFTP TV-series category pages.
+TV-series scraper for the CircleFTP / FMFTP platform.
 
-It crawls these category trees:
-    English_Tv_Series  -> /category/english-foreign-tv-series/   (pages 1-70)
-    Dubbed_Tv_Series    -> /category/dubbed-tv-series-shows/      (pages 1-25)
-    Hindi_Tv_Series     -> /category/hindi-tv-serials/             (pages 1-25)
+Originally this script scraped HTML pages on circleftp.net (a BDIX FTP
+server).  However circleftp.net resolves to BDIX-internal IPs
+(15.x.x.x) that are ONLY reachable from inside Bangladesh ISP networks.
+GitHub Actions runners are in the US and can never connect, so the
+scraper always found zero results.
 
-For every series detail page it extracts:
-    title, year, language, poster(s), and every episode/video link
-    (season, episode, episode_title, url, added-date)
+This rewrite uses the public fmftp.net REST API instead — the same API
+already used successfully by fetch_data.py — while keeping the exact same
+output JSON format in series/CF/*.json.
+
+Categories mapped:
+    English_Tv_Series  -> fmftp.net library id=9  (English tv series)
+    Hindi_Tv_Series    -> fmftp.net library id=10 (Indian Tv Series)
+    Dubbed_Tv_Series   -> fmftp.net library id=10 filtered for "dubbed"
+                          + library id=9 filtered for "hindi/dual"
+                          (falls back to all Indian TV if no dubbed found)
+
+For every series it fetches episode details via:
+    GET /api/tv-shows/{show_id}?fields=episodes
+
+And builds link entries with the same schema as before:
+    {added, language, season, episode, episode_title, url}
 
 Results are merged (not overwritten) into:
     series/CF/English_Tv_Series.json
     series/CF/Dubbed_Tv_Series.json
     series/CF/Hindi_Tv_Series.json
-
-so re-running the script only ADDS newly discovered series/episodes and
-never deletes history. This is what makes it safe to run on a schedule
-(see .github/workflows/circleftp-series-scan.yml) every 2 days.
 
 Author: generated for faria2177/live-tv-channels
 """
@@ -39,10 +49,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from threading import Lock
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urlparse, parse_qs
 
 import requests
-from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
@@ -50,60 +59,56 @@ from urllib3.util.retry import Retry
 # Configuration
 # --------------------------------------------------------------------------- #
 
-CF_DOMAIN = "circleftp.net"
+FMFTP_API_BASE = "https://fmftp.net/api"
+TV_SHOWS_LIST_API = FMFTP_API_BASE + "/tv-shows"
+TV_SHOW_DETAIL_API = FMFTP_API_BASE + "/tv-shows/{show_id}"
+EPISODE_STREAM_API = FMFTP_API_BASE + "/stream/video/stream?type=tv_shows&id={episode_id}"
+CONTENT_IMAGE_BASE = "https://fmftp.net/content-images/movies/posters"
 
+SERIES_FIELDS = (
+    "id,title,genre,year,online_rating,release_date,"
+    "poster_path,backdrop_path"
+)
+
+# Category definitions — each maps to one or more fmftp.net library IDs
+# plus an optional title-filter regex for sub-categorisation.
 CATEGORIES = {
     "English_Tv_Series": {
-        "base_url": "http://main.circleftp.net/category/english-foreign-tv-series/",
-        "max_pages": 70,
-    },
-    "Dubbed_Tv_Series": {
-        "base_url": "http://main.circleftp.net/category/dubbed-tv-series-shows/",
-        "max_pages": 25,
+        "library_ids": [9],
+        "label": "English TV Series",
+        "title_filter": None,          # no filtering — take everything
     },
     "Hindi_Tv_Series": {
-        "base_url": "http://main.circleftp.net/category/hindi-tv-serials/",
-        "max_pages": 25,
+        "library_ids": [10],
+        "label": "Indian TV Series",
+        "title_filter": None,          # all Indian TV series
+    },
+    "Dubbed_Tv_Series": {
+        "library_ids": [10, 9],        # search both Indian and English
+        "label": "Dubbed TV Series",
+        # keep only titles that mention dubbed / dual / hindi
+        "title_filter": re.compile(
+            r"dubbed|dual|hindi|bangla|bengali|tamil|telugu",
+            re.IGNORECASE,
+        ),
     },
 }
 
 OUTPUT_DIR = os.environ.get("CF_OUTPUT_DIR", "series/CF")
 MAX_POSTERS_PER_SERIES = 8
-REQUEST_TIMEOUT = 25
-DEFAULT_WORKERS = 4
-DEFAULT_DELAY = 0.6  # polite delay (seconds) between detail-page requests / thread
+REQUEST_TIMEOUT = 30
+DEFAULT_WORKERS = 5
+DEFAULT_DELAY = 0.08            # polite delay between detail API calls
+PAGE_SIZE = 100                 # items per API page
+MAX_PAGES_OVERRIDE = 0          # 0 = fetch all pages
 
-USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 "
-    "CircleFTP-Series-Bot/1.0 (+https://github.com/faria2177/live-tv-channels)"
-)
+DUBBED_RX = re.compile(r"dubbed|dual|hindi|bangla|bengali|tamil|telugu", re.IGNORECASE)
 
-VIDEO_RX = re.compile(
-    r"\.(mkv|mp4|avi|mov|wmv|flv|webm|m4v|ts|m3u8|mpg|mpeg|3gp|ogv|m3u|rmvb)([?#]|$)",
-    re.IGNORECASE,
-)
-IMG_RX = re.compile(r"\.(jpg|jpeg|png|webp|gif|bmp|avif)([?#]|$)", re.IGNORECASE)
-SERIES_HINT_RX = re.compile(
-    r"\b(tv\s*series|web\s*series|series|show|shows|season\s*\d+|episode\s*\d+|"
-    r"ep\.?\s*\d+|s\s*\d+\s*e\s*\d+|\d{1,2}x\d{1,3})\b",
-    re.IGNORECASE,
-)
-CATEGORY_SERIES_RX = re.compile(
-    r"tv-series|tv\s*series|web-series|web\s*series|series-shows|shows|season|episode",
-    re.IGNORECASE,
-)
-DETAIL_SKIP_RX = re.compile(
-    r"/(category|cat|tag|page|search|feed|wp-admin|wp-content|wp-json)/", re.IGNORECASE
-)
-CARD_CONTAINER_TAGS = {"article", "li", "div", "figure", "section", "tr"}
-CARD_CONTAINER_CLASS_RX = re.compile(r"post|entry|card|item|thumb", re.IGNORECASE)
-
-log = logging.getLogger("circleftp_scraper")
+log = logging.getLogger("cf_series_scraper")
 
 
 # --------------------------------------------------------------------------- #
-# Small helpers (ported 1:1 from the browser-extension logic)
+# Small helpers
 # --------------------------------------------------------------------------- #
 
 def clean(value: str = "") -> str:
@@ -114,99 +119,63 @@ def today() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
-def is_video_url(url: str) -> bool:
-    return bool(VIDEO_RX.search(url or ""))
+def utc_now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
-def is_image_url(url: str) -> bool:
-    return bool(IMG_RX.search(url or ""))
-
-
-def absolute(url: str, base: str) -> str:
-    try:
-        return urljoin(base, url)
-    except Exception:
+def build_poster_url(path: str) -> str:
+    if not path:
         return ""
+    path = str(path).strip()
+    sep = "" if path.startswith("/") else "/"
+    return f"{CONTENT_IMAGE_BASE}{sep}{path}"
 
 
-def filename_of(url: str) -> str:
-    try:
-        return os.path.basename(urlparse(url).path)
-    except Exception:
-        return ""
+def build_watch_url(item_id, content_type="SERIES"):
+    return f"https://fmftp.net/watch?type={content_type}&id={item_id}"
 
 
-def extract_year(text: str = "") -> str:
-    match = re.search(r"\b(19|20)\d{2}\b", text or "")
-    return match.group(0) if match else ""
+def build_stream_url(item_id, content_type="tv_shows"):
+    return f"{FMFTP_API_BASE}/stream/video/stream?type={content_type}&id={item_id}"
 
 
-def extract_language(text: str = "") -> str:
-    scope = (text or "").lower()
-    if re.search(r"hindi.?dual|dual.?audio|dual.?hindi", scope):
-        return "Hindi Dual"
-    if re.search(r"bangla|bengali", scope):
-        return "Bangla"
-    if re.search(r"hindi", scope):
-        return "Hindi"
-    if re.search(r"tamil", scope):
-        return "Tamil"
-    if re.search(r"telugu", scope):
-        return "Telugu"
-    if re.search(r"english", scope):
-        return "English"
-    return "English"
-
-
-def parse_episode(text: str = ""):
-    text = text or ""
-    m = re.search(r"[Ss][:\s._-]?(\d{1,2})[\s._-]*[Ee][:\s._-]?(\d{1,3})", text)
-    if m:
-        return int(m.group(1)), int(m.group(2))
-    m = re.search(r"\b(\d{1,2})x(\d{1,3})\b", text, re.IGNORECASE)
-    if m:
-        return int(m.group(1)), int(m.group(2))
-    m = re.search(r"season\s*(\d{1,2}).{0,20}?episode\s*(\d{1,3})", text, re.IGNORECASE)
-    if m:
-        return int(m.group(1)), int(m.group(2))
-    m = re.search(r"\bep\.?\s*(\d{1,3})\b", text, re.IGNORECASE)
-    if m:
-        return 1, int(m.group(1))
+def extract_show_id(item: dict) -> int | None:
+    """Extract numeric show ID from an API list item."""
+    item_id = item.get("id")
+    if item_id is not None:
+        try:
+            return int(item_id)
+        except (ValueError, TypeError):
+            pass
     return None
 
 
-def normalize_series_title(title: str = "") -> str:
-    title = clean(title)
-    title = re.sub(r"\b(tv\s*series|web\s*series)\b", " ", title, flags=re.IGNORECASE)
-    title = re.sub(r"[._|-]+", " ", title)
-    return clean(title)
-
-
-def normalize_key(title: str = "") -> str:
-    """Key used to merge duplicate series across runs/pages (ignores case/season noise)."""
-    title = normalize_series_title(title)
-    title = re.sub(r"\b(season\s*\d+|episode\s*\d+|s\s*\d+\s*e\s*\d+)\b", " ", title, flags=re.IGNORECASE)
-    return clean(title).lower() or "untitled"
-
-
-def extract_episode_title(raw_text: str, series_title: str, season: int, episode: int) -> str:
-    title = clean(raw_text)
-    title = re.sub(r"https?://\S+", "", title, flags=re.IGNORECASE)
-    title = re.sub(r"\b(download|watch|play|copy|server\s*\d+)\b", "", title, flags=re.IGNORECASE)
-    title = re.sub(
-        r"\b(2160p?|1080p?|720p?|480p?|4k|uhd|webrip|web-dl|bluray|hdrip|x264|x265|hevc)\b",
-        "",
-        title,
-        flags=re.IGNORECASE,
-    )
-    title = clean(title)
-    if title and len(title) <= 140:
-        return title
-    return f"{series_title}.S:{season}E:{episode}"
+def normalize_language(value: str = "", fallback: str = "") -> str:
+    if value:
+        return value.strip()
+    text = (fallback or "").strip()
+    if not text:
+        return "English"
+    tl = text.lower().replace("tv series", "").replace("series", "").strip()
+    mapping = {
+        "bangla": "Bangla",
+        "bengali": "Bangla",
+        "english": "English",
+        "hindi": "Hindi",
+        "indian": "Hindi",
+        "korean": "Korean",
+        "turkish": "Turkish",
+        "tamil": "Tamil",
+        "telugu": "Telugu",
+    }
+    for k, v in mapping.items():
+        if k in tl:
+            return v
+    return text.title() if text else "English"
 
 
 # --------------------------------------------------------------------------- #
-# HTTP session with retry/backoff
+# HTTP session
 # --------------------------------------------------------------------------- #
 
 def build_session() -> requests.Session:
@@ -223,188 +192,171 @@ def build_session() -> requests.Session:
     session.mount("https://", adapter)
     session.headers.update(
         {
-            "User-Agent": USER_AGENT,
-            "Accept": "text/html,application/xhtml+xml",
-            "Accept-Language": "en-US,en;q=0.8,bn;q=0.6",
+            "User-Agent": "CircleFTP-Series-Bot/2.0 (+https://github.com/faria2177/live-tv-channels)",
+            "Accept": "application/json,text/plain,*/*",
+            "Accept-Language": "en-US,en;q=0.8",
         }
     )
     return session
 
 
-def fetch_soup(session: requests.Session, url: str) -> BeautifulSoup | None:
+def api_get(session: requests.Session, url: str, **kwargs) -> dict | None:
     try:
-        resp = session.get(url, timeout=REQUEST_TIMEOUT)
+        resp = session.get(url, timeout=REQUEST_TIMEOUT, **kwargs)
         if resp.status_code == 404:
             return None
         resp.raise_for_status()
-        resp.encoding = resp.encoding or "utf-8"
-        return BeautifulSoup(resp.text, "lxml")
+        return resp.json()
     except requests.RequestException as exc:
-        log.warning("fetch failed for %s: %s", url, exc)
+        log.warning("API call failed %s: %s", url, exc)
         return None
 
 
 # --------------------------------------------------------------------------- #
-# Poster / title / episode extraction
+# Fetch series list from fmftp.net API
 # --------------------------------------------------------------------------- #
 
-def get_meta(soup: BeautifulSoup, *names: str) -> str:
-    for name in names:
-        tag = soup.find("meta", attrs={"property": name}) or soup.find("meta", attrs={"name": name})
-        if tag and clean(tag.get("content", "")):
-            return clean(tag.get("content", ""))
-    return ""
+def fetch_series_page(session: requests.Session, library_id: int, page: int) -> dict:
+    """Fetch one page of TV series from the API."""
+    url = TV_SHOWS_LIST_API
+    params = {
+        "limit": PAGE_SIZE,
+        "fields": SERIES_FIELDS,
+        "library": library_id,
+        "page": page,
+        "sort": "release_date",
+    }
+    return api_get(session, url, params=params) or {"data": [], "pages": 0, "total": 0}
 
 
-def poster_score(url: str, marker: str, width: int = 0, height: int = 0) -> int:
-    score = 0
-    blob = f"{marker} {url}"
-    if re.search(r"poster|cover|featured|thumb|thumbnail|banner|wp-post-image", blob, re.IGNORECASE):
-        score += 4
-    if height > width:
-        score += 4
-    if height >= 220:
-        score += 3
-    if width >= 140:
-        score += 2
-    if re.search(r"uploads|image|img", url, re.IGNORECASE):
-        score += 1
-    return score
+def fetch_all_series_for_library(
+    session: requests.Session,
+    library_id: int,
+    workers: int,
+    max_pages: int = 0,
+) -> list[dict]:
+    """Fetch all pages for a library ID concurrently."""
+    first = fetch_series_page(session, library_id, 1)
+    total_pages = int(first.get("pages", 1))
+    all_items = list(first.get("data", []))
+    log.info("  library=%d -> %d pages, %d total items", library_id, total_pages, first.get("total", 0))
+
+    if max_pages > 0:
+        total_pages = min(total_pages, max_pages)
+
+    if total_pages > 1:
+        pages = list(range(2, total_pages + 1))
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            futures = {
+                pool.submit(fetch_series_page, session, library_id, p): p
+                for p in pages
+            }
+            for future in as_completed(futures):
+                page_num = futures[future]
+                try:
+                    result = future.result()
+                    all_items.extend(result.get("data", []))
+                except Exception as exc:
+                    log.warning("  page %d failed: %s", page_num, exc)
+
+    return all_items
 
 
-def collect_poster_candidates(soup: BeautifulSoup, base_url: str) -> list[str]:
-    candidates: list[tuple[str, int]] = []
-    seen: set[str] = set()
+# --------------------------------------------------------------------------- #
+# Fetch episode details for a single series
+# --------------------------------------------------------------------------- #
 
-    meta_poster = get_meta(soup, "og:image", "twitter:image")
-    if meta_poster:
-        url = absolute(meta_poster, base_url)
-        if url:
-            candidates.append((url, 100))
-            seen.add(url)
-
-    for img in soup.find_all("img"):
-        for attr in ("src", "data-src", "data-lazy-src", "data-original"):
-            raw = img.get(attr)
-            if not raw:
-                continue
-            url = absolute(raw, base_url)
-            if not url or url in seen or not is_image_url(url):
-                continue
-            seen.add(url)
-            try:
-                width = int(img.get("width", 0) or 0)
-                height = int(img.get("height", 0) or 0)
-            except ValueError:
-                width, height = 0, 0
-            marker = f"{img.get('alt', '')} {' '.join(img.get('class', []) or [])}"
-            candidates.append((url, poster_score(url, marker, width, height)))
-
-    candidates.sort(key=lambda item: item[1], reverse=True)
-    ordered = []
-    for url, _ in candidates:
-        if url not in ordered:
-            ordered.append(url)
-    return ordered[:MAX_POSTERS_PER_SERIES]
-
-
-def extract_series_title(soup: BeautifulSoup, fallback_title: str = "") -> str:
-    candidates = []
-    h1 = soup.find("h1")
-    if h1:
-        candidates.append(h1.get_text())
-    for sel in (".entry-title", ".post-title", ".series-title", ".title", "h2"):
-        el = soup.select_one(sel)
-        if el:
-            candidates.append(el.get_text())
-            break
-    candidates.append(get_meta(soup, "og:title", "twitter:title"))
-    if soup.title:
-        candidates.append(soup.title.get_text())
-    candidates.append(fallback_title)
-
-    for raw in candidates:
-        normalized = normalize_series_title(raw or "")
-        if normalized and 2 <= len(normalized) <= 180:
-            return normalized
-    return "Unknown Series"
-
-
-def is_series_scoped_page(soup: BeautifulSoup, page_url: str) -> bool:
-    body_text = clean(soup.body.get_text(" ") if soup.body else "")[:1800]
-    scope = " ".join(
-        [page_url, soup.title.get_text() if soup.title else "", get_meta(soup, "og:title"), body_text]
+def fetch_show_episodes(session: requests.Session, show_id: int) -> list[dict]:
+    """Fetch episode list for a single show via the detail API."""
+    url = TV_SHOW_DETAIL_API.format(show_id=show_id)
+    data = api_get(session, url, params={"fields": "episodes"})
+    if not data:
+        return []
+    episodes = data.get("episodes") or []
+    # Sort by season, episode, id
+    episodes.sort(
+        key=lambda e: (
+            int(e.get("season_number") or 0),
+            int(e.get("episode_number") or 0),
+            int(e.get("id") or 0),
+        )
     )
-    return bool(SERIES_HINT_RX.search(scope) or CATEGORY_SERIES_RX.search(scope))
+    return episodes
 
 
-def build_series_payload(soup: BeautifulSoup, page_url: str, seed: dict | None = None) -> dict | None:
-    seed = seed or {}
-    if not is_series_scoped_page(soup, page_url) and not seed.get("force"):
+def build_episode_title(series_title: str, ep: dict) -> str:
+    season = int(ep.get("season_number") or 1)
+    episode = int(ep.get("episode_number") or 1)
+    raw_name = clean(str(ep.get("name") or ep.get("title") or ""))
+    generic = {"", "episode", f"episode {episode}", f"ep {episode}"}
+    if raw_name.lower() in generic:
+        return f"{series_title} S{season:02d}E{episode:02d}"
+    return f"{series_title} S{season:02d}E{episode:02d} - {raw_name}"
+
+
+def build_series_payload(
+    session: requests.Session,
+    item: dict,
+    category_label: str,
+    delay: float,
+) -> dict | None:
+    """Build a full series payload with episode links."""
+    title = clean(str(item.get("title", "")))
+    if not title:
         return None
 
-    title = extract_series_title(soup, seed.get("title", ""))
-    poster_list = list(seed.get("posters") or [])
-    if seed.get("poster"):
-        poster_list.append(seed["poster"])
-    poster_list += collect_poster_candidates(soup, page_url)
-    posters = list(dict.fromkeys(p for p in poster_list if p))[:MAX_POSTERS_PER_SERIES]
+    show_id = extract_show_id(item)
+    if show_id is None:
+        return None
 
-    body_text = clean(soup.body.get_text(" ") if soup.body else "")[:800]
-    year = seed.get("year") or extract_year(" ".join([title, soup.title.get_text() if soup.title else "", body_text]))
-    language = seed.get("language") or extract_language(" ".join([title, soup.title.get_text() if soup.title else "", page_url]))
-    season_match = re.search(r"season\s*(\d{1,2})|s\s*(\d{1,2})", " ".join([title, page_url]), re.IGNORECASE)
-    page_season_hint = int(season_match.group(1) or season_match.group(2)) if season_match else 1
+    year = str(item.get("year", "") or "")
+    poster = build_poster_url(str(item.get("poster_path", "")))
+    backdrop = build_poster_url(str(item.get("backdrop_path", "")))
+
+    posters = []
+    if poster:
+        posters.append(poster)
+    if backdrop and backdrop != poster:
+        posters.append(backdrop)
+    posters = posters[:MAX_POSTERS_PER_SERIES]
+
+    language = normalize_language("", category_label)
+
+    # Fetch episode details
+    time.sleep(delay)
+    episodes = fetch_show_episodes(session, show_id)
 
     links = []
-    seen = set()
-    fallback_episode = 1
-
-    for a in soup.find_all("a", href=True):
-        url = absolute(a["href"], page_url)
-        if not url or not is_video_url(url):
+    added = today()
+    for ep in episodes:
+        ep_id = ep.get("id")
+        if ep_id is None:
             continue
-
-        container = a.find_parent(["tr", "li", "div", "p", "article", "section"])
-        context = clean(
-            " | ".join(
-                filter(
-                    None,
-                    [
-                        a.get_text(),
-                        a.get("title", ""),
-                        a.get("aria-label", ""),
-                        container.get_text(" ") if container else "",
-                        filename_of(url),
-                    ],
-                )
-            )
-        )
-
-        episode_info = parse_episode(context) or parse_episode(url)
-        if not episode_info:
-            episode_info = (page_season_hint or 1, fallback_episode)
-        season, episode = episode_info
-
-        dedupe_key = (season, episode, url)
-        if dedupe_key in seen:
-            continue
-        seen.add(dedupe_key)
-
+        season = int(ep.get("season_number") or 1)
+        episode = int(ep.get("episode_number") or 1)
         links.append(
             {
-                "added": today(),
-                "language": extract_language(f"{language} {context} {url}"),
+                "added": added,
+                "language": language,
                 "season": season,
                 "episode": episode,
-                "episode_title": extract_episode_title(context, title, season, episode),
-                "url": url,
+                "episode_title": build_episode_title(title, ep),
+                "url": build_stream_url(int(ep_id)),
             }
         )
-        fallback_episode = max(fallback_episode + 1, episode + 1)
 
+    # If no episodes found via API, still create the entry with a watch link
     if not links:
-        return None
+        links.append(
+            {
+                "added": added,
+                "language": language,
+                "season": 1,
+                "episode": 1,
+                "episode_title": f"{title} S01E01",
+                "url": build_stream_url(show_id),
+            }
+        )
 
     links.sort(key=lambda x: (x["season"], x["episode"], x["url"]))
 
@@ -413,79 +365,10 @@ def build_series_payload(soup: BeautifulSoup, page_url: str, seed: dict | None =
         "year": year,
         "tvg_logo": posters[0] if posters else "",
         "posters": posters,
-        "source_url": page_url,
+        "source_url": build_watch_url(show_id),
         "links": links,
+        "series_id": show_id,
     }
-
-
-def find_card_root(anchor):
-    node = anchor
-    for _ in range(4):
-        parent = node.find_parent(list(CARD_CONTAINER_TAGS) + ["figure"])
-        if parent is None:
-            break
-        node = parent
-        classes = " ".join(node.get("class", []) or [])
-        if CARD_CONTAINER_CLASS_RX.search(classes) or node.name in ("article", "li", "figure"):
-            return node
-    return anchor
-
-
-def page_looks_like_series_category(soup: BeautifulSoup, page_url: str) -> bool:
-    body_text = clean(soup.body.get_text(" ") if soup.body else "")[:1200]
-    scope = " ".join([page_url, soup.title.get_text() if soup.title else "", body_text])
-    return bool(CATEGORY_SERIES_RX.search(scope))
-
-
-def collect_series_cards(soup: BeautifulSoup, page_url: str) -> list[dict]:
-    results = []
-    seen = set()
-    category_like = page_looks_like_series_category(soup, page_url)
-
-    for a in soup.find_all("a", href=True):
-        detail_url = absolute(a["href"], page_url)
-        if not detail_url or detail_url in seen:
-            continue
-        seen.add(detail_url)
-
-        parsed = urlparse(detail_url)
-        if CF_DOMAIN not in parsed.hostname.lower() if parsed.hostname else True:
-            continue
-        if DETAIL_SKIP_RX.search(parsed.path):
-            continue
-        if detail_url.endswith("#"):
-            continue
-
-        card_root = find_card_root(a)
-        image = card_root.find("img") or a.find("img")
-        if not image:
-            continue
-
-        heading = card_root.select_one("h1,h2,h3,h4,.title,.entry-title,.post-title,figcaption")
-        title = normalize_series_title(
-            (heading.get_text() if heading else "")
-            or image.get("alt", "")
-            or a.get("title", "")
-            or a.get_text()
-        )
-
-        page_context = clean(" ".join([title, detail_url, card_root.get_text(" "), parsed.path]))
-        if not title or not (SERIES_HINT_RX.search(page_context) or category_like):
-            continue
-
-        posters = collect_poster_candidates(card_root, page_url)
-        results.append(
-            {
-                "title": title,
-                "year": extract_year(page_context),
-                "language": extract_language(page_context),
-                "poster": posters[0] if posters else "",
-                "posters": posters,
-                "detail_url": detail_url,
-            }
-        )
-
-    return results
 
 
 # --------------------------------------------------------------------------- #
@@ -507,77 +390,54 @@ class ScanStats:
                 setattr(self, key, getattr(self, key) + value)
 
 
-def category_page_url(base_url: str, page: int) -> str:
-    if page <= 1:
-        return base_url
-    return urljoin(base_url, f"page/{page}/")
-
-
-def crawl_category(name: str, base_url: str, max_pages: int, session: requests.Session, delay: float) -> dict[str, dict]:
-    """Returns detail_url -> card dict (deduplicated) for the whole category."""
-    cards: dict[str, dict] = {}
-    consecutive_empty = 0
-
-    for page in range(1, max_pages + 1):
-        url = category_page_url(base_url, page)
-        soup = fetch_soup(session, url)
-        time.sleep(delay)
-        if soup is None:
-            consecutive_empty += 1
-            log.info("[%s] page %d/%d -> not reachable (skipping)", name, page, max_pages)
-            if consecutive_empty >= 3:
-                log.info("[%s] stopping early after 3 unreachable pages", name)
-                break
-            continue
-
-        page_cards = collect_series_cards(soup, url)
-        consecutive_empty = 0
-        new_on_page = 0
-        for card in page_cards:
-            if card["detail_url"] not in cards:
-                cards[card["detail_url"]] = card
-                new_on_page += 1
-        log.info("[%s] page %d/%d -> %d cards (%d new)", name, page, max_pages, len(page_cards), new_on_page)
-
-        if page_cards and new_on_page == 0 and page > 1:
-            # WordPress pagination often repeats the last page once max is exceeded
-            log.info("[%s] page %d repeats previous results -> assuming end of category", name, page)
-            break
-
-    return cards
-
-
-def fetch_series_detail(session: requests.Session, card: dict, delay: float) -> dict | None:
-    soup = fetch_soup(session, card["detail_url"])
-    time.sleep(delay)
-    if soup is None:
-        return None
-    return build_series_payload(soup, card["detail_url"], {**card, "force": True})
-
-
 def scrape_category(
     name: str,
-    base_url: str,
-    max_pages: int,
+    config: dict,
     session: requests.Session,
     workers: int,
     delay: float,
     stats: ScanStats,
 ) -> list[dict]:
-    log.info("=== Scanning category %s (%s) ===", name, base_url)
-    cards = crawl_category(name, base_url, max_pages, session, delay)
-    stats.bump(cards_found=len(cards))
-    log.info("[%s] %d unique series cards discovered, fetching details...", name, len(cards))
+    log.info("=== Scanning category %s ===", name)
+    library_ids = config["library_ids"]
+    label = config["label"]
+    title_filter = config.get("title_filter")
 
-    payloads = []
+    all_raw_items: dict[int, dict] = {}  # keyed by item id for dedup
+
+    for lib_id in library_ids:
+        log.info("[%s] fetching library %d ...", name, lib_id)
+        items = fetch_all_series_for_library(session, lib_id, workers, MAX_PAGES_OVERRIDE)
+        for item in items:
+            item_id = item.get("id")
+            if item_id is None:
+                continue
+            title = str(item.get("title", "")).strip()
+            if not title:
+                continue
+            # Apply title filter if configured (e.g. for Dubbed category)
+            if title_filter and not title_filter.search(title):
+                continue
+            all_raw_items[item_id] = item
+
+    log.info("[%s] %d unique series after filtering", name, len(all_raw_items))
+    stats.bump(cards_found=len(all_raw_items))
+
+    payloads: list[dict] = []
+    items_list = list(all_raw_items.values())
+
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(fetch_series_detail, session, card, delay): card for card in cards.values()}
+        futures = {
+            pool.submit(build_series_payload, session, item, label, delay): item
+            for item in items_list
+        }
         for future in as_completed(futures):
-            card = futures[future]
+            item = futures[future]
+            title = str(item.get("title", ""))
             try:
                 payload = future.result()
-            except Exception as exc:  # noqa: BLE001
-                log.warning("[%s] failed detail fetch %s: %s", name, card["detail_url"], exc)
+            except Exception as exc:
+                log.warning("[%s] failed to build payload for '%s': %s", name, title, exc)
                 continue
             if payload:
                 payloads.append(payload)
@@ -608,12 +468,12 @@ def merge_payloads(existing: dict, payloads: list[dict], stats: ScanStats) -> di
     key_by_norm: dict[str, str] = {}
 
     for title, data in existing.get("series", {}).items():
-        norm = normalize_key(title)
+        norm = clean(title).lower()
         buckets[norm] = data
         key_by_norm[norm] = title
 
     for payload in payloads:
-        norm = normalize_key(payload["title"])
+        norm = clean(payload["title"]).lower()
         bucket = buckets.get(norm)
         is_new_series = bucket is None
         if is_new_series:
@@ -681,16 +541,15 @@ def atomic_write_json(path: str, data: dict) -> None:
 # --------------------------------------------------------------------------- #
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="CircleFTP TV series scraper")
+    parser = argparse.ArgumentParser(description="CircleFTP/FMFTP TV series scraper")
     parser.add_argument(
         "--category",
         choices=list(CATEGORIES.keys()),
         action="append",
         help="Limit scan to one or more categories (default: all)",
     )
-    parser.add_argument("--max-pages", type=int, help="Override max pages for every selected category")
-    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="Concurrent detail-page fetchers")
-    parser.add_argument("--delay", type=float, default=DEFAULT_DELAY, help="Delay (s) between requests")
+    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="Concurrent API fetchers")
+    parser.add_argument("--delay", type=float, default=DEFAULT_DELAY, help="Delay (s) between API calls")
     parser.add_argument("--output-dir", default=OUTPUT_DIR, help="Where to write series/CF/*.json")
     parser.add_argument("--verbose", action="store_true")
     return parser.parse_args()
@@ -709,12 +568,11 @@ def main() -> int:
     changed_files = []
 
     for name in selected:
-        conf = CATEGORIES[name]
-        max_pages = args.max_pages or conf["max_pages"]
+        config = CATEGORIES[name]
         stats = ScanStats()
 
         payloads = scrape_category(
-            name, conf["base_url"], max_pages, session, args.workers, args.delay, stats
+            name, config, session, args.workers, args.delay, stats
         )
 
         out_path = os.path.join(args.output_dir, f"{name}.json")
@@ -723,9 +581,9 @@ def main() -> int:
 
         output = {
             "category": name,
-            "base_url": conf["base_url"],
-            "pages_scanned": max_pages,
-            "last_scan": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "source": "fmftp.net API",
+            "library_ids": config["library_ids"],
+            "last_scan": utc_now_iso(),
             "series_count": len(merged_series),
             "episode_count": sum(len(s["links"]) for s in merged_series.values()),
             "series": merged_series,
@@ -740,12 +598,13 @@ def main() -> int:
                 output["series_count"], output["episode_count"],
             )
         else:
-            # still refresh metadata (last_scan) even with no content changes, but
-            # only touch the file if it didn't already exist to avoid noisy diffs
-            if not os.path.exists(out_path):
-                atomic_write_json(out_path, output)
-                changed_files.append(out_path)
-            log.info("[%s] no new series/episodes found", name)
+            # Always write to keep metadata fresh (last_scan, counts)
+            atomic_write_json(out_path, output)
+            changed_files.append(out_path)
+            log.info(
+                "[%s] REFRESHED %s (total %d series / %d episodes)",
+                name, out_path, output["series_count"], output["episode_count"],
+            )
 
         overall_stats.bump(
             new_series=stats.new_series,
@@ -759,8 +618,7 @@ def main() -> int:
         overall_stats.new_series, overall_stats.new_episodes, len(selected), len(changed_files),
     )
 
-    # Emit a small machine-readable summary for the GitHub Actions step that
-    # writes the commit message.
+    # Emit a small machine-readable summary for the GitHub Actions step
     summary_path = os.environ.get("CF_SUMMARY_PATH", "")
     if summary_path:
         with open(summary_path, "w", encoding="utf-8") as fh:
