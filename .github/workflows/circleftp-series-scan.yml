@@ -1,11 +1,11 @@
 name: CircleFTP Series Scan
 
-# Runs every 2 days and on-demand. Note: cron has no native "every N days"
-# field, so day-of-month */2 (1,3,5,7,...) is used as the closest practical
-# equivalent. Use "workflow_dispatch" any time for an immediate manual run.
+# Runs every 2 days and on-demand.
+# Uses the fmftp.net public API (accessible from GitHub Actions)
+# instead of the BDIX-only circleftp.net HTML scraping.
 on:
   schedule:
-    - cron: "30 21 */2 * *"   # 21:30 UTC -> 03:30 BDT (Bangladesh time), every 2 days
+    - cron: "30 21 */2 * *"   # 21:30 UTC -> 03:30 BDT, every 2 days
   workflow_dispatch: {}
 
 permissions:
@@ -37,7 +37,7 @@ jobs:
       - name: Run CircleFTP series scraper
         env:
           CF_SUMMARY_PATH: ${{ github.workspace }}/scan-summary.json
-        run: python circleftp_series_scraper.py --workers 4 --delay 0.6 --verbose
+        run: python circleftp_series_scraper.py --workers 5 --delay 0.08 --verbose
 
       - name: Build commit message from scan summary
         id: summary
