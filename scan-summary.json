@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T11:28:24+00:00",
+  "generated_at": "2026-06-24T14:54:36+00:00",
   "validate_links": "advanced",
   "drop_invalid_links": true,
   "categories": 5,
@@ -9,11 +9,11 @@
   "links_valid": 21499,
   "links_invalid": 3,
   "changed_files": [
-    "./English_Tv_Series.json",
-    "./Hindi_Tv_Series.json",
-    "./Dubbed_Tv_Series.json",
-    "./Bangla_series.json",
-    "./korian_series.json"
+    "common/log/SE/English_Tv_Series.json",
+    "common/log/SE/Hindi_Tv_Series.json",
+    "common/log/SE/Dubbed_Tv_Series.json",
+    "common/log/SE/Bangla_series.json",
+    "common/log/SE/korian_series.json"
   ],
   "invalid_samples": [
     {
