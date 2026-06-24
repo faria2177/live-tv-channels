@@ -69,6 +69,7 @@ REQUEST_TIMEOUT = 30
 PAGE_SIZE = 100
 DEFAULT_WORKERS = 6
 DEFAULT_DELAY = 0.05
+DEFAULT_OUTPUT_DIR = os.path.join("common", "log", "SE")
 MAX_PAGES = 0  # 0 = all pages
 
 VALID_MEDIA_CONTENT_TYPES = (
@@ -97,31 +98,31 @@ CATEGORIES = {
     "English_Tv_Series": {
         "library_ids": [9],
         "language": "English",
-        "output_file": "common/log/SE/English_Tv_Series.json",
+        "output_file": "English_Tv_Series.json",
         "title_filter": None,
     },
     "Hindi_Tv_Series": {
         "library_ids": [10],
         "language": "Hindi",
-        "output_file": "common/log/SE/Hindi_Tv_Series.json",
+        "output_file": "Hindi_Tv_Series.json",
         "title_filter": None,
     },
     "Dubbed_Tv_Series": {
         "library_ids": [9, 10],
         "language": "Multi Audio",
-        "output_file": "common/log/SE/Dubbed_Tv_Series.json",
+        "output_file": "Dubbed_Tv_Series.json",
         "title_filter": DUBBED_REGEX,
     },
     "Bangla_series": {
         "library_ids": [12],
         "language": "Bangla",
-        "output_file": "common/log/SE/Bangla_series.json",
+        "output_file": "Bangla_series.json",
         "title_filter": None,
     },
     "korian_series": {
         "library_ids": [11],
         "language": "Korean",
-        "output_file": "common/log/SE/korian_series.json",
+        "output_file": "korian_series.json",
         "title_filter": None,
     },
 }
@@ -647,7 +648,11 @@ def atomic_write_json(path: str, data: dict) -> None:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="FMFTP TV series scraper")
     parser.add_argument("--category", choices=list(CATEGORIES.keys()), action="append", help="Run only selected categories")
-    parser.add_argument("--output-dir", default=".", help="Directory for output JSON files")
+    parser.add_argument(
+        "--output-dir",
+        default=DEFAULT_OUTPUT_DIR,
+        help="Directory for output JSON files",
+    )
     parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="Concurrent show workers")
     parser.add_argument("--delay", type=float, default=DEFAULT_DELAY, help="Delay between detail scans")
     parser.add_argument(
