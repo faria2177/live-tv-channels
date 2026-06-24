@@ -61,7 +61,9 @@ API_BASE = "https://fmftp.net/api"
 LIST_API = f"{API_BASE}/tv-shows"
 DETAIL_API = f"{API_BASE}/tv-shows/{{show_id}}"
 STREAM_API = f"{API_BASE}/stream/video/stream?type=tv_shows&id={{episode_id}}"
-IMAGE_BASE = "https://fmftp.net/content-images/movies/posters"
+TV_POSTER_BASE = "https://fmftp.net/content-images/tv-shows/posters"
+TV_BACKDROP_BASE = "https://fmftp.net/content-images/tv-shows/backdrops"
+TV_LOGO_BASE = "https://fmftp.net/content-images/tv-shows/logos"
 
 REQUEST_TIMEOUT = 30
 PAGE_SIZE = 100
@@ -183,13 +185,20 @@ def parse_date(value: str | None) -> str:
     return text[:10]
 
 
-def build_image_url(path: str | None) -> str:
+def build_image_url(path: str | None, kind: str = "poster") -> str:
     path = clean(path or "")
     if not path:
         return ""
     if path.startswith("http://") or path.startswith("https://"):
         return path
-    return f"{IMAGE_BASE}{'' if path.startswith('/') else '/'}{path}"
+
+    base_map = {
+        "poster": TV_POSTER_BASE,
+        "backdrop": TV_BACKDROP_BASE,
+        "logo": TV_LOGO_BASE,
+    }
+    base = base_map.get(kind, TV_POSTER_BASE)
+    return f"{base}{'' if path.startswith('/') else '/'}{path}"
 
 
 def build_stream_api_url(episode_id: int) -> str:
@@ -241,7 +250,7 @@ def fetch_series_page(session: requests.Session, library_id: int, page: int) -> 
             "limit": PAGE_SIZE,
             "page": page,
             "sort": "release_date",
-            "fields": "id,title,original_title,year,release_date,poster_path,backdrop_path,path,url,languages,genre,updatedAt,createdAt",
+            "fields": "id,title,original_title,year,release_date,logo_path,poster_path,backdrop_path,path,url,languages,genre,updatedAt,createdAt",
         },
     )
     return data or {"data": [], "pages": 0, "total": 0}
@@ -538,7 +547,11 @@ def build_series_entry(
 
     time.sleep(delay)
     episodes = fetch_show_episodes(session, int(show_id))
-    poster = build_image_url(item.get("poster_path") or item.get("backdrop_path"))
+    poster = (
+        build_image_url(item.get("poster_path"), "poster")
+        or build_image_url(item.get("logo_path"), "logo")
+        or build_image_url(item.get("backdrop_path"), "backdrop")
+    )
     year = str(item.get("year") or "")
 
     links: list[dict] = []
