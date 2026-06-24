@@ -1,12 +1,33 @@
-name: CircleFTP Series Scan
+name: CircleFTP / FMFTP Series Scan
 
-# Runs every 2 days and on-demand.
-# Uses the fmftp.net public API (accessible from GitHub Actions)
-# instead of the BDIX-only circleftp.net HTML scraping.
 on:
   schedule:
-    - cron: "30 21 */2 * *"   # 21:30 UTC -> 03:30 BDT, every 2 days
-  workflow_dispatch: {}
+    - cron: "30 21 */2 * *"
+  workflow_dispatch:
+    inputs:
+      validate_links:
+        description: "Link validation mode"
+        required: false
+        default: "advanced"
+        type: choice
+        options:
+          - advanced
+          - off
+      drop_invalid_links:
+        description: "Remove invalid links from output"
+        required: false
+        default: true
+        type: boolean
+      workers:
+        description: "Concurrent workers"
+        required: false
+        default: "6"
+        type: string
+      delay:
+        description: "Delay between detail scans"
+        required: false
+        default: "0.05"
+        type: string
 
 permissions:
   contents: write
@@ -18,12 +39,10 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 180
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,37 +53,52 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run CircleFTP series scraper
+      - name: Resolve workflow settings
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "CF_VALIDATE_LINKS=${{ inputs.validate_links }}" >> "$GITHUB_ENV"
+            echo "CF_DROP_INVALID_LINKS=${{ inputs.drop_invalid_links && '1' || '0' }}" >> "$GITHUB_ENV"
+            echo "SCAN_WORKERS=${{ inputs.workers }}" >> "$GITHUB_ENV"
+            echo "SCAN_DELAY=${{ inputs.delay }}" >> "$GITHUB_ENV"
+          else
+            echo "CF_VALIDATE_LINKS=advanced" >> "$GITHUB_ENV"
+            echo "CF_DROP_INVALID_LINKS=1" >> "$GITHUB_ENV"
+            echo "SCAN_WORKERS=6" >> "$GITHUB_ENV"
+            echo "SCAN_DELAY=0.05" >> "$GITHUB_ENV"
+          fi
+
+      - name: Run scraper
         env:
           CF_SUMMARY_PATH: ${{ github.workspace }}/scan-summary.json
-        run: python circleftp_series_scraper.py --workers 5 --delay 0.08 --verbose
+        run: |
+          python circleftp_series_scraper.py \
+            --output-dir . \
+            --workers "$SCAN_WORKERS" \
+            --delay "$SCAN_DELAY" \
+            --verbose
 
-      - name: Build commit message from scan summary
-        id: summary
+      - name: Show summary
+        if: always()
         run: |
           if [ -f scan-summary.json ]; then
-            NEW_SERIES=$(python3 -c "import json;print(json.load(open('scan-summary.json'))['new_series'])")
-            NEW_EPISODES=$(python3 -c "import json;print(json.load(open('scan-summary.json'))['new_episodes'])")
-          else
-            NEW_SERIES=0
-            NEW_EPISODES=0
+            cat scan-summary.json
           fi
-          echo "new_series=$NEW_SERIES" >> "$GITHUB_OUTPUT"
-          echo "new_episodes=$NEW_EPISODES" >> "$GITHUB_OUTPUT"
 
-      - name: Commit and push if there are changes
+      - name: Commit updated JSON files
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add series/CF/*.json
+          git add English_Tv_Series.json Hindi_Tv_Series.json Dubbed_Tv_Series.json Bangla_series.json korian_series.json scan-summary.json || true
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore(CF): +${{ steps.summary.outputs.new_series }} series, +${{ steps.summary.outputs.new_episodes }} episodes [skip ci]"
+            git commit -m "chore(series): refresh FMFTP outputs [skip ci]"
             git push
           fi
 
-      - name: Upload scan summary (debug artifact)
+      - name: Upload summary artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
