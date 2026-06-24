@@ -1,38 +1,40 @@
 #!/usr/bin/env python3
 """
-circleftp_series_scraper.py
-============================
-TV-series scraper for the CircleFTP / FMFTP platform.
+FMFTP TV series scraper.
 
-Originally this script scraped HTML pages on circleftp.net (a BDIX FTP
-server).  However circleftp.net resolves to BDIX-internal IPs
-(15.x.x.x) that are ONLY reachable from inside Bangladesh ISP networks.
-GitHub Actions runners are in the US and can never connect, so the
-scraper always found zero results.
+Builds output JSON files in the same top-level shape as the provided
+series.json sample:
 
-This rewrite uses the public fmftp.net REST API instead — the same API
-already used successfully by fetch_data.py — while keeping the exact same
-output JSON format in series/CF/*.json.
+{
+  "Series Title": {
+    "year": "2026",
+    "tvg_logo": "https://...jpg",
+    "links": [
+      {
+        "added": "2026-06-24",
+        "language": "English",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Series Title S01E01",
+        "url": "https://fmftp.net/data/...mp4"
+      }
+    ]
+  }
+}
 
-Categories mapped:
-    English_Tv_Series  -> fmftp.net library id=9  (English tv series)
-    Hindi_Tv_Series    -> fmftp.net library id=10 (Indian Tv Series)
-    Dubbed_Tv_Series   -> fmftp.net library id=10 filtered for "dubbed"
-                          + library id=9 filtered for "hindi/dual"
-                          (falls back to all Indian TV if no dubbed found)
+Supported outputs:
+- English_Tv_Series.json
+- Hindi_Tv_Series.json
+- Dubbed_Tv_Series.json
+- Bangla_series.json
+- korian_series.json
 
-For every series it fetches episode details via:
-    GET /api/tv-shows/{show_id}?fields=episodes
-
-And builds link entries with the same schema as before:
-    {added, language, season, episode, episode_title, url}
-
-Results are merged (not overwritten) into:
-    series/CF/English_Tv_Series.json
-    series/CF/Dubbed_Tv_Series.json
-    series/CF/Hindi_Tv_Series.json
-
-Author: generated for faria2177/live-tv-channels
+Notes:
+- Korean data source: https://fmftp.net/tv-shows?category=11
+- Bangla data source:  https://fmftp.net/tv-shows?category=12
+- Data is collected from the public FMFTP API.
+- "Dubbed" detection is heuristic because the public API does not expose
+  a dedicated dubbed category.
 """
 
 from __future__ import annotations
@@ -49,67 +51,118 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from threading import Lock
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import urljoin, urlparse
 
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-# --------------------------------------------------------------------------- #
-# Configuration
-# --------------------------------------------------------------------------- #
+API_BASE = "https://fmftp.net/api"
+LIST_API = f"{API_BASE}/tv-shows"
+DETAIL_API = f"{API_BASE}/tv-shows/{{show_id}}"
+STREAM_API = f"{API_BASE}/stream/video/stream?type=tv_shows&id={{episode_id}}"
+IMAGE_BASE = "https://fmftp.net/content-images/movies/posters"
 
-FMFTP_API_BASE = "https://fmftp.net/api"
-TV_SHOWS_LIST_API = FMFTP_API_BASE + "/tv-shows"
-TV_SHOW_DETAIL_API = FMFTP_API_BASE + "/tv-shows/{show_id}"
-EPISODE_STREAM_API = FMFTP_API_BASE + "/stream/video/stream?type=tv_shows&id={episode_id}"
-CONTENT_IMAGE_BASE = "https://fmftp.net/content-images/movies/posters"
+REQUEST_TIMEOUT = 30
+PAGE_SIZE = 100
+DEFAULT_WORKERS = 6
+DEFAULT_DELAY = 0.05
+MAX_PAGES = 0  # 0 = all pages
 
-SERIES_FIELDS = (
-    "id,title,genre,year,online_rating,release_date,"
-    "poster_path,backdrop_path"
+VALID_MEDIA_CONTENT_TYPES = (
+    "video/",
+    "audio/",
+    "application/octet-stream",
+    "application/x-matroska",
 )
+VALID_MEDIA_EXTENSIONS = (
+    ".mp4",
+    ".mkv",
+    ".avi",
+    ".webm",
+    ".m4v",
+    ".ts",
+    ".mov",
+)
+GENERIC_EPISODE_NAMES = {"", "episode"}
+DUBBED_REGEX = re.compile(
+    r"dubbed|dual|multi(?:\s|[-_])?audio|hindi|bangla|bengali|tamil|telugu|malayalam|korean",
+    re.IGNORECASE,
+)
+SXXEXX_REGEX = re.compile(r"s(\d{1,2})e(\d{1,3})", re.IGNORECASE)
 
-# Category definitions — each maps to one or more fmftp.net library IDs
-# plus an optional title-filter regex for sub-categorisation.
 CATEGORIES = {
     "English_Tv_Series": {
         "library_ids": [9],
-        "label": "English TV Series",
-        "title_filter": None,          # no filtering — take everything
+        "language": "English",
+        "output_file": "English_Tv_Series.json",
+        "title_filter": None,
     },
     "Hindi_Tv_Series": {
         "library_ids": [10],
-        "label": "Indian TV Series",
-        "title_filter": None,          # all Indian TV series
+        "language": "Hindi",
+        "output_file": "Hindi_Tv_Series.json",
+        "title_filter": None,
     },
     "Dubbed_Tv_Series": {
-        "library_ids": [10, 9],        # search both Indian and English
-        "label": "Dubbed TV Series",
-        # keep only titles that mention dubbed / dual / hindi
-        "title_filter": re.compile(
-            r"dubbed|dual|hindi|bangla|bengali|tamil|telugu",
-            re.IGNORECASE,
-        ),
+        "library_ids": [9, 10],
+        "language": "Multi Audio",
+        "output_file": "Dubbed_Tv_Series.json",
+        "title_filter": DUBBED_REGEX,
+    },
+    "Bangla_series": {
+        "library_ids": [12],
+        "language": "Bangla",
+        "output_file": "Bangla_series.json",
+        "title_filter": None,
+    },
+    "korian_series": {
+        "library_ids": [11],
+        "language": "Korean",
+        "output_file": "korian_series.json",
+        "title_filter": None,
     },
 }
 
-OUTPUT_DIR = os.environ.get("CF_OUTPUT_DIR", "series/CF")
-MAX_POSTERS_PER_SERIES = 8
-REQUEST_TIMEOUT = 30
-DEFAULT_WORKERS = 5
-DEFAULT_DELAY = 0.08            # polite delay between detail API calls
-PAGE_SIZE = 100                 # items per API page
-MAX_PAGES_OVERRIDE = 0          # 0 = fetch all pages
-
-DUBBED_RX = re.compile(r"dubbed|dual|hindi|bangla|bengali|tamil|telugu", re.IGNORECASE)
-
-log = logging.getLogger("cf_series_scraper")
+log = logging.getLogger("fmftp_series_scraper")
 
 
-# --------------------------------------------------------------------------- #
-# Small helpers
-# --------------------------------------------------------------------------- #
+@dataclass
+class ValidationResult:
+    ok: bool
+    final_url: str = ""
+    status_code: int = 0
+    content_type: str = ""
+    content_length: str = ""
+    note: str = ""
+
+
+@dataclass
+class ScanStats:
+    categories: int = 0
+    series_seen: int = 0
+    series_written: int = 0
+    links_seen: int = 0
+    links_valid: int = 0
+    links_invalid: int = 0
+    invalid_samples: list[dict] = field(default_factory=list)
+    changed_files: list[str] = field(default_factory=list)
+    lock: Lock = field(default_factory=Lock)
+
+    def bump(self, **kwargs) -> None:
+        with self.lock:
+            for key, value in kwargs.items():
+                setattr(self, key, getattr(self, key) + value)
+
+    def add_invalid_sample(self, sample: dict, max_items: int = 200) -> None:
+        with self.lock:
+            if len(self.invalid_samples) < max_items:
+                self.invalid_samples.append(sample)
+
+    def add_changed_file(self, path: str) -> None:
+        with self.lock:
+            self.changed_files.append(path)
+
 
 def clean(value: str = "") -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
@@ -123,436 +176,553 @@ def utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
-def build_poster_url(path: str) -> str:
+def parse_date(value: str | None) -> str:
+    text = clean(value or "")
+    if not text:
+        return today()
+    return text[:10]
+
+
+def build_image_url(path: str | None) -> str:
+    path = clean(path or "")
     if not path:
         return ""
-    path = str(path).strip()
-    sep = "" if path.startswith("/") else "/"
-    return f"{CONTENT_IMAGE_BASE}{sep}{path}"
+    if path.startswith("http://") or path.startswith("https://"):
+        return path
+    return f"{IMAGE_BASE}{'' if path.startswith('/') else '/'}{path}"
 
 
-def build_watch_url(item_id, content_type="SERIES"):
-    return f"https://fmftp.net/watch?type={content_type}&id={item_id}"
+def build_stream_api_url(episode_id: int) -> str:
+    return STREAM_API.format(episode_id=episode_id)
 
-
-def build_stream_url(item_id, content_type="tv_shows"):
-    return f"{FMFTP_API_BASE}/stream/video/stream?type={content_type}&id={item_id}"
-
-
-def extract_show_id(item: dict) -> int | None:
-    """Extract numeric show ID from an API list item."""
-    item_id = item.get("id")
-    if item_id is not None:
-        try:
-            return int(item_id)
-        except (ValueError, TypeError):
-            pass
-    return None
-
-
-def normalize_language(value: str = "", fallback: str = "") -> str:
-    if value:
-        return value.strip()
-    text = (fallback or "").strip()
-    if not text:
-        return "English"
-    tl = text.lower().replace("tv series", "").replace("series", "").strip()
-    mapping = {
-        "bangla": "Bangla",
-        "bengali": "Bangla",
-        "english": "English",
-        "hindi": "Hindi",
-        "indian": "Hindi",
-        "korean": "Korean",
-        "turkish": "Turkish",
-        "tamil": "Tamil",
-        "telugu": "Telugu",
-    }
-    for k, v in mapping.items():
-        if k in tl:
-            return v
-    return text.title() if text else "English"
-
-
-# --------------------------------------------------------------------------- #
-# HTTP session
-# --------------------------------------------------------------------------- #
 
 def build_session() -> requests.Session:
     session = requests.Session()
     retry = Retry(
         total=4,
-        backoff_factor=1.5,
+        connect=4,
+        read=4,
+        backoff_factor=1.2,
         status_forcelist=[429, 500, 502, 503, 504],
-        allowed_methods=["GET"],
+        allowed_methods=["GET", "HEAD"],
         respect_retry_after_header=True,
     )
-    adapter = HTTPAdapter(max_retries=retry, pool_maxsize=20)
+    adapter = HTTPAdapter(max_retries=retry, pool_maxsize=40)
     session.mount("http://", adapter)
     session.mount("https://", adapter)
     session.headers.update(
         {
-            "User-Agent": "CircleFTP-Series-Bot/2.0 (+https://github.com/faria2177/live-tv-channels)",
+            "User-Agent": "FMFTP-Series-Scanner/3.0",
             "Accept": "application/json,text/plain,*/*",
-            "Accept-Language": "en-US,en;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
         }
     )
     return session
 
 
-def api_get(session: requests.Session, url: str, **kwargs) -> dict | None:
+def http_json(session: requests.Session, url: str, **kwargs) -> dict | None:
     try:
-        resp = session.get(url, timeout=REQUEST_TIMEOUT, **kwargs)
-        if resp.status_code == 404:
+        response = session.get(url, timeout=REQUEST_TIMEOUT, **kwargs)
+        if response.status_code == 404:
             return None
-        resp.raise_for_status()
-        return resp.json()
+        response.raise_for_status()
+        return response.json()
     except requests.RequestException as exc:
-        log.warning("API call failed %s: %s", url, exc)
+        log.warning("Request failed for %s: %s", url, exc)
         return None
 
 
-# --------------------------------------------------------------------------- #
-# Fetch series list from fmftp.net API
-# --------------------------------------------------------------------------- #
-
 def fetch_series_page(session: requests.Session, library_id: int, page: int) -> dict:
-    """Fetch one page of TV series from the API."""
-    url = TV_SHOWS_LIST_API
-    params = {
-        "limit": PAGE_SIZE,
-        "fields": SERIES_FIELDS,
-        "library": library_id,
-        "page": page,
-        "sort": "release_date",
-    }
-    return api_get(session, url, params=params) or {"data": [], "pages": 0, "total": 0}
+    data = http_json(
+        session,
+        LIST_API,
+        params={
+            "library": library_id,
+            "limit": PAGE_SIZE,
+            "page": page,
+            "sort": "release_date",
+            "fields": "id,title,original_title,year,release_date,poster_path,backdrop_path,path,url,languages,genre,updatedAt,createdAt",
+        },
+    )
+    return data or {"data": [], "pages": 0, "total": 0}
 
 
-def fetch_all_series_for_library(
-    session: requests.Session,
-    library_id: int,
-    workers: int,
-    max_pages: int = 0,
-) -> list[dict]:
-    """Fetch all pages for a library ID concurrently."""
+def fetch_all_series_for_library(session: requests.Session, library_id: int, workers: int) -> list[dict]:
     first = fetch_series_page(session, library_id, 1)
-    total_pages = int(first.get("pages", 1))
-    all_items = list(first.get("data", []))
-    log.info("  library=%d -> %d pages, %d total items", library_id, total_pages, first.get("total", 0))
+    total_pages = int(first.get("pages") or 1)
+    if MAX_PAGES > 0:
+        total_pages = min(total_pages, MAX_PAGES)
+    items = list(first.get("data") or [])
+    if total_pages <= 1:
+        return items
 
-    if max_pages > 0:
-        total_pages = min(total_pages, max_pages)
+    page_numbers = list(range(2, total_pages + 1))
+    with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
+        futures = {
+            executor.submit(fetch_series_page, session, library_id, page_num): page_num
+            for page_num in page_numbers
+        }
+        for future in as_completed(futures):
+            page_num = futures[future]
+            try:
+                payload = future.result()
+                items.extend(payload.get("data") or [])
+            except Exception as exc:  # pragma: no cover
+                log.warning("library %s page %s failed: %s", library_id, page_num, exc)
+    return items
 
-    if total_pages > 1:
-        pages = list(range(2, total_pages + 1))
-        with ThreadPoolExecutor(max_workers=workers) as pool:
-            futures = {
-                pool.submit(fetch_series_page, session, library_id, p): p
-                for p in pages
-            }
-            for future in as_completed(futures):
-                page_num = futures[future]
-                try:
-                    result = future.result()
-                    all_items.extend(result.get("data", []))
-                except Exception as exc:
-                    log.warning("  page %d failed: %s", page_num, exc)
-
-    return all_items
-
-
-# --------------------------------------------------------------------------- #
-# Fetch episode details for a single series
-# --------------------------------------------------------------------------- #
 
 def fetch_show_episodes(session: requests.Session, show_id: int) -> list[dict]:
-    """Fetch episode list for a single show via the detail API."""
-    url = TV_SHOW_DETAIL_API.format(show_id=show_id)
-    data = api_get(session, url, params={"fields": "episodes"})
+    data = http_json(session, DETAIL_API.format(show_id=show_id), params={"fields": "episodes"})
     if not data:
         return []
-    episodes = data.get("episodes") or []
-    # Sort by season, episode, id
+    episodes = list(data.get("episodes") or [])
     episodes.sort(
-        key=lambda e: (
-            int(e.get("season_number") or 0),
-            int(e.get("episode_number") or 0),
-            int(e.get("id") or 0),
+        key=lambda item: (
+            int(item.get("season_number") or 0),
+            int(item.get("episode_number") or 0),
+            int(item.get("id") or 0),
         )
     )
     return episodes
 
 
-def build_episode_title(series_title: str, ep: dict) -> str:
-    season = int(ep.get("season_number") or 1)
-    episode = int(ep.get("episode_number") or 1)
-    raw_name = clean(str(ep.get("name") or ep.get("title") or ""))
-    generic = {"", "episode", f"episode {episode}", f"ep {episode}"}
-    if raw_name.lower() in generic:
-        return f"{series_title} S{season:02d}E{episode:02d}"
-    return f"{series_title} S{season:02d}E{episode:02d} - {raw_name}"
+def should_keep_for_dubbed(item: dict) -> bool:
+    haystacks = [
+        item.get("title"),
+        item.get("original_title"),
+        item.get("path"),
+        item.get("url"),
+        item.get("languages"),
+        item.get("genre"),
+    ]
+    merged = " | ".join(clean(value) for value in haystacks if value)
+    return bool(DUBBED_REGEX.search(merged))
 
 
-def build_series_payload(
+def collect_category_items(name: str, config: dict, session: requests.Session, workers: int) -> list[dict]:
+    unique: dict[int, dict] = {}
+    for library_id in config["library_ids"]:
+        log.info("[%s] fetching library=%s", name, library_id)
+        for item in fetch_all_series_for_library(session, library_id, workers):
+            show_id = item.get("id")
+            if show_id is None:
+                continue
+            title = clean(item.get("title"))
+            if not title:
+                continue
+            if name == "Dubbed_Tv_Series" and not should_keep_for_dubbed(item):
+                continue
+            unique[int(show_id)] = item
+    items = list(unique.values())
+    items.sort(key=lambda entry: clean(entry.get("title", "")).lower())
+    return items
+
+
+def build_episode_title(series_title: str, episode: dict) -> str:
+    season = int(episode.get("season_number") or 1)
+    number = int(episode.get("episode_number") or 1)
+    raw_name = clean(episode.get("name") or episode.get("title") or "")
+    lowered = raw_name.lower()
+    if lowered in GENERIC_EPISODE_NAMES or lowered == f"episode {number}":
+        return f"{series_title} S{season}E{number}"
+    return f"{series_title} S{season}E{number} - {raw_name}"
+
+
+def make_absolute_url(location: str) -> str:
+    if not location:
+        return ""
+    if location.startswith("//"):
+        return f"https:{location}"
+    if location.startswith("http://") or location.startswith("https://"):
+        return location
+    return urljoin("https://fmftp.net", location)
+
+
+def is_valid_content_type(content_type: str) -> bool:
+    lowered = (content_type or "").lower()
+    return any(lowered.startswith(prefix) for prefix in VALID_MEDIA_CONTENT_TYPES)
+
+
+def resolve_direct_media_url(session: requests.Session, episode_id: int) -> ValidationResult:
+    api_url = build_stream_api_url(episode_id)
+    try:
+        response = session.get(api_url, timeout=REQUEST_TIMEOUT, allow_redirects=False, stream=True)
+        status = response.status_code
+        content_type = response.headers.get("Content-Type", "")
+        if status in {301, 302, 303, 307, 308}:
+            location = make_absolute_url(response.headers.get("Location", ""))
+            response.close()
+            if location:
+                return ValidationResult(ok=True, final_url=location, status_code=status, content_type=content_type)
+            return ValidationResult(ok=False, status_code=status, content_type=content_type, note="redirect-without-location")
+        if status in {200, 206} and is_valid_content_type(content_type):
+            final_url = response.url
+            response.close()
+            return ValidationResult(ok=True, final_url=final_url, status_code=status, content_type=content_type)
+        preview_note = f"unexpected-stream-status:{status}"
+        response.close()
+        return ValidationResult(ok=False, status_code=status, content_type=content_type, note=preview_note)
+    except requests.RequestException as exc:
+        return ValidationResult(ok=False, note=f"stream-resolve-error:{exc.__class__.__name__}")
+
+
+def validate_media_url_advanced(
     session: requests.Session,
-    item: dict,
-    category_label: str,
-    delay: float,
+    direct_url: str,
+    season: int,
+    episode: int,
+) -> ValidationResult:
+    if not direct_url:
+        return ValidationResult(ok=False, note="empty-direct-url")
+
+    last_error = ""
+    methods = ["HEAD", "GET"]
+    for method in methods:
+        try:
+            kwargs = {
+                "timeout": REQUEST_TIMEOUT,
+                "allow_redirects": True,
+                "stream": True,
+            }
+            headers = {}
+            if method == "GET":
+                headers["Range"] = "bytes=0-0"
+            response = session.request(method, direct_url, headers=headers, **kwargs)
+            status = response.status_code
+            content_type = response.headers.get("Content-Type", "")
+            content_length = response.headers.get("Content-Length") or response.headers.get("Content-Range", "")
+            final_url = response.url
+
+            if status not in {200, 206}:
+                last_error = f"probe-status:{status}"
+                response.close()
+                continue
+
+            path = urlparse(final_url).path.lower()
+            ext_ok = any(path.endswith(ext) for ext in VALID_MEDIA_EXTENSIONS)
+            ct_ok = is_valid_content_type(content_type)
+            if not (ct_ok or ext_ok):
+                last_error = f"bad-content-type:{content_type or 'unknown'}"
+                response.close()
+                continue
+
+            note = ""
+            basename = os.path.basename(path)
+            match = SXXEXX_REGEX.search(basename)
+            if match:
+                found_season = int(match.group(1))
+                found_episode = int(match.group(2))
+                if found_season != season or found_episode != episode:
+                    note = f"episode-mismatch:{found_season}x{found_episode}"
+
+            response.close()
+            return ValidationResult(
+                ok=True,
+                final_url=final_url,
+                status_code=status,
+                content_type=content_type,
+                content_length=content_length,
+                note=note,
+            )
+        except requests.RequestException as exc:
+            last_error = f"probe-error:{exc.__class__.__name__}"
+
+    return ValidationResult(ok=False, final_url=direct_url, note=last_error or "advanced-validation-failed")
+
+
+def build_episode_link(
+    session: requests.Session,
+    series_title: str,
+    category_language: str,
+    episode: dict,
+    validate_links: str,
+    drop_invalid_links: bool,
+    stats: ScanStats,
 ) -> dict | None:
-    """Build a full series payload with episode links."""
-    title = clean(str(item.get("title", "")))
-    if not title:
-        return None
+    season = int(episode.get("season_number") or 1)
+    number = int(episode.get("episode_number") or 1)
+    episode_id = episode.get("id")
+    added = parse_date(episode.get("updatedAt") or episode.get("createdAt") or episode.get("release_date"))
 
-    show_id = extract_show_id(item)
-    if show_id is None:
-        return None
+    stats.bump(links_seen=1)
 
-    year = str(item.get("year", "") or "")
-    poster = build_poster_url(str(item.get("poster_path", "")))
-    backdrop = build_poster_url(str(item.get("backdrop_path", "")))
-
-    posters = []
-    if poster:
-        posters.append(poster)
-    if backdrop and backdrop != poster:
-        posters.append(backdrop)
-    posters = posters[:MAX_POSTERS_PER_SERIES]
-
-    language = normalize_language("", category_label)
-
-    # Fetch episode details
-    time.sleep(delay)
-    episodes = fetch_show_episodes(session, show_id)
-
-    links = []
-    added = today()
-    for ep in episodes:
-        ep_id = ep.get("id")
-        if ep_id is None:
-            continue
-        season = int(ep.get("season_number") or 1)
-        episode = int(ep.get("episode_number") or 1)
-        links.append(
+    if episode_id is None:
+        stats.bump(links_invalid=1)
+        stats.add_invalid_sample(
             {
-                "added": added,
-                "language": language,
+                "series": series_title,
                 "season": season,
-                "episode": episode,
-                "episode_title": build_episode_title(title, ep),
-                "url": build_stream_url(int(ep_id)),
+                "episode": number,
+                "reason": "missing-episode-id",
             }
         )
+        return None if drop_invalid_links else {
+            "added": added,
+            "language": category_language,
+            "season": season,
+            "episode": number,
+            "episode_title": build_episode_title(series_title, episode),
+            "url": "",
+        }
 
-    # If no episodes found via API, still create the entry with a watch link
-    if not links:
-        links.append(
+    resolved = resolve_direct_media_url(session, int(episode_id))
+    if not resolved.ok or not resolved.final_url:
+        stats.bump(links_invalid=1)
+        stats.add_invalid_sample(
             {
-                "added": added,
-                "language": language,
-                "season": 1,
-                "episode": 1,
-                "episode_title": f"{title} S01E01",
-                "url": build_stream_url(show_id),
+                "series": series_title,
+                "season": season,
+                "episode": number,
+                "episode_id": episode_id,
+                "reason": resolved.note or "resolve-failed",
             }
         )
+        if drop_invalid_links:
+            return None
+        return {
+            "added": added,
+            "language": category_language,
+            "season": season,
+            "episode": number,
+            "episode_title": build_episode_title(series_title, episode),
+            "url": build_stream_api_url(int(episode_id)),
+        }
 
-    links.sort(key=lambda x: (x["season"], x["episode"], x["url"]))
+    final_url = resolved.final_url
+    if validate_links == "advanced":
+        verified = validate_media_url_advanced(session, final_url, season, number)
+        if verified.ok and verified.final_url:
+            final_url = verified.final_url
+            stats.bump(links_valid=1)
+        else:
+            stats.bump(links_invalid=1)
+            stats.add_invalid_sample(
+                {
+                    "series": series_title,
+                    "season": season,
+                    "episode": number,
+                    "episode_id": episode_id,
+                    "reason": verified.note or "advanced-validation-failed",
+                    "url": final_url,
+                }
+            )
+            if drop_invalid_links:
+                return None
+    else:
+        stats.bump(links_valid=1)
 
     return {
-        "title": title,
-        "year": year,
-        "tvg_logo": posters[0] if posters else "",
-        "posters": posters,
-        "source_url": build_watch_url(show_id),
-        "links": links,
-        "series_id": show_id,
+        "added": added,
+        "language": category_language,
+        "season": season,
+        "episode": number,
+        "episode_title": build_episode_title(series_title, episode),
+        "url": final_url,
     }
 
 
-# --------------------------------------------------------------------------- #
-# Crawl orchestration
-# --------------------------------------------------------------------------- #
-
-@dataclass
-class ScanStats:
-    pages_scanned: int = 0
-    cards_found: int = 0
-    new_series: int = 0
-    new_episodes: int = 0
-    updated_series: int = 0
-    lock: Lock = field(default_factory=Lock)
-
-    def bump(self, **kwargs):
-        with self.lock:
-            for key, value in kwargs.items():
-                setattr(self, key, getattr(self, key) + value)
-
-
-def scrape_category(
-    name: str,
-    config: dict,
+def build_series_entry(
     session: requests.Session,
-    workers: int,
+    item: dict,
+    category_language: str,
+    validate_links: str,
+    drop_invalid_links: bool,
     delay: float,
     stats: ScanStats,
-) -> list[dict]:
-    log.info("=== Scanning category %s ===", name)
-    library_ids = config["library_ids"]
-    label = config["label"]
-    title_filter = config.get("title_filter")
+) -> tuple[str, dict] | None:
+    show_id = item.get("id")
+    title = clean(item.get("title"))
+    if show_id is None or not title:
+        return None
 
-    all_raw_items: dict[int, dict] = {}  # keyed by item id for dedup
+    time.sleep(delay)
+    episodes = fetch_show_episodes(session, int(show_id))
+    poster = build_image_url(item.get("poster_path") or item.get("backdrop_path"))
+    year = str(item.get("year") or "")
 
-    for lib_id in library_ids:
-        log.info("[%s] fetching library %d ...", name, lib_id)
-        items = fetch_all_series_for_library(session, lib_id, workers, MAX_PAGES_OVERRIDE)
-        for item in items:
-            item_id = item.get("id")
-            if item_id is None:
-                continue
-            title = str(item.get("title", "")).strip()
-            if not title:
-                continue
-            # Apply title filter if configured (e.g. for Dubbed category)
-            if title_filter and not title_filter.search(title):
-                continue
-            all_raw_items[item_id] = item
+    links: list[dict] = []
+    for episode in episodes:
+        link = build_episode_link(
+            session=session,
+            series_title=title,
+            category_language=category_language,
+            episode=episode,
+            validate_links=validate_links,
+            drop_invalid_links=drop_invalid_links,
+            stats=stats,
+        )
+        if link and link.get("url"):
+            links.append(link)
 
-    log.info("[%s] %d unique series after filtering", name, len(all_raw_items))
-    stats.bump(cards_found=len(all_raw_items))
+    links.sort(key=lambda row: (int(row["season"]), int(row["episode"]), row["url"]))
 
-    payloads: list[dict] = []
-    items_list = list(all_raw_items.values())
-
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {
-            pool.submit(build_series_payload, session, item, label, delay): item
-            for item in items_list
-        }
-        for future in as_completed(futures):
-            item = futures[future]
-            title = str(item.get("title", ""))
-            try:
-                payload = future.result()
-            except Exception as exc:
-                log.warning("[%s] failed to build payload for '%s': %s", name, title, exc)
-                continue
-            if payload:
-                payloads.append(payload)
-
-    log.info("[%s] %d series payloads extracted", name, len(payloads))
-    return payloads
+    return (
+        title,
+        {
+            "year": year,
+            "tvg_logo": poster,
+            "links": links,
+        },
+    )
 
 
-# --------------------------------------------------------------------------- #
-# Merge + persist
-# --------------------------------------------------------------------------- #
-
-def load_existing(path: str) -> dict:
+def load_existing_output(path: str) -> dict:
     if not os.path.exists(path):
-        return {"series": {}}
+        return {}
     try:
-        with open(path, "r", encoding="utf-8") as fh:
-            data = json.load(fh)
-        data.setdefault("series", {})
-        return data
-    except (json.JSONDecodeError, OSError) as exc:
-        log.warning("could not read existing %s (%s) -> starting fresh", path, exc)
-        return {"series": {}}
+        with open(path, "r", encoding="utf-8") as handle:
+            data = json.load(handle)
+        return data if isinstance(data, dict) else {}
+    except Exception as exc:
+        log.warning("Could not read existing file %s: %s", path, exc)
+        return {}
 
 
-def merge_payloads(existing: dict, payloads: list[dict], stats: ScanStats) -> dict:
-    buckets: dict[str, dict] = {}
-    key_by_norm: dict[str, str] = {}
+def merge_outputs(existing: dict, fresh_entries: dict) -> dict:
+    merged: dict[str, dict] = {}
 
-    for title, data in existing.get("series", {}).items():
-        norm = clean(title).lower()
-        buckets[norm] = data
-        key_by_norm[norm] = title
-
-    for payload in payloads:
-        norm = clean(payload["title"]).lower()
-        bucket = buckets.get(norm)
-        is_new_series = bucket is None
-        if is_new_series:
-            bucket = {
-                "title": payload["title"],
+    for title, payload in existing.items():
+        if isinstance(payload, dict):
+            merged[title] = {
                 "year": str(payload.get("year") or ""),
-                "tvg_logo": "",
-                "posters": [],
-                "source_url": payload.get("source_url", ""),
-                "links": [],
-                "updated_at": today(),
+                "tvg_logo": payload.get("tvg_logo") or "",
+                "links": list(payload.get("links") or []),
             }
-            buckets[norm] = bucket
-            stats.bump(new_series=1)
 
-        if not bucket.get("year") and payload.get("year"):
+    for title, payload in fresh_entries.items():
+        bucket = merged.setdefault(
+            title,
+            {
+                "year": str(payload.get("year") or ""),
+                "tvg_logo": payload.get("tvg_logo") or "",
+                "links": [],
+            },
+        )
+        if payload.get("year"):
             bucket["year"] = str(payload["year"])
-        if payload.get("source_url"):
-            bucket["source_url"] = payload["source_url"]
+        if payload.get("tvg_logo"):
+            bucket["tvg_logo"] = payload["tvg_logo"]
 
-        for poster in [payload.get("tvg_logo")] + list(payload.get("posters") or []):
-            if poster and poster not in bucket["posters"]:
-                bucket["posters"].append(poster)
-        bucket["posters"] = bucket["posters"][:MAX_POSTERS_PER_SERIES]
-        if not bucket.get("tvg_logo") and bucket["posters"]:
-            bucket["tvg_logo"] = bucket["posters"][0]
-
-        existing_keys = {(l["season"], l["episode"], l["url"]) for l in bucket["links"]}
-        added_here = 0
+        dedupe = {(int(link.get("season") or 0), int(link.get("episode") or 0), link.get("url") or "") for link in bucket["links"]}
         for link in payload.get("links", []):
-            dedupe_key = (link["season"], link["episode"], link["url"])
-            if dedupe_key in existing_keys:
+            key = (int(link.get("season") or 0), int(link.get("episode") or 0), link.get("url") or "")
+            if key in dedupe:
                 continue
-            existing_keys.add(dedupe_key)
+            dedupe.add(key)
             bucket["links"].append(link)
-            added_here += 1
 
-        if added_here:
-            bucket["links"].sort(key=lambda x: (x["season"], x["episode"], x["url"]))
-            bucket["updated_at"] = today()
-            stats.bump(new_episodes=added_here)
-            if not is_new_series:
-                stats.bump(updated_series=1)
+        bucket["links"].sort(key=lambda row: (int(row["season"]), int(row["episode"]), row["url"]))
 
-    series_out = {bucket["title"]: bucket for bucket in buckets.values()}
-    return dict(sorted(series_out.items(), key=lambda kv: kv[0].lower()))
+    return dict(sorted(merged.items(), key=lambda item: clean(item[0]).lower()))
 
 
 def atomic_write_json(path: str, data: dict) -> None:
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    fd, tmp_path = tempfile.mkstemp(prefix=".tmp_", dir=os.path.dirname(path) or ".")
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    fd, temp_path = tempfile.mkstemp(prefix=".tmp_", dir=os.path.dirname(path) or ".")
     try:
-        with os.fdopen(fd, "w", encoding="utf-8") as fh:
-            json.dump(data, fh, ensure_ascii=False, indent=2)
-            fh.write("\n")
-        os.replace(tmp_path, path)
+        with os.fdopen(fd, "w", encoding="utf-8") as handle:
+            json.dump(data, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
+        os.replace(temp_path, path)
     except Exception:
-        if os.path.exists(tmp_path):
-            os.remove(tmp_path)
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
         raise
 
 
-# --------------------------------------------------------------------------- #
-# CLI entry point
-# --------------------------------------------------------------------------- #
-
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="CircleFTP/FMFTP TV series scraper")
+    parser = argparse.ArgumentParser(description="FMFTP TV series scraper")
+    parser.add_argument("--category", choices=list(CATEGORIES.keys()), action="append", help="Run only selected categories")
+    parser.add_argument("--output-dir", default=".", help="Directory for output JSON files")
+    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="Concurrent show workers")
+    parser.add_argument("--delay", type=float, default=DEFAULT_DELAY, help="Delay between detail scans")
     parser.add_argument(
-        "--category",
-        choices=list(CATEGORIES.keys()),
-        action="append",
-        help="Limit scan to one or more categories (default: all)",
+        "--validate-links",
+        choices=["off", "advanced"],
+        default=os.environ.get("CF_VALIDATE_LINKS", "advanced"),
+        help="Whether to validate resolved episode links",
     )
-    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="Concurrent API fetchers")
-    parser.add_argument("--delay", type=float, default=DEFAULT_DELAY, help="Delay (s) between API calls")
-    parser.add_argument("--output-dir", default=OUTPUT_DIR, help="Where to write series/CF/*.json")
-    parser.add_argument("--verbose", action="store_true")
+    parser.add_argument(
+        "--drop-invalid-links",
+        action="store_true",
+        default=os.environ.get("CF_DROP_INVALID_LINKS", "0") == "1",
+        help="Skip invalid episode links instead of writing them",
+    )
+    parser.add_argument(
+        "--summary-path",
+        default=os.environ.get("CF_SUMMARY_PATH", ""),
+        help="Optional summary JSON path",
+    )
+    parser.add_argument("--verbose", action="store_true", help="Enable debug logging")
     return parser.parse_args()
+
+
+def run_category(
+    name: str,
+    config: dict,
+    session: requests.Session,
+    args: argparse.Namespace,
+    overall: ScanStats,
+) -> None:
+    log.info("=== Category: %s ===", name)
+    items = collect_category_items(name, config, session, args.workers)
+    overall.bump(categories=1, series_seen=len(items))
+
+    fresh_entries: dict[str, dict] = {}
+    with ThreadPoolExecutor(max_workers=max(1, args.workers)) as executor:
+        futures = {
+            executor.submit(
+                build_series_entry,
+                session,
+                item,
+                config["language"],
+                args.validate_links,
+                args.drop_invalid_links,
+                args.delay,
+                overall,
+            ): item
+            for item in items
+        }
+        for future in as_completed(futures):
+            item = futures[future]
+            title = clean(item.get("title"))
+            try:
+                result = future.result()
+            except Exception as exc:  # pragma: no cover
+                log.warning("[%s] failed to process %s: %s", name, title, exc)
+                continue
+            if not result:
+                continue
+            entry_title, payload = result
+            fresh_entries[entry_title] = payload
+
+    output_path = os.path.join(args.output_dir, config["output_file"])
+    existing = load_existing_output(output_path)
+    merged = merge_outputs(existing, fresh_entries)
+    atomic_write_json(output_path, merged)
+    overall.add_changed_file(output_path)
+    overall.bump(series_written=len(merged))
+    log.info("[%s] wrote %s (%d series)", name, output_path, len(merged))
+
+
+def write_summary(path: str, stats: ScanStats, args: argparse.Namespace) -> None:
+    if not path:
+        return
+    payload = {
+        "generated_at": utc_now_iso(),
+        "validate_links": args.validate_links,
+        "drop_invalid_links": args.drop_invalid_links,
+        "categories": stats.categories,
+        "series_seen": stats.series_seen,
+        "series_written": stats.series_written,
+        "links_seen": stats.links_seen,
+        "links_valid": stats.links_valid,
+        "links_invalid": stats.links_invalid,
+        "changed_files": stats.changed_files,
+        "invalid_samples": stats.invalid_samples,
+    }
+    atomic_write_json(path, payload)
 
 
 def main() -> int:
@@ -562,75 +732,22 @@ def main() -> int:
         format="%(asctime)s [%(levelname)s] %(message)s",
     )
 
-    selected = args.category or list(CATEGORIES.keys())
     session = build_session()
-    overall_stats = ScanStats()
-    changed_files = []
+    stats = ScanStats()
+    selected = args.category or list(CATEGORIES.keys())
 
-    for name in selected:
-        config = CATEGORIES[name]
-        stats = ScanStats()
+    for category_name in selected:
+        run_category(category_name, CATEGORIES[category_name], session, args, stats)
 
-        payloads = scrape_category(
-            name, config, session, args.workers, args.delay, stats
-        )
-
-        out_path = os.path.join(args.output_dir, f"{name}.json")
-        existing = load_existing(out_path)
-        merged_series = merge_payloads(existing, payloads, stats)
-
-        output = {
-            "category": name,
-            "source": "fmftp.net API",
-            "library_ids": config["library_ids"],
-            "last_scan": utc_now_iso(),
-            "series_count": len(merged_series),
-            "episode_count": sum(len(s["links"]) for s in merged_series.values()),
-            "series": merged_series,
-        }
-
-        if stats.new_series or stats.new_episodes:
-            atomic_write_json(out_path, output)
-            changed_files.append(out_path)
-            log.info(
-                "[%s] WROTE %s -> +%d series, +%d episodes (total %d series / %d episodes)",
-                name, out_path, stats.new_series, stats.new_episodes,
-                output["series_count"], output["episode_count"],
-            )
-        else:
-            # Always write to keep metadata fresh (last_scan, counts)
-            atomic_write_json(out_path, output)
-            changed_files.append(out_path)
-            log.info(
-                "[%s] REFRESHED %s (total %d series / %d episodes)",
-                name, out_path, output["series_count"], output["episode_count"],
-            )
-
-        overall_stats.bump(
-            new_series=stats.new_series,
-            new_episodes=stats.new_episodes,
-            updated_series=stats.updated_series,
-            cards_found=stats.cards_found,
-        )
-
+    write_summary(args.summary_path, stats, args)
     log.info(
-        "=== DONE: %d new series, %d new episodes across %d categories (%d files changed) ===",
-        overall_stats.new_series, overall_stats.new_episodes, len(selected), len(changed_files),
+        "DONE: categories=%d series=%d links=%d valid=%d invalid=%d",
+        stats.categories,
+        stats.series_written,
+        stats.links_seen,
+        stats.links_valid,
+        stats.links_invalid,
     )
-
-    # Emit a small machine-readable summary for the GitHub Actions step
-    summary_path = os.environ.get("CF_SUMMARY_PATH", "")
-    if summary_path:
-        with open(summary_path, "w", encoding="utf-8") as fh:
-            json.dump(
-                {
-                    "new_series": overall_stats.new_series,
-                    "new_episodes": overall_stats.new_episodes,
-                    "changed_files": changed_files,
-                },
-                fh,
-            )
-
     return 0
 
 
