@@ -1957,6 +1957,20 @@
       }
     ]
   },
+  "Headline": {
+    "year": "2026",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/iz2YRPTx3sE0jjhXshCtdmw5BYJ.jpg",
+    "links": [
+      {
+        "added": "2026-06-27",
+        "language": "Bangla",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Headline S1E1 - Almost Famous",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Bangla/Headline/s01/Headline%20s01e01.mp4"
+      }
+    ]
+  },
   "Hello Mini": {
     "year": "2019",
     "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/4ATvjCvlg5WcrDMiQb4RFohrDkz.jpg",
