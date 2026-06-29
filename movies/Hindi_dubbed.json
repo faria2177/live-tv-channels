@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/movies?category=5",
   "category_id": "5",
   "category_name": "Hindi dubbed",
-  "total_items": 1268,
+  "total_items": 1275,
   "collected_at": "2026-06-18T19:12:03.599329Z",
   "items": {
     "Peddi": {
@@ -22072,7 +22072,130 @@
           "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20170"
         }
       ]
+    },
+    "Little Brother": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/hIJpXb7Xaje2mebN9ylsS7blQzP.jpg",
+      "rating": 6.088,
+      "genre": [
+        "Comedy"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20986",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20986"
+        }
+      ]
+    },
+    "Masters of the Universe": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
+      "rating": 7.2,
+      "genre": [
+        "Action",
+        "Fantasy",
+        "Science Fiction"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20989",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20989"
+        }
+      ]
+    },
+    "Blast": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/ho824aZtnBzE6FuJRn2znQCq4qQ.jpg",
+      "rating": 7.182,
+      "genre": [
+        "Drama",
+        "Action",
+        "Family",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20984",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20984"
+        }
+      ]
+    },
+    "M4M Motive for Murder": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/FcoRfDLRwiAcNCd5SmeDIIeea7.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Crime",
+        "Mystery",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20988",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20988"
+        }
+      ]
+    },
+    "The Sheep Detectives": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/6QtL9rl3Zb4d8qW6EJ4qO5hSSfU.jpg",
+      "rating": 7.639,
+      "genre": [
+        "Comedy",
+        "Crime",
+        "Mystery",
+        "Family"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20990",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20990"
+        }
+      ]
+    },
+    "Anali": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/swU1gHR88apVPthor7RVv8AOa1j.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Action",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20987",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20987"
+        }
+      ]
+    },
+    "Gladiator Underground": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/qLN16AeIjS5P5Kk5B6pBi1Mh1mi.jpg",
+      "rating": 7.6,
+      "genre": [
+        "Action"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20985",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20985"
+        }
+      ]
     }
   },
-  "last_updated": "2026-06-27T01:51:58.101187Z"
+  "last_updated": "2026-06-29T02:03:21.461480Z"
 }

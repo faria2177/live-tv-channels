@@ -2387,7 +2387,7 @@
       ]
     },
     "Kavan": {
-      "year": "2019",
+      "year": "2017",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/hqePCECNlXBRMAJz9cd5VoP25Lf.jpg",
       "rating": 7.2,
       "genre": [
@@ -2396,10 +2396,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=19410",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18976",
           "language": "Tamil",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=19410"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18976"
         }
       ]
     },
@@ -2724,24 +2724,24 @@
       ]
     },
     "Guru": {
-      "year": "2018",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4qzgxaWtAtl19YwHvtQ1E8Kju6P.jpg",
-      "rating": 6.258,
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/5VqWbyN1EmzvqpFNSzGN7sLJRTj.jpg",
+      "rating": 6.353,
       "genre": [
-        "Documentary",
-        "Crime"
+        "Romance",
+        "Family"
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=19299",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18933",
           "language": "Tamil",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=19299"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18933"
         }
       ]
     },
     "U Turn": {
-      "year": "2018",
+      "year": "2016",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/d5wL2axBtieecnAD6X4HMgrkXGp.jpg",
       "rating": 6.873,
       "genre": [
@@ -2751,10 +2751,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=19321",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18817",
           "language": "Tamil",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=19321"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18817"
         }
       ]
     },
@@ -3035,7 +3035,7 @@
       ]
     },
     "Aanandam": {
-      "year": "2018",
+      "year": "2016",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/lf6uk5ukEhULKS4M386ah9Tv1Fz.jpg",
       "rating": 7.303,
       "genre": [
@@ -3045,10 +3045,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=19291",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18844",
           "language": "Tamil",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=19291"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18844"
         }
       ]
     },
@@ -10032,16 +10032,20 @@
       ]
     },
     "Shutter": {
-      "year": "2012",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/rhAe1xMuKmzPmu8AqZkXmhgAQN0.jpg",
-      "rating": 0.0,
-      "genre": [],
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/s3qFsQFWCm38hzUGqPxukTo57IZ.jpg",
+      "rating": 6.2,
+      "genre": [
+        "Thriller",
+        "Horror",
+        "Science Fiction"
+      ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=19258",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=19259",
           "language": "Tamil",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=19258"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=19259"
         }
       ]
     },
@@ -11571,10 +11575,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=19269",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=19268",
           "language": "Tamil",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=19269"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=19268"
         }
       ]
     },
@@ -18636,5 +18640,5 @@
       ]
     }
   },
-  "last_updated": "2026-06-27T01:52:04.064963Z"
+  "last_updated": "2026-06-29T02:03:27.217352Z"
 }

@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/tv-shows?category=12",
   "category_id": "12",
   "category_name": "Bangla Tv Series",
-  "total_items": 83,
+  "total_items": 84,
   "collected_at": "2026-06-18T19:12:22.887288Z",
   "items": {
     "Byomkesh Bakshi": {
@@ -896,7 +896,18 @@
       "language": "Bangla Tv Series",
       "watch_page": "https://fmftp.net/watch?type=SERIES&id=845",
       "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=845"
+    },
+    "Headline": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/iz2YRPTx3sE0jjhXshCtdmw5BYJ.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8782",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8782"
     }
   },
-  "last_updated": "2026-06-27T01:52:10.061708Z"
+  "last_updated": "2026-06-29T02:03:32.909548Z"
 }

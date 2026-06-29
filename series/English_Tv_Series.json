@@ -9242,15 +9242,15 @@
       "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=237"
     },
     "First Class": {
-      "year": "2014",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/6SmkARstImdwtgni6UYDkWUzOIO.jpg",
-      "rating": 6.0,
+      "year": "2008",
+      "tvg_logo": "",
+      "rating": 0.0,
       "genre": [
-        "Drama"
+        "Comedy"
       ],
       "language": "English tv series",
-      "watch_page": "https://fmftp.net/watch?type=SERIES&id=5694",
-      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=5694"
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=111",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=111"
     },
     "Hysteria": {
       "year": "2014",
@@ -9324,16 +9324,13 @@
       "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=54"
     },
     "Dracula": {
-      "year": "2013",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/5SqUNnExnN7Cr8rzyTXJTWmEMHn.jpg",
-      "rating": 6.97,
-      "genre": [
-        "Drama",
-        "Action & Adventure"
-      ],
+      "year": "1999",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/leXoGxRcNxEmAJXjPtFfyrzCR8V.jpg",
+      "rating": 0.0,
+      "genre": [],
       "language": "English tv series",
-      "watch_page": "https://fmftp.net/watch?type=SERIES&id=5673",
-      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=5673"
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=94",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=94"
     },
     "House of Cards": {
       "year": "2013",
@@ -10773,5 +10770,5 @@
       "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=4224"
     }
   },
-  "last_updated": "2026-06-27T01:52:07.132544Z"
+  "last_updated": "2026-06-29T02:03:30.083431Z"
 }
