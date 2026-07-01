@@ -6413,7 +6413,7 @@
       ]
     },
     "The Buckingham Murders": {
-      "year": "2023",
+      "year": "2024",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/opWu2Qf1g5OfAWP4HdmH4ildwuV.jpg",
       "rating": 5.7,
       "genre": [
@@ -6424,10 +6424,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=17684",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=17659",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=17684"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=17659"
         }
       ]
     },
@@ -16030,7 +16030,7 @@
       ]
     },
     "RX 100": {
-      "year": "2019",
+      "year": "2018",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/rGkTmRYQhdzBhpFjPi0lxchHgcn.jpg",
       "rating": 5.543,
       "genre": [
@@ -16040,10 +16040,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=17064",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16851",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=17064"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16851"
         }
       ]
     },
@@ -28093,7 +28093,7 @@
       ]
     },
     "Tera Kya Hoga Johnny": {
-      "year": "2009",
+      "year": "2010",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/7p82P5RVqVsTBP9V0pBAdBK1ohC.jpg",
       "rating": 1.0,
       "genre": [
@@ -28103,10 +28103,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16426",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=15682",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16426"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=15682"
         }
       ]
     },
@@ -28415,7 +28415,7 @@
       ]
     },
     "Paan Singh Tomar": {
-      "year": "2010",
+      "year": "2012",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/ii2KMVvGmcmJrqwYcT5nKn92bD5.jpg",
       "rating": 7.3,
       "genre": [
@@ -28424,10 +28424,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=15581",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16387",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=15581"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16387"
         }
       ]
     },
@@ -48132,5 +48132,5 @@
       ]
     }
   },
-  "last_updated": "2026-06-29T02:02:51.394481Z"
+  "last_updated": "2026-07-01T02:02:19.191396Z"
 }
