@@ -7361,6 +7361,20 @@
       }
     ]
   },
+  "Isakapatnam": {
+    "year": "2026",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/cs42BHvNNWw74fct04gAzijTtBQ.jpg",
+    "links": [
+      {
+        "added": "2026-07-05",
+        "language": "Hindi",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Isakapatnam S1E1",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Indian/Isakapatnam/s01/SouthFreak.COM%20-%20Isakapatnam%20s01e01.mp4"
+      }
+    ]
+  },
   "Ishq Aaj Kal": {
     "year": "2019",
     "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/rP5v24WDAyXKC42V0gJuI1bE8tE.jpg",
@@ -9050,6 +9064,20 @@
         "episode": 6,
         "episode_title": "Leila S1E6",
         "url": "https://fmftp.net/data/disk-1/tvseries/Indian/Leila/Season%201/Leila.S01E06.720p.NF.WEB-DL.x264-MkvCage.mkv"
+      }
+    ]
+  },
+  "Lingam": {
+    "year": "2026",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/l5utMuTzwMUpypOTOSLQLg5WY57.jpg",
+    "links": [
+      {
+        "added": "2026-07-05",
+        "language": "Hindi",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Lingam S1E1 - First Wave of the Ocean",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Indian/Lingam/s01/SouthFreak.COM%20-%20Lingam%202026%20S01e01.mp4"
       }
     ]
   },
@@ -14872,6 +14900,20 @@
         "episode": 8,
         "episode_title": "Sunflower S2E8 - Last Piece of the Puzzle",
         "url": "https://fmftp.net/data/disk-1/tvseries/Indian/Sunflower/s02/Sunflower%20S02%20E08.mkv"
+      }
+    ]
+  },
+  "Super Subbu": {
+    "year": "2026",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/bwb5oPnZAdRwKusI8So8Sx1bcL4.jpg",
+    "links": [
+      {
+        "added": "2026-07-05",
+        "language": "Hindi",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Super Subbu S1E1 - Subbu S/o Kukku",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Indian/Super%20Subbu/s01/Super%20Subbu%20s01e01.mp4"
       }
     ]
   },
