@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/tv-shows?category=10",
   "category_id": "10",
   "category_name": "Indian Tv Series",
-  "total_items": 208,
+  "total_items": 211,
   "collected_at": "2026-06-18T19:12:21.409606Z",
   "items": {
     "Raakh": {
@@ -2453,7 +2453,40 @@
       "language": "Indian Tv Series",
       "watch_page": "https://fmftp.net/watch?type=SERIES&id=8781",
       "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8781"
+    },
+    "Super Subbu": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/bwb5oPnZAdRwKusI8So8Sx1bcL4.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Comedy"
+      ],
+      "language": "Indian Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8800",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8800"
+    },
+    "Isakapatnam": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/cs42BHvNNWw74fct04gAzijTtBQ.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama"
+      ],
+      "language": "Indian Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8798",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8798"
+    },
+    "Lingam": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/l5utMuTzwMUpypOTOSLQLg5WY57.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Crime"
+      ],
+      "language": "Indian Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8799",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8799"
     }
   },
-  "last_updated": "2026-07-03T01:26:29.382135Z"
+  "last_updated": "2026-07-05T01:41:27.490326Z"
 }

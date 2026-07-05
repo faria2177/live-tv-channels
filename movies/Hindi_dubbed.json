@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/movies?category=5",
   "category_id": "5",
   "category_name": "Hindi dubbed",
-  "total_items": 1275,
+  "total_items": 1282,
   "collected_at": "2026-06-18T19:12:03.599329Z",
   "items": {
     "Peddi": {
@@ -22195,7 +22195,132 @@
           "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20985"
         }
       ]
+    },
+    "Enola Holmes 3": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
+      "rating": 7.151,
+      "genre": [
+        "Adventure",
+        "Crime",
+        "Mystery",
+        "Action"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21002",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21002"
+        }
+      ]
+    },
+    "Tavvai": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/pZAbPoVTMYrxFUSGG9hwaOUsZnW.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Mystery",
+        "Horror",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21007",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21007"
+        }
+      ]
+    },
+    "Mollywood Times": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/zUBCBtMsQ8dxnhJhhng4C8U80IU.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21006",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21006"
+        }
+      ]
+    },
+    "Karakkam": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xCc5K9hy7Nkmkag1yS3HC75j9e2.jpg",
+      "rating": 10.0,
+      "genre": [
+        "Horror",
+        "Comedy"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21003",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21003"
+        }
+      ]
+    },
+    "Obsession": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4VQkkxPgylMtPHHBNeWvfLwBhji.jpg",
+      "rating": 8.199,
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21009",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21009"
+        }
+      ]
+    },
+    "KD The Devil": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nEuEMJrnLBneE9tJlmzbhCFLu95.jpg",
+      "rating": 7.5,
+      "genre": [
+        "History",
+        "Crime",
+        "Action",
+        "Fantasy"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21005",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21005"
+        }
+      ]
+    },
+    "Tuck Jagadish": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dwRfi1cV9oKjVEll12DJqjLWyOD.jpg",
+      "rating": 4.3,
+      "genre": [
+        "Drama",
+        "Action",
+        "Family"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21008",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21008"
+        }
+      ]
     }
   },
-  "last_updated": "2026-07-03T01:26:18.395096Z"
+  "last_updated": "2026-07-05T01:41:17.080252Z"
 }
