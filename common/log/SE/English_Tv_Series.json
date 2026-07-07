@@ -31618,8 +31618,8 @@
     ]
   },
   "Dracula": {
-    "year": "2013",
-    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/5SqUNnExnN7Cr8rzyTXJTWmEMHn.jpg",
+    "year": "1999",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/leXoGxRcNxEmAJXjPtFfyrzCR8V.jpg",
     "links": [
       {
         "added": "2026-06-02",
@@ -31641,6 +31641,14 @@
         "added": "2026-03-10",
         "language": "English",
         "season": 1,
+        "episode": 1,
+        "episode_title": "Dracula S1E1",
+        "url": "https://fmftp.net/data/disk-1/tvseries/English/Dracula/S%201/Dracula.2020.S01E01.720p.NF.WEBRip.x264-GalaxyTV.mkv"
+      },
+      {
+        "added": "2026-03-10",
+        "language": "English",
+        "season": 1,
         "episode": 2,
         "episode_title": "Dracula S1E2 - Blood Vessel",
         "url": "https://fmftp.net/data/disk-1/tvseries/English/Dracula(2013)/s01/Dracula%20(2013)%20-%20S01E02%20-%20A%20Whiff%20of%20Sulfur%20(1080p%20BluRay%20x265%20MONOLITH).mp4"
@@ -31649,9 +31657,25 @@
         "added": "2026-03-10",
         "language": "English",
         "season": 1,
+        "episode": 2,
+        "episode_title": "Dracula S1E2",
+        "url": "https://fmftp.net/data/disk-1/tvseries/English/Dracula/S%201/Dracula.2020.S01E02.720p.NF.WEBRip.x264-GalaxyTV.mkv"
+      },
+      {
+        "added": "2026-03-10",
+        "language": "English",
+        "season": 1,
         "episode": 3,
         "episode_title": "Dracula S1E3 - The Dark Compass",
         "url": "https://fmftp.net/data/disk-1/tvseries/English/Dracula(2013)/s01/Dracula%20(2013)%20-%20S01E03%20-%20Goblin%20Merchant%20Men%20(1080p%20BluRay%20x265%20MONOLITH).mp4"
+      },
+      {
+        "added": "2026-03-10",
+        "language": "English",
+        "season": 1,
+        "episode": 3,
+        "episode_title": "Dracula S1E3",
+        "url": "https://fmftp.net/data/disk-1/tvseries/English/Dracula/S%201/Dracula.2020.S01E03.720p.NF.WEBRip.x264-GalaxyTV.mkv"
       },
       {
         "added": "2026-03-10",
@@ -121810,9 +121834,17 @@
     ]
   },
   "The Night Manager": {
-    "year": "2016",
-    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/hdCC5N42cXERbzIn6ED7oqTKtkq.jpg",
+    "year": "2023",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/1anVoLwguecmFqsNx0Ic8cIzmuW.jpg",
     "links": [
+      {
+        "added": "2026-07-07",
+        "language": "English",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "The Night Manager S1E1 - Zakhm",
+        "url": "https://fmftp.net/data/disk-1/tvseries/English/The%20Night%20Manager/s01/S01E01-%20Episode%201.mp4"
+      },
       {
         "added": "2026-06-15",
         "language": "English",
@@ -121820,6 +121852,14 @@
         "episode": 1,
         "episode_title": "The Night Manager S1E1",
         "url": "https://fmftp.net/data/disk-1/tvseries/new/The%20Night%20Manager/s01/The.Night.Manager.S01E01.Zakhm.1080p.HS.WEB-DL.Hindi.DDP5.1.Atmos.H.264-iNFiNiT3.mkv"
+      },
+      {
+        "added": "2026-06-28",
+        "language": "English",
+        "season": 1,
+        "episode": 2,
+        "episode_title": "The Night Manager S1E2 - Mission",
+        "url": "https://fmftp.net/data/disk-1/tvseries/English/The%20Night%20Manager/s01/S01E02-%20Episode%202.mp4"
       },
       {
         "added": "2026-04-06",
@@ -121830,12 +121870,28 @@
         "url": "https://fmftp.net/data/disk-1/tvseries/new/The%20Night%20Manager/s01/The.Night.Manager.S01E02.Mission.1080p.HS.WEB-DL.Hindi.DDP5.1.Atmos.H.264-iNFiNiT3.mkv"
       },
       {
+        "added": "2026-07-02",
+        "language": "English",
+        "season": 1,
+        "episode": 3,
+        "episode_title": "The Night Manager S1E3 - Mehmaan",
+        "url": "https://fmftp.net/data/disk-1/tvseries/English/The%20Night%20Manager/s01/S01E03-%20Episode%203.mp4"
+      },
+      {
         "added": "2026-03-20",
         "language": "English",
         "season": 1,
         "episode": 3,
         "episode_title": "The Night Manager S1E3",
         "url": "https://fmftp.net/data/disk-1/tvseries/new/The%20Night%20Manager/s01/The.Night.Manager.S01E03.Mehmaan.1080p.HS.WEB-DL.Hindi.DDP5.1.Atmos.H.264-iNFiNiT3.mkv"
+      },
+      {
+        "added": "2026-06-19",
+        "language": "English",
+        "season": 1,
+        "episode": 4,
+        "episode_title": "The Night Manager S1E4 - Sweetly-waala",
+        "url": "https://fmftp.net/data/disk-1/tvseries/English/The%20Night%20Manager/s01/S01E04-%20Episode%204.mp4"
       },
       {
         "added": "2026-04-07",
@@ -121846,12 +121902,28 @@
         "url": "https://fmftp.net/data/disk-1/tvseries/new/The%20Night%20Manager/s01/The.Night.Manager.S01E04.Sweetly-waala.1080p.HS.WEB-DL.Hindi.DDP5.1.Atmos.H.264-iNFiNiT3.mkv"
       },
       {
+        "added": "2026-06-10",
+        "language": "English",
+        "season": 1,
+        "episode": 5,
+        "episode_title": "The Night Manager S1E5 - Abhimanyu",
+        "url": "https://fmftp.net/data/disk-1/tvseries/English/The%20Night%20Manager/s01/S01E05-%20Episode%205.mp4"
+      },
+      {
         "added": "2026-06-06",
         "language": "English",
         "season": 1,
         "episode": 5,
         "episode_title": "The Night Manager S1E5",
         "url": "https://fmftp.net/data/disk-1/tvseries/new/The%20Night%20Manager/s01/The%20Night%20Manager%20S01E05.mkv"
+      },
+      {
+        "added": "2026-07-02",
+        "language": "English",
+        "season": 1,
+        "episode": 6,
+        "episode_title": "The Night Manager S1E6 - Magic Trick",
+        "url": "https://fmftp.net/data/disk-1/tvseries/English/The%20Night%20Manager/s01/S01E06-%20Episode%206.mp4"
       },
       {
         "added": "2026-06-06",
