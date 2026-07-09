@@ -101152,10 +101152,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=9504",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=9505",
           "language": "Hollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=9504"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=9505"
         }
       ]
     },
@@ -139295,10 +139295,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=7124",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=7370",
           "language": "Hollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=7124"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=7370"
         }
       ]
     },
@@ -154128,7 +154128,7 @@
       ]
     },
     "The Last Movie Star": {
-      "year": "2018",
+      "year": "2017",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/pxuk1SKCPFqcMFHnItIlXizwJ7r.jpg",
       "rating": 6.5,
       "genre": [
@@ -154136,10 +154136,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=10703",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=11387",
           "language": "Hollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=10703"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=11387"
         }
       ]
     },
@@ -154245,7 +154245,7 @@
       ]
     },
     "Dear Dictator": {
-      "year": "2018",
+      "year": "2017",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/2YFCAAZUUpj66gLAMqRhwpY1U34.jpg",
       "rating": 5.484,
       "genre": [
@@ -154253,15 +154253,15 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=10774",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=10982",
           "language": "Hollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=10774"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=10982"
         }
       ]
     },
     "Josie": {
-      "year": "2018",
+      "year": "2017",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/sXwATbG3eJjkteGh1YaqV1PGeGb.jpg",
       "rating": 5.267,
       "genre": [
@@ -154270,10 +154270,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=13553",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=11112",
           "language": "Hollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=13553"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=11112"
         }
       ]
     },
@@ -157320,10 +157320,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=13659",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=10706",
           "language": "Hollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=13659"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=10706"
         }
       ]
     },
@@ -225202,5 +225202,5 @@
       ]
     }
   },
-  "last_updated": "2026-07-07T01:44:10.932703Z"
+  "last_updated": "2026-07-09T01:26:02.955809Z"
 }
