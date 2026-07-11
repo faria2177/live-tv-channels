@@ -1,0 +1,157 @@
+{
+  "generated_at": "2026-07-11T12:59:48.521532Z",
+  "total_movies": 20967,
+  "total_series": 1297,
+  "total_episodes": 21569,
+  "grand_total": 22264,
+  "movies": {
+    "total": 20967,
+    "categories": [
+      {
+        "label": "Bollywood",
+        "category_id": "1",
+        "file": "movies/Bollywood.json",
+        "count": 2915,
+        "new": 6,
+        "updated": 2909,
+        "total_episodes": null,
+        "expected_total": 2917
+      },
+      {
+        "label": "Hollywood",
+        "category_id": "2",
+        "file": "movies/Hollywood.json",
+        "count": 14091,
+        "new": 10,
+        "updated": 14081,
+        "total_episodes": null,
+        "expected_total": 14094
+      },
+      {
+        "label": "Animation",
+        "category_id": "3",
+        "file": "movies/Animation.json",
+        "count": 437,
+        "new": 0,
+        "updated": 437,
+        "total_episodes": null,
+        "expected_total": 438
+      },
+      {
+        "label": "Korean Movies",
+        "category_id": "4",
+        "file": "movies/Korean.json",
+        "count": 375,
+        "new": 0,
+        "updated": 375,
+        "total_episodes": null,
+        "expected_total": 376
+      },
+      {
+        "label": "Hindi Dubbed",
+        "category_id": "5",
+        "file": "movies/Hindi_dubbed.json",
+        "count": 1295,
+        "new": 0,
+        "updated": 1295,
+        "total_episodes": null,
+        "expected_total": 1296
+      },
+      {
+        "label": "Horror",
+        "category_id": "6",
+        "file": "movies/Horror.json",
+        "count": 49,
+        "new": 0,
+        "updated": 49,
+        "total_episodes": null,
+        "expected_total": 49
+      },
+      {
+        "label": "Indian Bangla",
+        "category_id": "7",
+        "file": "movies/Indian_Bangla.json",
+        "count": 663,
+        "new": 1,
+        "updated": 662,
+        "total_episodes": null,
+        "expected_total": 664
+      },
+      {
+        "label": "Tamil",
+        "category_id": "8",
+        "file": "movies/Tamil.json",
+        "count": 1135,
+        "new": 5,
+        "updated": 1130,
+        "total_episodes": null,
+        "expected_total": 1136
+      },
+      {
+        "label": "Foreign",
+        "category_id": "14",
+        "file": "movies/foreign.json",
+        "count": 7,
+        "new": 0,
+        "updated": 7,
+        "total_episodes": null,
+        "expected_total": 7
+      }
+    ]
+  },
+  "series": {
+    "total": 1297,
+    "categories": [
+      {
+        "label": "English TV Series",
+        "category_id": "9",
+        "file": "series/English_Tv_Series.json",
+        "count": 903,
+        "new": 2,
+        "updated": 901,
+        "total_episodes": 17444,
+        "expected_total": 903
+      },
+      {
+        "label": "Indian TV Series",
+        "category_id": "10",
+        "file": "series/Indian_Tv_Series.json",
+        "count": 212,
+        "new": 0,
+        "updated": 212,
+        "total_episodes": 2023,
+        "expected_total": 212
+      },
+      {
+        "label": "Korean TV Series",
+        "category_id": "11",
+        "file": "series/Korean_Tv_Series.json",
+        "count": 95,
+        "new": 0,
+        "updated": 95,
+        "total_episodes": 1465,
+        "expected_total": 95
+      },
+      {
+        "label": "Bangla TV Series",
+        "category_id": "12",
+        "file": "series/Bangla_Tv_Series.json",
+        "count": 85,
+        "new": 0,
+        "updated": 85,
+        "total_episodes": 606,
+        "expected_total": 85
+      },
+      {
+        "label": "Turkish TV Series",
+        "category_id": "13",
+        "file": "series/Turkish_Tv_Series.json",
+        "count": 2,
+        "new": 0,
+        "updated": 2,
+        "total_episodes": 31,
+        "expected_total": 2
+      }
+    ]
+  }
+}
