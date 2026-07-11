@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/movies?category=5",
   "category_id": "5",
   "category_name": "Hindi dubbed",
-  "total_items": 1282,
+  "total_items": 1292,
   "collected_at": "2026-06-18T19:12:03.599329Z",
   "items": {
     "Peddi": {
@@ -22320,7 +22320,183 @@
           "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21008"
         }
       ]
+    },
+    "Nothing to Lose": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/3SKN8QZptMm8KfCCQtEmyh1Zkgz.jpg",
+      "rating": 4.933,
+      "genre": [
+        "Drama",
+        "Action"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21025",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21025"
+        }
+      ]
+    },
+    "Sing Geetham": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/2UVWJ0zkPzuUlKHs7ZaTfQ2GLpk.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Comedy",
+        "Music",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21022",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21022"
+        }
+      ]
+    },
+    "Dose": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/wuEQbDF5jHaOOAMGiXWmDRz9imG.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Mystery",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21018",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21018"
+        }
+      ]
+    },
+    "Drishyam 3": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/456FlpiU1iOBnaOxSd783QhZKWw.jpg",
+      "rating": 7.3,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21016",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21016"
+        }
+      ]
+    },
+    "Passenger": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
+      "rating": 6.409,
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21020",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21020"
+        }
+      ]
+    },
+    "Razor": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/la5XLMTI7HpzEdrWAZe5vMtyGqt.jpg",
+      "rating": 7.333,
+      "genre": [
+        "Thriller",
+        "Drama",
+        "Action"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21021",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21021"
+        }
+      ]
+    },
+    "Mario": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "rating": 8.253,
+      "genre": [
+        "Family",
+        "Comedy",
+        "Adventure",
+        "Fantasy",
+        "Animation"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21019",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21019"
+        }
+      ]
+    },
+    "Written & Directed by God": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vYCJihP5IQwUw9RMSmeGg7yU1FP.jpg",
+      "rating": 3.0,
+      "genre": [
+        "Fantasy",
+        "Comedy"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21023",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21023"
+        }
+      ]
+    },
+    "Balti": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/tpgbGGIM76Vk44KLxTNM2UkzmLG.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Action",
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21017",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21017"
+        }
+      ]
+    },
+    "Find Your Friends": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/uFdpiH5zh8wMnOckYtwvVDM0SDE.jpg",
+      "rating": 4.375,
+      "genre": [
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21024",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21024"
+        }
+      ]
     }
   },
-  "last_updated": "2026-07-11T01:16:30.668479Z"
+  "last_updated": "2026-07-11T09:47:22.357413Z"
 }

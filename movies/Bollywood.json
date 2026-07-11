@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/movies?category=1",
   "category_id": "1",
   "category_name": "Bollywood",
-  "total_items": 2829,
+  "total_items": 2832,
   "collected_at": "2026-06-18T19:11:09.661676Z",
   "items": {
     "Maa Behen": {
@@ -12217,7 +12217,7 @@
       ]
     },
     "Meri Nimmo": {
-      "year": "2017",
+      "year": "2018",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/ebW4SPm3wQlFsV7uvfy7gMxzed1.jpg",
       "rating": 8.0,
       "genre": [
@@ -12225,10 +12225,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16732",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16838",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16732"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16838"
         }
       ]
     },
@@ -12582,20 +12582,20 @@
       ]
     },
     "Cargo": {
-      "year": "2020",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/p8qSsI6g2vSrdumtdbb8c2Q2pV6.jpg",
-      "rating": 4.974,
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/cdPSUck4tBRvRu6DFk6XciDrssn.jpg",
+      "rating": 6.406,
       "genre": [
-        "Science Fiction",
         "Drama",
-        "Fantasy"
+        "Thriller",
+        "Horror"
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=17173",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16494",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=17173"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16494"
         }
       ]
     },
@@ -18092,10 +18092,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=17081",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16881",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=17081"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16881"
         }
       ]
     },
@@ -24198,7 +24198,7 @@
       ]
     },
     "Haraamkhor": {
-      "year": "2017",
+      "year": "2015",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/pZMrkB3Y2srTl4MwMOqQSnNBeVN.jpg",
       "rating": 5.7,
       "genre": [
@@ -24206,10 +24206,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16704",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16703",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16704"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16703"
         }
       ]
     },
@@ -28093,7 +28093,7 @@
       ]
     },
     "Tera Kya Hoga Johnny": {
-      "year": "2010",
+      "year": "2009",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/7p82P5RVqVsTBP9V0pBAdBK1ohC.jpg",
       "rating": 1.0,
       "genre": [
@@ -28103,10 +28103,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=15682",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16426",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=15682"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16426"
         }
       ]
     },
@@ -28415,7 +28415,7 @@
       ]
     },
     "Paan Singh Tomar": {
-      "year": "2010",
+      "year": "2012",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/ii2KMVvGmcmJrqwYcT5nKn92bD5.jpg",
       "rating": 7.3,
       "genre": [
@@ -28424,10 +28424,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=15581",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=16387",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=15581"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=16387"
         }
       ]
     },
@@ -36596,7 +36596,7 @@
       ]
     },
     "Jab We Met": {
-      "year": "2007",
+      "year": "2009",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/iqiH6vnoEgjAypKsuIScN7JlE2j.jpg",
       "rating": 7.3,
       "genre": [
@@ -36606,10 +36606,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=15425",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=15426",
           "language": "Bollywood",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=15425"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=15426"
         }
       ]
     },
@@ -48147,7 +48147,58 @@
           "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21004"
         }
       ]
+    },
+    "Ikka": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/fp5EAKE8nTx402n1fWz55QsuYY9.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21028",
+          "language": "Bollywood",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21028"
+        }
+      ]
+    },
+    "Dhamaal 4": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/5d7hpbefNiuebl5eqP5cRrckVxs.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Comedy"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21026",
+          "language": "Bollywood",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21026"
+        }
+      ]
+    },
+    "Satluj": {
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/hm4ou83RwLVwNj3HsmQuqC1qkWy.jpg",
+      "rating": 8.4,
+      "genre": [
+        "Crime",
+        "Drama",
+        "History"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=21027",
+          "language": "Bollywood",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21027"
+        }
+      ]
     }
   },
-  "last_updated": "2026-07-11T01:15:59.364476Z"
+  "last_updated": "2026-07-11T09:46:50.823574Z"
 }
