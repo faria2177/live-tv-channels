@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/tv-shows?category=9",
   "category_id": "9",
   "category_name": "English tv series",
-  "total_items": 896,
+  "total_items": 899,
   "collected_at": "2026-06-18T19:12:19.840327Z",
   "items": {
     "Spider-Noir": {
@@ -10794,7 +10794,48 @@
       "language": "English tv series",
       "watch_page": "https://fmftp.net/watch?type=SERIES&id=8802",
       "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8802"
+    },
+    "Wolverine and the X-Men": {
+      "year": "2009",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/oSeJ2nESB77iC6SLo4qcqoadjdt.jpg",
+      "rating": 7.52,
+      "genre": [
+        "Animation",
+        "Action & Adventure",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "English tv series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8823",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8823"
+    },
+    "Fantastic Four World's Greatest Heroes": {
+      "year": "2006",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/zCtCW0JlbMpzfQDAX1bO1o1KLi.jpg",
+      "rating": 7.5,
+      "genre": [
+        "Animation",
+        "Action & Adventure",
+        "Sci-Fi & Fantasy",
+        "Family"
+      ],
+      "language": "English tv series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8820",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8820"
+    },
+    "Teen Titans": {
+      "year": "2003",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/gxe4wIp3kYfw4QSkLMt99HfLkok.jpg",
+      "rating": 6.4,
+      "genre": [
+        "Animation",
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "language": "English tv series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8836",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8836"
     }
   },
-  "last_updated": "2026-07-09T01:26:20.370489Z"
+  "last_updated": "2026-07-11T01:16:40.038558Z"
 }
