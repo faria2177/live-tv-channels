@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/movies?category=5",
   "category_id": "5",
   "category_name": "Hindi dubbed",
-  "total_items": 1292,
+  "total_items": 1297,
   "collected_at": "2026-06-18T19:12:03.599329Z",
   "items": {
     "Peddi": {
@@ -254,20 +254,19 @@
       ]
     },
     "Michael": {
-      "year": "2023",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nEnrTiGItYqpt0hdNyMlB8dCchG.jpg",
-      "rating": 0.0,
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
+      "rating": 8.545,
       "genre": [
         "Music",
-        "Drama",
-        "History"
+        "Drama"
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1259",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20949",
           "language": "Hindi dubbed",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1259"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20949"
         }
       ]
     },
@@ -3393,7 +3392,7 @@
       ]
     },
     "Mangalavaaram": {
-      "year": "2023",
+      "year": "2024",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/zZxBWGqdoQ3lX7oPjtI41Yby59j.jpg",
       "rating": 5.1,
       "genre": [
@@ -3402,10 +3401,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1240",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1241",
           "language": "Hindi dubbed",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1240"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1241"
         }
       ]
     },
@@ -7193,7 +7192,7 @@
       ]
     },
     "Hunt": {
-      "year": "2022",
+      "year": "2024",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/htIsZzWDHuFaNwBFWR3XkhQKDff.jpg",
       "rating": 0.0,
       "genre": [
@@ -7202,10 +7201,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1127",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=19818",
           "language": "Hindi dubbed",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1127"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=19818"
         }
       ]
     },
@@ -19336,10 +19335,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20073",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1656",
           "language": "Hindi dubbed",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20073"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1656"
         }
       ]
     },
@@ -22496,7 +22495,97 @@
           "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21024"
         }
       ]
+    },
+    "Jombieland [20326]": {
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/h78roUiZylCIzTrmeBN6Pnhv8cI.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Action",
+        "Comedy",
+        "Horror"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20326",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20326"
+        }
+      ]
+    },
+    "Michael [1259]": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nEnrTiGItYqpt0hdNyMlB8dCchG.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Music",
+        "Drama",
+        "History"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1259",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1259"
+        }
+      ]
+    },
+    "Mangalavaaram [1240]": {
+      "year": "2023",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/zZxBWGqdoQ3lX7oPjtI41Yby59j.jpg",
+      "rating": 5.1,
+      "genre": [
+        "Thriller",
+        "Mystery"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1240",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1240"
+        }
+      ]
+    },
+    "Hunt [1127]": {
+      "year": "2022",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/htIsZzWDHuFaNwBFWR3XkhQKDff.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Thriller",
+        "Action"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=1127",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=1127"
+        }
+      ]
+    },
+    "Charlie [20073]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/wnPGeT5UIRhYBRKrGnQ0gHFm6Ol.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Action",
+        "Comedy",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20073",
+          "language": "Hindi dubbed",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20073"
+        }
+      ]
     }
   },
-  "last_updated": "2026-07-11T09:47:22.357413Z"
+  "last_updated": "2026-07-11T11:31:08.810020Z",
+  "expected_total": 1296,
+  "failed_pages": null
 }

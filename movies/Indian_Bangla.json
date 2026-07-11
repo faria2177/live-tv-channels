@@ -3,20 +3,24 @@
   "source_url": "https://fmftp.net/movies?category=7",
   "category_id": "7",
   "category_name": "Indian Bangla",
-  "total_items": 553,
+  "total_items": 664,
   "collected_at": "2026-06-18T19:12:10.963608Z",
   "items": {
     "Taarkata": {
-      "year": "2014",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/75ZCFTzBWPnwNn0TzMwSxxsPEQR.jpg",
-      "rating": 6.5,
-      "genre": [],
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nTg6Op2eS9lUryUseo96fSHA6u1.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Comedy",
+        "Action",
+        "Crime"
+      ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18319",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20938",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18319"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20938"
         }
       ]
     },
@@ -226,18 +230,19 @@
       ]
     },
     "Jackpot": {
-      "year": "2009",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/2ZEg1FuNi5W1Dr1fK43PFaWFZDo.jpg",
-      "rating": 0.0,
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/20708_poster_1774804448987.jfif",
+      "rating": 6.4,
       "genre": [
-        "Documentary"
+        "Comedy",
+        "Action"
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18572",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=20708",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18572"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=20708"
         }
       ]
     },
@@ -515,20 +520,19 @@
       ]
     },
     "Borbaad": {
-      "year": "2014",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vEeLCWXFCT2Mniy7GhQZ5zhpmTv.jpg",
-      "rating": 7.0,
+      "year": "2025",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/jpvptCCkoF85hZL3xd6olSAg8qc.jpg",
+      "rating": 9.0,
       "genre": [
         "Action",
-        "Drama",
         "Romance"
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18119",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18616",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18119"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18616"
         }
       ]
     },
@@ -1394,10 +1398,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18117",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18111",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18117"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18111"
         }
       ]
     },
@@ -1526,10 +1530,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18358",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18213",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18358"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18213"
         }
       ]
     },
@@ -1642,10 +1646,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18400",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18105",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18400"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18105"
         }
       ]
     },
@@ -1676,10 +1680,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18438",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18162",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18438"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18162"
         }
       ]
     },
@@ -1907,10 +1911,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18393",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18079",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18393"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18079"
         }
       ]
     },
@@ -1931,19 +1935,19 @@
       ]
     },
     "Chander Pahar": {
-      "year": "0",
-      "tvg_logo": "",
-      "rating": 0.0,
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/lDrEIaeeEJsOb00rmlpcyIv4QOR.jpg",
+      "rating": 5.6,
       "genre": [
-        "Action",
-        "Adventure"
+        "Adventure",
+        "Mystery"
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18422",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18134",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18422"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18134"
         }
       ]
     },
@@ -1990,10 +1994,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18249",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18248",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18249"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18248"
         }
       ]
     },
@@ -2026,10 +2030,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18481",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18226",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18481"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18226"
         }
       ]
     },
@@ -2074,10 +2078,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18279",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18278",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18279"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18278"
         }
       ]
     },
@@ -2120,10 +2124,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18516",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18300",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18516"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18300"
         }
       ]
     },
@@ -2154,10 +2158,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18506",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18286",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18506"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18286"
         }
       ]
     },
@@ -2168,10 +2172,10 @@
       "genre": [],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18459",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18190",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18459"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18190"
         }
       ]
     },
@@ -2333,10 +2337,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18485",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18236",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18485"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18236"
         }
       ]
     },
@@ -2467,10 +2471,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18314",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18313",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18314"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18313"
         }
       ]
     },
@@ -2568,7 +2572,7 @@
       ]
     },
     "Elar Char Adhyay": {
-      "year": "2013",
+      "year": "2012",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/nbNFOJvVNQvhPd1Y5fxxRbSOrse.jpg",
       "rating": 8.5,
       "genre": [
@@ -2576,10 +2580,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18447",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18173",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18447"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18173"
         }
       ]
     },
@@ -2609,10 +2613,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18156",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18155",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18156"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18155"
         }
       ]
     },
@@ -2673,10 +2677,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18395",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18085",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18395"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18085"
         }
       ]
     },
@@ -3230,10 +3234,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18193",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18039",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18193"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18039"
         }
       ]
     },
@@ -3286,19 +3290,18 @@
       ]
     },
     "Charulata": {
-      "year": "1964",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4kznHLoJGN3OBZunQvZwy26it8z.jpg",
-      "rating": 7.562,
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/19XDWzXFlV6WNJNpjzBUspC2jMe.jpg",
+      "rating": 0.0,
       "genre": [
-        "Drama",
         "Romance"
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18136",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18137",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18136"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18137"
         }
       ]
     },
@@ -4198,10 +4201,10 @@
       "genre": [],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18390",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18042",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18390"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18042"
         }
       ]
     },
@@ -4374,10 +4377,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18592",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18315",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18592"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18315"
         }
       ]
     },
@@ -4391,10 +4394,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18275",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18274",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18275"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18274"
         }
       ]
     },
@@ -4419,10 +4422,10 @@
       "genre": [],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18425",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18138",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18425"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18138"
         }
       ]
     },
@@ -4473,10 +4476,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18296",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18295",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18296"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18295"
         }
       ]
     },
@@ -4490,10 +4493,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18491",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18265",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18491"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18265"
         }
       ]
     },
@@ -4621,10 +4624,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18510",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18291",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18510"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18291"
         }
       ]
     },
@@ -4635,10 +4638,10 @@
       "genre": [],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18423",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18135",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18423"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18135"
         }
       ]
     },
@@ -4649,10 +4652,10 @@
       "genre": [],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18541",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18333",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18541"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18333"
         }
       ]
     },
@@ -4681,10 +4684,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18470",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18205",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18470"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18205"
         }
       ]
     },
@@ -4716,10 +4719,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18468",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18202",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18468"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18202"
         }
       ]
     },
@@ -4779,10 +4782,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18583",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18268",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18583"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18268"
         }
       ]
     },
@@ -4795,10 +4798,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18579",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18254",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18579"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18254"
         }
       ]
     },
@@ -4825,10 +4828,10 @@
       "genre": [],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18474",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18214",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18474"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18214"
         }
       ]
     },
@@ -5196,10 +5199,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18533",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18369",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18533"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18369"
         }
       ]
     },
@@ -5212,10 +5215,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18353",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18182",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18353"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18182"
         }
       ]
     },
@@ -5230,10 +5233,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18350",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18161",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18350"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18161"
         }
       ]
     },
@@ -5294,10 +5297,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18590",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18557",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18590"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18557"
         }
       ]
     },
@@ -5342,10 +5345,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18534",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18370",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18534"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18370"
         }
       ]
     },
@@ -5440,10 +5443,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18322",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18055",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18322"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18055"
         }
       ]
     },
@@ -5491,10 +5494,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18141",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18044",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18141"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18044"
         }
       ]
     },
@@ -5507,10 +5510,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18172",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18051",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18172"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18051"
         }
       ]
     },
@@ -5539,10 +5542,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18536",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18371",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18536"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18371"
         }
       ]
     },
@@ -5571,10 +5574,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18595",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18558",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18595"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18558"
         }
       ]
     },
@@ -5605,26 +5608,27 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18571",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18570",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18571"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18570"
         }
       ]
     },
     "Trishna": {
-      "year": "2008",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/unIR1vpdhIciLReLAWUdaOnEye3.jpg",
-      "rating": 0.0,
+      "year": "2009",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xFCJeLJDXYhrX6Z4bHbdiDeVUgm.jpg",
+      "rating": 5.8,
       "genre": [
+        "Drama",
         "Romance"
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18539",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18540",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18539"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18540"
         }
       ]
     },
@@ -5684,10 +5688,10 @@
       "genre": [],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18565",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18549",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18565"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18549"
         }
       ]
     },
@@ -5717,10 +5721,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18577",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18553",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18577"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18553"
         }
       ]
     },
@@ -5799,10 +5803,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18566",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18550",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18566"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18550"
         }
       ]
     },
@@ -5864,10 +5868,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18584",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18554",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18584"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18554"
         }
       ]
     },
@@ -5932,10 +5936,10 @@
       "genre": [],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18576",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18552",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18576"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18552"
         }
       ]
     },
@@ -5949,10 +5953,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18429",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18045",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18429"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18045"
         }
       ]
     },
@@ -6013,10 +6017,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18586",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18058",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18586"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18058"
         }
       ]
     },
@@ -6043,10 +6047,10 @@
       "genre": [],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18537",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18372",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18537"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18372"
         }
       ]
     },
@@ -6193,10 +6197,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18588",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18555",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18588"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18555"
         }
       ]
     },
@@ -6258,10 +6262,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18452",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18352",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18452"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18352"
         }
       ]
     },
@@ -6274,10 +6278,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18567",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18551",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18567"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18551"
         }
       ]
     },
@@ -6352,10 +6356,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18444",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18351",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18444"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18351"
         }
       ]
     },
@@ -6386,10 +6390,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18589",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18556",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18589"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18556"
         }
       ]
     },
@@ -6419,10 +6423,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18465",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18356",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18465"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18356"
         }
       ]
     },
@@ -6469,10 +6473,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18548",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18430",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18548"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18430"
         }
       ]
     },
@@ -6554,10 +6558,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18157",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18047",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18157"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18047"
         }
       ]
     },
@@ -6659,10 +6663,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18084",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18040",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18084"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18040"
         }
       ]
     },
@@ -6676,10 +6680,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18077",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18041",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18077"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18041"
         }
       ]
     },
@@ -6710,10 +6714,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18163",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18048",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18163"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18048"
         }
       ]
     },
@@ -6815,7 +6819,7 @@
       ]
     },
     "Abhimaan": {
-      "year": "2016",
+      "year": "2017",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/ty8N7txQi6iehHwieCcLYpK4x48.jpg",
       "rating": 5.5,
       "genre": [
@@ -6825,10 +6829,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18378",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18379",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18378"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18379"
         }
       ]
     },
@@ -6985,10 +6989,10 @@
       "genre": [],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18283",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18364",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18283"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18364"
         }
       ]
     },
@@ -7002,10 +7006,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18354",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18192",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18354"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18192"
         }
       ]
     },
@@ -7053,10 +7057,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18418",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18622",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18418"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18622"
         }
       ]
     },
@@ -7070,10 +7074,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18145",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18346",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18145"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18346"
         }
       ]
     },
@@ -7087,10 +7091,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18532",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18326",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18532"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18326"
         }
       ]
     },
@@ -7105,10 +7109,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18605",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18150",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18605"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18150"
         }
       ]
     },
@@ -7123,10 +7127,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18240",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18241",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18240"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18241"
         }
       ]
     },
@@ -7141,10 +7145,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18543",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18373",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18543"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18373"
         }
       ]
     },
@@ -7157,10 +7161,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18417",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18653",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18417"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18653"
         }
       ]
     },
@@ -7238,10 +7242,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18050",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18440",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18050"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18440"
         }
       ]
     },
@@ -7254,10 +7258,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18355",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18194",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18355"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18194"
         }
       ]
     },
@@ -7406,10 +7410,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18148",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18431",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18148"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18431"
         }
       ]
     },
@@ -7438,10 +7442,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18228",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18053",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18228"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18053"
         }
       ]
     },
@@ -7456,10 +7460,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18347",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18146",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18347"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18146"
         }
       ]
     },
@@ -7472,10 +7476,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18344",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18099",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18344"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18099"
         }
       ]
     },
@@ -7488,10 +7492,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18513",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18366",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18513"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18366"
         }
       ]
     },
@@ -7505,10 +7509,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18360",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18487",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18360"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18487"
         }
       ]
     },
@@ -7521,10 +7525,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18342",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18072",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18342"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18072"
         }
       ]
     },
@@ -7572,10 +7576,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18499",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18363",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18499"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18363"
         }
       ]
     },
@@ -7604,10 +7608,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18357",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18473",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18357"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18473"
         }
       ]
     },
@@ -7684,10 +7688,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18212",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18059",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18212"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18059"
         }
       ]
     },
@@ -7763,10 +7767,10 @@
       "genre": [],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18238",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18060",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18238"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18060"
         }
       ]
     },
@@ -7797,10 +7801,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18367",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18312",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18367"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18312"
         }
       ]
     },
@@ -7814,10 +7818,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18289",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18054",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18289"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18054"
         }
       ]
     },
@@ -7876,10 +7880,10 @@
       "genre": [],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18359",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18578",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18359"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18578"
         }
       ]
     },
@@ -7925,10 +7929,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18215",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18049",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18215"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18049"
         }
       ]
     },
@@ -7943,10 +7947,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18406",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18345",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18406"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18345"
         }
       ]
     },
@@ -7981,7 +7985,7 @@
       ]
     },
     "Asha Jaoar Majhe": {
-      "year": "2014",
+      "year": "2015",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/4CyVgbl4FCebAHfYMyyf7hk9aJ7.jpg",
       "rating": 6.8,
       "genre": [
@@ -7989,10 +7993,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18086",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18396",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18086"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18396"
         }
       ]
     },
@@ -8005,10 +8009,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18361",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18490",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18361"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18490"
         }
       ]
     },
@@ -8175,10 +8179,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18343",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18385",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18343"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18385"
         }
       ]
     },
@@ -8268,10 +8272,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18348",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18434",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18348"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18434"
         }
       ]
     },
@@ -8330,10 +8334,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18496",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18362",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18496"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18362"
         }
       ]
     },
@@ -8413,10 +8417,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18505",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18365",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18505"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18365"
         }
       ]
     },
@@ -8461,10 +8465,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18528",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18368",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18528"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18368"
         }
       ]
     },
@@ -8575,10 +8579,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18421",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18131",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18421"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18131"
         }
       ]
     },
@@ -8622,10 +8626,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18092",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18095",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18092"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18095"
         }
       ]
     },
@@ -8751,10 +8755,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18587",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18287",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18587"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18287"
         }
       ]
     },
@@ -8770,10 +8774,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18109",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18110",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18109"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18110"
         }
       ]
     },
@@ -8837,10 +8841,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18415",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18118",
           "language": "Indian Bangla",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18415"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18118"
         }
       ]
     },
@@ -9095,7 +9099,1844 @@
           "watch_page": "https://fmftp.net/watch?type=MOVIE&id=21029"
         }
       ]
+    },
+    "Bisorjon [18117]": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/o9P4HNKZdrBZroLhcPeiFFrQzyR.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18117",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18117"
+        }
+      ]
+    },
+    "Jio Pagla [18358]": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4d6DXkv2Jyj88qOu8IjAp9VUunq.jpg",
+      "rating": 6.333,
+      "genre": [
+        "Comedy",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18358",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18358"
+        }
+      ]
+    },
+    "Cockpit [18046]": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/lDvTPNa4SRRFS0xy4zuTI6e9fSA.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Adventure",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18046",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18046"
+        }
+      ]
+    },
+    "Cockpit [18432]": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/lDvTPNa4SRRFS0xy4zuTI6e9fSA.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Adventure",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18432",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18432"
+        }
+      ]
+    },
+    "Dekh Kemon Lage [18157]": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/b3gjGt86lFKFyRUxX3TMO7EpQes.jpg",
+      "rating": 2.0,
+      "genre": [
+        "Family",
+        "Comedy"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18157",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18157"
+        }
+      ]
+    },
+    "Amar Aponjon [18084]": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nlzq3j8Y0hUYkNbHTsl3W6b8Kz0.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18084",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18084"
+        }
+      ]
+    },
+    "Ami Je Ke Tomar [18077]": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/zkh9NlYCNk4AM8Rq0m8KbWZzjQk.jpg",
+      "rating": 3.0,
+      "genre": [
+        "Romance",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18077",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18077"
+        }
+      ]
+    },
+    "Durga Sohay [18163]": {
+      "year": "2017",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4us8dIOmktEm99ZnexuHZssHgTA.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Family",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18163",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18163"
+        }
+      ]
+    },
+    "Power [18283]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dpotjxUE276b1edcKPHSlKRBgs6.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18283",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18283"
+        }
+      ]
+    },
+    "Haripada Bandwala [18354]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/1Pamy2zo6uouI75uIfzEJk4Gk7Y.jpg",
+      "rating": 1.8,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18354",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18354"
+        }
+      ]
+    },
+    "Byomkesh Pawrbo [18418]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xSFHsC6cgVyc2WoOb3wF3LHZmTB.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Thriller",
+        "Mystery"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18418",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18418"
+        }
+      ]
+    },
+    "Cholai [18145]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/iLnRZLWikMwUY2yqanm6Mnqabm6.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18145",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18145"
+        }
+      ]
+    },
+    "Thammar Boyfriend [18532]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/7SFSQo8rQqmO7SIeNmr6uZ7Sw0n.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18532",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18532"
+        }
+      ]
+    },
+    "Colkatay Columbus [18605]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/42oy7WtB05L4mEwvvBY5pq0AgXX.jpg",
+      "rating": 4.2,
+      "genre": [
+        "Fantasy",
+        "Comedy",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18605",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18605"
+        }
+      ]
+    },
+    "Love Express [18240]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/wKXLjd0BFP1a1Tg1GN1mnFKOa3q.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18240",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18240"
+        }
+      ]
+    },
+    "Zulfiqar [18543]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/puP73iCASUETIOhGxBNXlz9Lyvg.jpg",
+      "rating": 4.4,
+      "genre": [
+        "Thriller",
+        "Crime",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18543",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18543"
+        }
+      ]
+    },
+    "Byomkesh O Chiriakhana [18417]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/gaWbh3epbDxOhNCcSDetUggMD6b.jpg",
+      "rating": 7.5,
+      "genre": [
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18417",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18417"
+        }
+      ]
+    },
+    "Abhimaan [18378]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/ty8N7txQi6iehHwieCcLYpK4x48.jpg",
+      "rating": 5.5,
+      "genre": [
+        "Action",
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18378",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18378"
+        }
+      ]
+    },
+    "Eagoler Chokh [18050]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/k0nPQ2ulfem8dEVlXh0z1SMg1ad.jpg",
+      "rating": 7.8,
+      "genre": [
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18050",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18050"
+        }
+      ]
+    },
+    "Hemanta [18355]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/10VyHSchVxJDChRh4K3PGx55cYw.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18355",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18355"
+        }
+      ]
+    },
+    "Cinemawala [18148]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/cILhRgOKlY2pFIUHcz2kUOBnCoX.jpg",
+      "rating": 7.5,
+      "genre": [
+        "Family",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18148",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18148"
+        }
+      ]
+    },
+    "Ki Kore Toke Bolbo [18228]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/g9XHN2tbB2s8Th14l6as9oxIj8Q.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18228",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18228"
+        }
+      ]
+    },
+    "Chorabali [18347]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/5GTTK6hxU4qyJMpppPSUlJK3A8V.jpg",
+      "rating": 5.8,
+      "genre": [
+        "Mystery",
+        "Drama",
+        "Crime"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18347",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18347"
+        }
+      ]
+    },
+    "Bastu Shaap [18344]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/sxNHVafPX0jX6KKjAW9t9nRXAFK.jpg",
+      "rating": 4.5,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18344",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18344"
+        }
+      ]
+    },
+    "Aguner Pakhi [18342]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dMp0FSCCjmRGhEEcCNxbtsWC4d3.jpg",
+      "rating": 5.0,
+      "genre": [
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18342",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18342"
+        }
+      ]
+    },
+    "Monchora [18360]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/aGTP1JzBBi72Qk1MoMeFJMSKjHJ.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Mystery",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18360",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18360"
+        }
+      ]
+    },
+    "Rater Rajanigandha [18513]": {
+      "year": "2016",
+      "tvg_logo": "",
+      "rating": 10.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18513",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18513"
+        }
+      ]
+    },
+    "Pakaram [18499]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/je3qQTUZPsSsj9fVqrN6EyATOGa.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18499",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18499"
+        }
+      ]
+    },
+    "Jijibisha [18357]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/iibyPzeN3OGKxSrdqUS9b1nHg1Q.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18357",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18357"
+        }
+      ]
+    },
+    "Aparajita Tumi [18390]": {
+      "year": "2012",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/zeGy6n3a8frnVIz9r861xIbeQAI.jpg",
+      "rating": 7.8,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18390",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18390"
+        }
+      ]
+    },
+    "Street Light [18592]": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/wL3HfaVBqy0Br3qVulOLNlB51Bu.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18592",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18592"
+        }
+      ]
+    },
+    "Papi [18275]": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/hF3I0Zd54EOgt9PuI1yXDmsx4gb.jpg",
+      "rating": 7.7,
+      "genre": [
+        "Comedy",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18275",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18275"
+        }
+      ]
+    },
+    "Chatrak [18425]": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/haNJx7SR2aDqxaWSA2qNMaaJDCS.jpg",
+      "rating": 2.0,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18425",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18425"
+        }
+      ]
+    },
+    "Romeo [18296]": {
+      "year": "2011",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "Romance",
+        "Comedy",
+        "Drama",
+        "Family"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18296",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18296"
+        }
+      ]
+    },
+    "Necklace [18491]": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/iYfZMu4z7nROu3tYfwsNyj34wBY.jpg",
+      "rating": 7.1,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18491",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18491"
+        }
+      ]
+    },
+    "Rang Milanti [18510]": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/eiJxKfLyaYRrB44iAxwcXBiRT75.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Comedy"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18510",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18510"
+        }
+      ]
+    },
+    "Chaplin [18423]": {
+      "year": "2011",
+      "tvg_logo": "",
+      "rating": 6.2,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18423",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18423"
+        }
+      ]
+    },
+    "Uro Chithi [18541]": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/71qZQ1hDsuHj7BHvo1us1O2W4bI.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18541",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18541"
+        }
+      ]
+    },
+    "Iti Mrinalini [18470]": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/d65ezWRt2MOFkDRN4O2a0l3gutd.jpg",
+      "rating": 6.2,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18470",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18470"
+        }
+      ]
+    },
+    "Icche [18468]": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/t0P7XWLTenuPG9Vi0x7T56lApz4.jpg",
+      "rating": 9.0,
+      "genre": [
+        "Drama",
+        "Family"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18468",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18468"
+        }
+      ]
+    },
+    "Noukadubi [18583]": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xebG4lhLu3R6yAePRVrXrYA4lWD.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Romance",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18583",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18583"
+        }
+      ]
+    },
+    "Memories In March [18579]": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/pHCghTIRYBvy7hfAQ6VnAO9w9EP.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18579",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18579"
+        }
+      ]
+    },
+    "Jiyo Kaka [18474]": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/uPF8eyYgNAuWIkFbPh8rcre4kME.jpg",
+      "rating": 9.5,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18474",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18474"
+        }
+      ]
+    },
+    "Thana Theke Aschi [18533]": {
+      "year": "2010",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dsMKgTm7Hef4QbUfFR8YkNRGbLR.jpg",
+      "rating": 3.5,
+      "genre": [
+        "Thriller",
+        "Mystery",
+        "Drama",
+        "Crime"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18533",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18533"
+        }
+      ]
+    },
+    "Gandu [18353]": {
+      "year": "2010",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/ctAGjCNv3rg8BKM2RqIFbsKjaif.jpg",
+      "rating": 5.4,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18353",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18353"
+        }
+      ]
+    },
+    "Jenana [18212]": {
+      "year": "2016",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18212",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18212"
+        }
+      ]
+    },
+    "Load Shedding [18238]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/5MGFIqO9S9nVVd8xANZIU52RQQl.jpg",
+      "rating": 6.5,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18238",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18238"
+        }
+      ]
+    },
+    "Abby Sen [18075]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xdNOJ50UM7d0JqfEYdx5oRf9EbC.jpg",
+      "rating": 6.2,
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Science Fiction"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18075",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18075"
+        }
+      ]
+    },
+    "Rajkahini [18289]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/op7PSses8Q0Rmu8DwKl1F4qtr6D.jpg",
+      "rating": 8.4,
+      "genre": [
+        "Drama",
+        "History"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18289",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18289"
+        }
+      ]
+    },
+    "Shudhu Tomari Jonyo [18367]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nzLM92nRjRA5N2wT3eSJ8YYWdUv.jpg",
+      "rating": 7.8,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18367",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18367"
+        }
+      ]
+    },
+    "Mayer Biye [18359]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/l0pOuM80ZIcJIaaFxshULDUtgAr.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18359",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18359"
+        }
+      ]
+    },
+    "Jomer Raja Dilo Bor [18215]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/6egetSB9WdWt3S0lu7P8AuUNTrJ.jpg",
+      "rating": 5.5,
+      "genre": [
+        "Comedy",
+        "Music",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18215",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18215"
+        }
+      ]
+    },
+    "Besh Korechi Prem Korechi [18406]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4O2ujG3zVOtbKM4QRT4r4RPAwCL.jpg",
+      "rating": 2.0,
+      "genre": [
+        "Action",
+        "Comedy",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18406",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18406"
+        }
+      ]
+    },
+    "Naxal [18361]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/hZy29MVbfaj0mkV0NKnAPuAawOD.jpg",
+      "rating": 10.0,
+      "genre": [
+        "History"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18361",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18361"
+        }
+      ]
+    },
+    "Amanush 2 [18343]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/9ErvRm4Y6oL4yzoIQYdmnaV8v3L.jpg",
+      "rating": 5.0,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18343",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18343"
+        }
+      ]
+    },
+    "Cosmic Sex [18348]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/gh8UoQd8PJOelIOY5ng9VMOmrS1.jpg",
+      "rating": 6.194,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18348",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18348"
+        }
+      ]
+    },
+    "Open Tee Bioscope [18496]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/r7cToqNkJFzd1ceNUrAXDsln7BG.jpg",
+      "rating": 6.9,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18496",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18496"
+        }
+      ]
+    },
+    "Professional [18505]": {
+      "year": "2015",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/bxB2q91nKYp8JNzqE7t7TWBVupB.jpg",
+      "rating": 8.301,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Action"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18505",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18505"
+        }
+      ]
+    },
+    "Swade Alhade [18528]": {
+      "year": "2015",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18528",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18528"
+        }
+      ]
+    },
+    "Chaar [18421]": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/u0OO0xBC8GfFY7mhFrbCLXVOYhL.jpg",
+      "rating": 9.3,
+      "genre": [
+        "Animation",
+        "History",
+        "Action",
+        "Adventure",
+        "Family"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18421",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18421"
+        }
+      ]
+    },
+    "Asha Jaoar Majhe [18086]": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4CyVgbl4FCebAHfYMyyf7hk9aJ7.jpg",
+      "rating": 6.8,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18086",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18086"
+        }
+      ]
+    },
+    "Badshahi Angti [18092]": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/kS2GgXu7AKiOxgtGUs48ylUHVfe.jpg",
+      "rating": 7.1,
+      "genre": [
+        "Thriller",
+        "Mystery"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18092",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18092"
+        }
+      ]
+    },
+    "Borbaad [18119]": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vEeLCWXFCT2Mniy7GhQZ5zhpmTv.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Action",
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18119",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18119"
+        }
+      ]
+    },
+    "Punascha [18587]": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dAnqNtyVIMze6xhSuwLYexxoaEL.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18587",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18587"
+        }
+      ]
+    },
+    "Bindaas [18109]": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/yGjcklnJk2UAbsyGXWthDeJSfYu.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18109",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18109"
+        }
+      ]
+    },
+    "Bonku Babu [18415]": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/8huuagrSpdrRSJXAdTcGaBEWjIm.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18415",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18415"
+        }
+      ]
+    },
+    "Taarkata [18319]": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/75ZCFTzBWPnwNn0TzMwSxxsPEQR.jpg",
+      "rating": 6.5,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18319",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18319"
+        }
+      ]
+    },
+    "Bangali Babu English Mem [18400]": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4hrNeMNsakEQT9k6jcTH2a9A5gL.jpg",
+      "rating": 7.5,
+      "genre": [
+        "Comedy",
+        "Music",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18400",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18400"
+        }
+      ]
+    },
+    "Durbin [18438]": {
+      "year": "2014",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/jhPIclER6magJbfZxe7joSiT5WW.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Adventure",
+        "Action",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18438",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18438"
+        }
+      ]
+    },
+    "Apur Panchali [18393]": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/pZzxFGzJF1Bw6bQeBsDPP72gEhH.jpg",
+      "rating": 5.6,
+      "genre": [
+        "Family",
+        "History",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18393",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18393"
+        }
+      ]
+    },
+    "Majnu [18249]": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/EJQ3E75akB0Za4PkFSs2aOeJFe.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18249",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18249"
+        }
+      ]
+    },
+    "Khiladi [18481]": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nrRlmCcWm9DGhK9dYRxSeSKfghU.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Action",
+        "Comedy",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18481",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18481"
+        }
+      ]
+    },
+    "Phoring [18279]": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/6ldDfbiwP27bEYKekM5zHoqlinB.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18279",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18279"
+        }
+      ]
+    },
+    "Rupkatha Noy [18516]": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/2QkOBuY6O10JcMkLKA8ATpDkXX0.jpg",
+      "rating": 6.6,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18516",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18516"
+        }
+      ]
+    },
+    "Proloy [18506]": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/vUwK6raCjkY5x1SwN4PTdoFTTzc.jpg",
+      "rating": 6.5,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18506",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18506"
+        }
+      ]
+    },
+    "Half Serious [18459]": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/h5EDbMR2bIO0u0OxIJ9ssa8E21R.jpg",
+      "rating": 0.0,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18459",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18459"
+        }
+      ]
+    },
+    "Lattoo [18485]": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/6OPRAxOanEhPOJCDBWyN1W9CEJz.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Music"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18485",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18485"
+        }
+      ]
+    },
+    "Simanaheen [18314]": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/fMgesajijl8UJDFbdaUCvsdpvEP.jpg",
+      "rating": 4.0,
+      "genre": [
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18314",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18314"
+        }
+      ]
+    },
+    "Elar Char Adhyay [18447]": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/nbNFOJvVNQvhPd1Y5fxxRbSOrse.jpg",
+      "rating": 8.5,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18447",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18447"
+        }
+      ]
+    },
+    "Deewana [18156]": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/k0qkcAF6SolWYmTWPzxLLIEeZKa.jpg",
+      "rating": 4.8,
+      "genre": [
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18156",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18156"
+        }
+      ]
+    },
+    "Aschorjo Prodip [18395]": {
+      "year": "2013",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18395",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18395"
+        }
+      ]
+    },
+    "Chokher Bali [18548]": {
+      "year": "2003",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/izErrnZhCWHOaDUjRnpbqW4gU63.jpg",
+      "rating": 7.5,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18548",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18548"
+        }
+      ]
+    },
+    "Heerak Rajar Deshe [18193]": {
+      "year": "1980",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18193",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18193"
+        }
+      ]
+    },
+    "Charulata [18136]": {
+      "year": "1964",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/4kznHLoJGN3OBZunQvZwy26it8z.jpg",
+      "rating": 7.562,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18136",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18136"
+        }
+      ]
+    },
+    "Chander Pahar [18422]": {
+      "year": "0",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "Action",
+        "Adventure"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18422",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18422"
+        }
+      ]
+    },
+    "Dui Prithibi [18350]": {
+      "year": "2010",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/zkzbQAyL93YArTHojBQJUv79g6V.jpg",
+      "rating": 4.9,
+      "genre": [
+        "Drama",
+        "Romance",
+        "Adventure"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18350",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18350"
+        }
+      ]
+    },
+    "Shukno Lanka [18590]": {
+      "year": "2010",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/yWzu2lJzcCtOqEnqzNcALXBHFOA.jpg",
+      "rating": 10.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18590",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18590"
+        }
+      ]
+    },
+    "The Japanese Wife [18534]": {
+      "year": "2010",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/cf9VYWeZi009WX2X2ePPn5CwANB.jpg",
+      "rating": 6.614,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18534",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18534"
+        }
+      ]
+    },
+    "Target [18322]": {
+      "year": "2010",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xxdcfGbMxQ8IqMVQV6ykXW12X2z.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Thriller",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18322",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18322"
+        }
+      ]
+    },
+    "Chha-E Chuti [18141]": {
+      "year": "2010",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18141",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18141"
+        }
+      ]
+    },
+    "Ekti Tarar Khonje-Beyond the Stars [18171]": {
+      "year": "2010",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18171",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18171"
+        }
+      ]
+    },
+    "Ekti Tarar Khonje-Beyond the Stars [18172]": {
+      "year": "2010",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18172",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18172"
+        }
+      ]
+    },
+    "Tokhon Teyish [18536]": {
+      "year": "2010",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18536",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18536"
+        }
+      ]
+    },
+    "sukno lonka [18595]": {
+      "year": "2010",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18595",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18595"
+        }
+      ]
+    },
+    "Hit List [18571]": {
+      "year": "2009",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/tAd5jgCcv4a3g4UNnfJMGZ7Q9kk.jpg",
+      "rating": 5.692,
+      "genre": [
+        "Comedy",
+        "Romance",
+        "TV Movie"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18571",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18571"
+        }
+      ]
+    },
+    "Cross Connection [18565]": {
+      "year": "2009",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18565",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18565"
+        }
+      ]
+    },
+    "Madly Bangali [18577]": {
+      "year": "2009",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/yH57eALcXSvWP1EbdIJlMMVQuzq.jpg",
+      "rating": 8.0,
+      "genre": [
+        "Music"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18577",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18577"
+        }
+      ]
+    },
+    "Jackpot [18572]": {
+      "year": "2009",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/2ZEg1FuNi5W1Dr1fK43PFaWFZDo.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Documentary"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18572",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18572"
+        }
+      ]
+    },
+    "Dujone [18566]": {
+      "year": "2009",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18566",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18566"
+        }
+      ]
+    },
+    "Poran Jay Jolia Re [18584]": {
+      "year": "2009",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18584",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18584"
+        }
+      ]
+    },
+    "Trishna [18539]": {
+      "year": "2008",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/unIR1vpdhIciLReLAWUdaOnEye3.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18539",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18539"
+        }
+      ]
+    },
+    "Love Story [18576]": {
+      "year": "2008",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/tPhHOnAz8L3NQJxoesP66N46UoJ.jpg",
+      "rating": 8.0,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18576",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18576"
+        }
+      ]
+    },
+    "Chirodini Tumi Je Amar [18429]": {
+      "year": "2008",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/7NLAcuRzvuyyTK2tCECL897Rm4X.jpg",
+      "rating": 5.8,
+      "genre": [
+        "Romance",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18429",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18429"
+        }
+      ]
+    },
+    "Premer Kahini [18586]": {
+      "year": "2008",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/8CrB1yNfwVShajGiL2JDybvQEiU.jpg",
+      "rating": 5.5,
+      "genre": [
+        "Romance",
+        "Drama",
+        "Family"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18586",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18586"
+        }
+      ]
+    },
+    "Tolly Lights [18537]": {
+      "year": "2008",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18537",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18537"
+        }
+      ]
+    },
+    "SHIKAR [18588]": {
+      "year": "2006",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/k9Uv21vLxBXAMYmia895Vz2pITX.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Action"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18588",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18588"
+        }
+      ]
+    },
+    "Gaja Ukiler Hatya Rahasya [18452]": {
+      "year": "2006",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18452",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18452"
+        }
+      ]
+    },
+    "Faltu [18567]": {
+      "year": "2005",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/pwK2xSu7txqy8KSZjc0WH3WXpas.jpg",
+      "rating": 0.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18567",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18567"
+        }
+      ]
+    },
+    "Ek Mutho Chhobi [18444]": {
+      "year": "2005",
+      "tvg_logo": "",
+      "rating": 0.0,
+      "genre": [
+        "None"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18444",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18444"
+        }
+      ]
+    },
+    "Shadows of Time [18589]": {
+      "year": "2004",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/dSg6DsthDXnI2IGNYhn0B1q2i07.jpg",
+      "rating": 6.1,
+      "genre": [
+        "Drama",
+        "Horror",
+        "Romance"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18589",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18589"
+        }
+      ]
+    },
+    "Hotath Neerar Jonnyo [18465]": {
+      "year": "2004",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/qJYBSzAEKpPrwgozKXnM2I1Ng31.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Family"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=18465",
+          "language": "Indian Bangla",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=18465"
+        }
+      ]
     }
   },
-  "last_updated": "2026-07-11T09:47:25.570090Z"
+  "last_updated": "2026-07-11T11:31:10.996167Z",
+  "expected_total": 664,
+  "failed_pages": null
 }

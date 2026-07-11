@@ -3,20 +3,19 @@
   "source_url": "https://fmftp.net/tv-shows?category=12",
   "category_id": "12",
   "category_name": "Bangla Tv Series",
-  "total_items": 84,
+  "total_items": 85,
   "collected_at": "2026-06-18T19:12:22.887288Z",
   "items": {
     "Byomkesh Bakshi": {
-      "year": "2010",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/6Hudn4jiJArcg89UEDsF6gAvgWo.jpg",
-      "rating": 8.6,
+      "year": "2026",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/A2lWKbnTddjRNaT5FFfEJvH6WqQ.jpg",
+      "rating": 8.0,
       "genre": [
-        "Crime",
         "Mystery"
       ],
       "language": "Bangla Tv Series",
-      "watch_page": "https://fmftp.net/watch?type=SERIES&id=786",
-      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=786"
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=8241",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8241"
     },
     "Kuheli": {
       "year": "2026",
@@ -907,7 +906,21 @@
       "language": "Bangla Tv Series",
       "watch_page": "https://fmftp.net/watch?type=SERIES&id=8782",
       "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=8782"
+    },
+    "Byomkesh Bakshi [786]": {
+      "year": "2010",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/6Hudn4jiJArcg89UEDsF6gAvgWo.jpg",
+      "rating": 8.6,
+      "genre": [
+        "Crime",
+        "Mystery"
+      ],
+      "language": "Bangla Tv Series",
+      "watch_page": "https://fmftp.net/watch?type=SERIES&id=786",
+      "stream_url": "https://fmftp.net/api/stream/video/stream?type=tv-shows&id=786"
     }
   },
-  "last_updated": "2026-07-11T09:47:34.688833Z"
+  "last_updated": "2026-07-11T11:31:18.492494Z",
+  "expected_total": 85,
+  "failed_pages": null
 }

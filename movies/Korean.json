@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/movies?category=4",
   "category_id": "4",
   "category_name": "Korean",
-  "total_items": 369,
+  "total_items": 376,
   "collected_at": "2026-06-18T19:11:58.805083Z",
   "items": {
     "The Shadow's Edge": {
@@ -548,10 +548,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=686",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=667",
           "language": "Korean",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=686"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=667"
         }
       ]
     },
@@ -1111,19 +1111,20 @@
       ]
     },
     "No Mercy": {
-      "year": "2010",
-      "tvg_logo": "https://fmftp.net/content-images/movies/posters/iG9fuXtkvaZSnEFMi75U1yv9mjw.jpg",
-      "rating": 7.4,
+      "year": "2019",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/7DfarQ2v2UhYoobZC4uloa7geyg.jpg",
+      "rating": 0.0,
       "genre": [
         "Action",
-        "Drama"
+        "Crime",
+        "Thriller"
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=768",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=769",
           "language": "Korean",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=768"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=769"
         }
       ]
     },
@@ -1610,10 +1611,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=570",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=571",
           "language": "Korean",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=570"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=571"
         }
       ]
     },
@@ -2920,10 +2921,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=804",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=650",
           "language": "Korean",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=804"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=650"
         }
       ]
     },
@@ -4455,7 +4456,7 @@
       ]
     },
     "My Way": {
-      "year": "2011",
+      "year": "2012",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/upwipxKFnuasyfcdLB4M32annwG.jpg",
       "rating": 6.465,
       "genre": [
@@ -4464,10 +4465,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=602",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=760",
           "language": "Korean",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=602"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=760"
         }
       ]
     },
@@ -5079,10 +5080,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=593",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=592",
           "language": "Korean",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=593"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=592"
         }
       ]
     },
@@ -6395,7 +6396,127 @@
           "watch_page": "https://fmftp.net/watch?type=MOVIE&id=844"
         }
       ]
+    },
+    "The Pirates The Last Royal Treasure [686]": {
+      "year": "2022",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/50UQeTrUM7ErXzkvqCsV6EXcM3g.jpg",
+      "rating": 6.5,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=686",
+          "language": "Korean",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=686"
+        }
+      ]
+    },
+    "Little Forest [570]": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/2i7t3PbEMp9Yne5rqN69qquZUDM.jpg",
+      "rating": 7.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=570",
+          "language": "Korean",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=570"
+        }
+      ]
+    },
+    "My Way [602]": {
+      "year": "2011",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/upwipxKFnuasyfcdLB4M32annwG.jpg",
+      "rating": 6.465,
+      "genre": [
+        "Drama",
+        "Music"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=602",
+          "language": "Korean",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=602"
+        }
+      ]
+    },
+    "No Mercy [768]": {
+      "year": "2010",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/iG9fuXtkvaZSnEFMi75U1yv9mjw.jpg",
+      "rating": 7.4,
+      "genre": [
+        "Action",
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=768",
+          "language": "Korean",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=768"
+        }
+      ]
+    },
+    "Mother [593]": {
+      "year": "2009",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/lkcYWbWC2hlOyiaC649Br4qLjoW.jpg",
+      "rating": 8.0,
+      "genre": [
+        "Documentary"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=593",
+          "language": "Korean",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=593"
+        }
+      ]
+    },
+    "To Jenny [676]": {
+      "year": "2018",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/xA66GolQwktCCyyKZxSSUfR1HdG.jpg",
+      "rating": 6.0,
+      "genre": [
+        "Drama"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=676",
+          "language": "Korean",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=676"
+        }
+      ]
+    },
+    "The Age of Shadows [804]": {
+      "year": "2016",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/fdmbC7BRAvDfgzPtfk9tNqn8QNx.jpg",
+      "rating": 7.21,
+      "genre": [
+        "Action",
+        "Thriller"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=804",
+          "language": "Korean",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=804"
+        }
+      ]
     }
   },
-  "last_updated": "2026-07-11T09:47:19.296556Z"
+  "last_updated": "2026-07-11T11:31:06.309328Z",
+  "expected_total": 376,
+  "failed_pages": null
 }

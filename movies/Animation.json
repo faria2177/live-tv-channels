@@ -3,7 +3,7 @@
   "source_url": "https://fmftp.net/movies?category=3",
   "category_id": "3",
   "category_name": "Animation",
-  "total_items": 436,
+  "total_items": 438,
   "collected_at": "2026-06-18T19:11:54.822685Z",
   "items": {
     "Swapped": {
@@ -2601,7 +2601,7 @@
       ]
     },
     "Extraordinary Tales": {
-      "year": "2013",
+      "year": "2015",
       "tvg_logo": "https://fmftp.net/content-images/movies/posters/mGETWBPMDHgpdFVsJf8cYGsPWnz.jpg",
       "rating": 6.395,
       "genre": [
@@ -2611,10 +2611,10 @@
       ],
       "links": [
         {
-          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=17741",
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=17986",
           "language": "Animation",
           "quality": "",
-          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=17741"
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=17986"
         }
       ]
     },
@@ -8097,7 +8097,47 @@
           "watch_page": "https://fmftp.net/watch?type=MOVIE&id=17969"
         }
       ]
+    },
+    "Extraordinary Tales [17741]": {
+      "year": "2013",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/mGETWBPMDHgpdFVsJf8cYGsPWnz.jpg",
+      "rating": 6.395,
+      "genre": [
+        "Horror",
+        "Animation",
+        "Mystery"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=17741",
+          "language": "Animation",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=17741"
+        }
+      ]
+    },
+    "The Addams Family 2 [455]": {
+      "year": "2021",
+      "tvg_logo": "https://fmftp.net/content-images/movies/posters/ld7YB9vBRp1GM1DT3KmFWSmtBPB.jpg",
+      "rating": 6.968,
+      "genre": [
+        "Animation",
+        "Family",
+        "Comedy",
+        "Fantasy",
+        "Adventure"
+      ],
+      "links": [
+        {
+          "url": "https://fmftp.net/api/stream/video/stream?type=movies&id=455",
+          "language": "Animation",
+          "quality": "",
+          "watch_page": "https://fmftp.net/watch?type=MOVIE&id=455"
+        }
+      ]
     }
   },
-  "last_updated": "2026-07-11T09:47:17.753832Z"
+  "last_updated": "2026-07-11T11:31:04.729903Z",
+  "expected_total": 438,
+  "failed_pages": null
 }
