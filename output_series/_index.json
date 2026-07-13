@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-07-12T14:16:46Z",
+  "built_at": "2026-07-13T04:17:47Z",
   "output_dir": "output_series",
   "files": [
     {
@@ -16,7 +16,7 @@
       "total_series": 906,
       "series_with_episodes": 906,
       "series_with_errors": 0,
-      "total_episodes": 17514
+      "total_episodes": 17518
     },
     {
       "file": "Indian_Tv_Series.json",
@@ -44,5 +44,5 @@
     }
   ],
   "grand_total_series": 1300,
-  "grand_total_episodes": 21639
+  "grand_total_episodes": 21643
 }
