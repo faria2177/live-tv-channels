@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-11T12:59:48.521532Z",
-  "total_movies": 20967,
+  "generated_at": "2026-07-13T02:24:50.469073Z",
+  "total_movies": 20968,
   "total_series": 1297,
-  "total_episodes": 21569,
-  "grand_total": 22264,
+  "total_episodes": 21573,
+  "grand_total": 22265,
   "movies": {
-    "total": 20967,
+    "total": 20968,
     "categories": [
       {
         "label": "Bollywood",
         "category_id": "1",
         "file": "movies/Bollywood.json",
         "count": 2915,
-        "new": 6,
-        "updated": 2909,
+        "new": 2,
+        "updated": 2913,
         "total_episodes": null,
         "expected_total": 2917
       },
@@ -22,8 +22,8 @@
         "category_id": "2",
         "file": "movies/Hollywood.json",
         "count": 14091,
-        "new": 10,
-        "updated": 14081,
+        "new": 8,
+        "updated": 14083,
         "total_episodes": null,
         "expected_total": 14094
       },
@@ -31,19 +31,19 @@
         "label": "Animation",
         "category_id": "3",
         "file": "movies/Animation.json",
-        "count": 437,
-        "new": 0,
-        "updated": 437,
+        "count": 438,
+        "new": 2,
+        "updated": 436,
         "total_episodes": null,
-        "expected_total": 438
+        "expected_total": 439
       },
       {
         "label": "Korean Movies",
         "category_id": "4",
         "file": "movies/Korean.json",
         "count": 375,
-        "new": 0,
-        "updated": 375,
+        "new": 1,
+        "updated": 374,
         "total_episodes": null,
         "expected_total": 376
       },
@@ -72,8 +72,8 @@
         "category_id": "7",
         "file": "movies/Indian_Bangla.json",
         "count": 663,
-        "new": 1,
-        "updated": 662,
+        "new": 0,
+        "updated": 663,
         "total_episodes": null,
         "expected_total": 664
       },
@@ -82,8 +82,8 @@
         "category_id": "8",
         "file": "movies/Tamil.json",
         "count": 1135,
-        "new": 5,
-        "updated": 1130,
+        "new": 6,
+        "updated": 1129,
         "total_episodes": null,
         "expected_total": 1136
       },
@@ -107,9 +107,9 @@
         "category_id": "9",
         "file": "series/English_Tv_Series.json",
         "count": 903,
-        "new": 2,
-        "updated": 901,
-        "total_episodes": 17444,
+        "new": 0,
+        "updated": 903,
+        "total_episodes": 17448,
         "expected_total": 903
       },
       {
