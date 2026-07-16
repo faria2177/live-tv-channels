@@ -1,14 +1,14 @@
 {
-  "built_at": "2026-07-16T03:55:26Z",
+  "built_at": "2026-07-16T16:11:01Z",
   "output_dir": "output_series",
   "files": [
     {
       "file": "Bangla_Tv_Series.json",
       "mode": "legacy",
       "total_series": 85,
-      "series_with_episodes": 84,
-      "series_with_errors": 0,
-      "total_episodes": 606
+      "series_with_episodes": 48,
+      "series_with_errors": 36,
+      "total_episodes": 382
     },
     {
       "file": "English_Tv_Series.json",
@@ -44,5 +44,5 @@
     }
   ],
   "grand_total_series": 1302,
-  "grand_total_episodes": 21667
+  "grand_total_episodes": 21443
 }

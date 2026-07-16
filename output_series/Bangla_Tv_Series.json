@@ -34,17 +34,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=8241",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Byomkesh Bakshi S1E1 - The Stranger in Chinatown",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=33230"
-      }
-    ],
-    "episode_count": 1,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/8241?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509b4c50>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 8241
   },
   "Kuheli": {
@@ -80,17 +71,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=8669",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Kuheli S1E1 - Kuheli tey Laash",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=34154"
-      }
-    ],
-    "episode_count": 1,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/8669?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509b4dd0>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 8669
   },
   "Roktofolok": {
@@ -126,17 +108,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=8499",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Roktofolok S1E1 - Agantuk",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=34056"
-      }
-    ],
-    "episode_count": 1,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/8499?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509c1050>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 8499
   },
   "Nishir Daak": {
@@ -222,57 +195,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=5822",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Nishir Daak S1E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=26010"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Nishir Daak S1E2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=26011"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Nishir Daak S1E3",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=26012"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Nishir Daak S1E4",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=26013"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Nishir Daak S1E5",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=26014"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Nishir Daak S1E6",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=26015"
-      }
-    ],
-    "episode_count": 6,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/5822?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509d49d0>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 5822
   },
   "Bibhishon": {
@@ -308,17 +232,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=6133",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Bibhishon S1E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=26447"
-      }
-    ],
-    "episode_count": 1,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/6133?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509c2550>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 6133
   },
   "Paap Kahini": {
@@ -354,17 +269,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=8305",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Paap Kahini S1E1 - S01 Complete",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=33601"
-      }
-    ],
-    "episode_count": 1,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/8305?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509b6950>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 8305
   },
   "Gulmohor": {
@@ -402,17 +308,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=801",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Gulmohor S1E1 - Sa",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16692"
-      }
-    ],
-    "episode_count": 1,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/801?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509d4cd0>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 801
   },
   "JImmi": {
@@ -450,17 +347,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=806",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "JImmi S1E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16734"
-      }
-    ],
-    "episode_count": 1,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/806?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507e0fd0>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 806
   },
   "Khakee The Bengal Chapter": {
@@ -559,65 +447,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=814",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Khakee The Bengal Chapter S1E1 - City of Joy",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16786"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Khakee The Bengal Chapter S1E2 - Gurudakshina",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16787"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Khakee The Bengal Chapter S1E3 - Jay-Veeru",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16788"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Khakee The Bengal Chapter S1E4 - Rakshabandhan",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16789"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Khakee The Bengal Chapter S1E5 - City of Bhoy",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16790"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Khakee The Bengal Chapter S1E6 - The Mole",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16791"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "Khakee The Bengal Chapter S1E7 - Lanka Dahan",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16792"
-      }
-    ],
-    "episode_count": 7,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/814?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509b6590>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 814
   },
   "Dainee": {
@@ -705,57 +536,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=793",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Dainee S1E1 - Otit-er Taaney",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16508"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Dainee S1E2 - Ashani Shanket",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16509"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Dainee S1E3 - Chaal Bodol",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16510"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Dainee S1E4 - Biswashghatok",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16511"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Dainee S1E5 - Obhaagi",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16512"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Dainee S1E6 - Shesh Sanghat",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16513"
-      }
-    ],
-    "episode_count": 6,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/793?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509d7090>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 793
   },
   "Bohemian Ghora": {
@@ -791,17 +573,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=779",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Bohemian Ghora S1E1 - Singha Pelo Kanya",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16433"
-      }
-    ],
-    "episode_count": 1,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/779?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509c3890>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 779
   },
   "AKA": {
@@ -840,17 +613,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=4479",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "AKA S1E1 - Nulled",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=25150"
-      }
-    ],
-    "episode_count": 1,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/4479?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507e8090>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 4479
   },
   "Kaalratri": {
@@ -939,57 +703,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=811",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Kaalratri S1E1 - S1.E1 ∙ Bodhuboron",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16771"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Kaalratri S1E2 - S1.E2 ∙ Khopar Kaanta",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16772"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Kaalratri S1E3 - 1.E3 ∙ Debir Bishorjon",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16773"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Kaalratri S1E4 - S1.E4 ∙ Satyasandhani",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16774"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Kaalratri S1E5 - S1.E5 ∙ Bhule Jaowa Otit",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16775"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Kaalratri S1E6 - S1.E6 ∙ Sabyasachi",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16776"
-      }
-    ],
-    "episode_count": 6,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/811?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509c1390>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 811
   },
   "Chokro": {
@@ -1231,177 +946,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=8180",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Chokro S1E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32772"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Chokro S1E2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32773"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Chokro S1E3",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32774"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Chokro S1E4",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32775"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Chokro S1E5",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32776"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Chokro S1E6",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32777"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "Chokro S1E7",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32778"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 8,
-        "episode_title": "Chokro S1E8",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32779"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 9,
-        "episode_title": "Chokro S1E9",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32780"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 10,
-        "episode_title": "Chokro S1E10",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32781"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 11,
-        "episode_title": "Chokro S1E11",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32782"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 12,
-        "episode_title": "Chokro S1E12",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32783"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 13,
-        "episode_title": "Chokro S1E13",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32784"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 14,
-        "episode_title": "Chokro S1E14",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32785"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 15,
-        "episode_title": "Chokro S1E15",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32786"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 16,
-        "episode_title": "Chokro S1E16",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32787"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 17,
-        "episode_title": "Chokro S1E17",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32788"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 18,
-        "episode_title": "Chokro S1E18",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32789"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 19,
-        "episode_title": "Chokro S1E19",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32790"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 20,
-        "episode_title": "Chokro S1E20",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32791"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 1,
-        "episode_title": "Chokro S2E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=32792"
-      }
-    ],
-    "episode_count": 21,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/8180?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507e3910>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 8180
   },
   "Myself Allen Swapan": {
@@ -1515,73 +1061,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=828",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Myself Allen Swapan S1E1 - The Dead Man",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17002"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Myself Allen Swapan S1E2 - The Family Man",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17003"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Myself Allen Swapan S1E3 - The Lady's Man",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17004"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Myself Allen Swapan S1E4 - The Conman",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17005"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Myself Allen Swapan S1E5 - The Businessman",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17006"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Myself Allen Swapan S1E6 - The Shrewd Man",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17007"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "Myself Allen Swapan S1E7 - The End Game",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17008"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 1,
-        "episode_title": "Myself Allen Swapan S2E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17009"
-      }
-    ],
-    "episode_count": 8,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/828?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509b5290>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 828
   },
   "REKKA": {
@@ -1699,81 +1180,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=838",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "REKKA S1E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17064"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "REKKA S1E2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17065"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "REKKA S1E3",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17066"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "REKKA S1E4",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17067"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "REKKA S1E5",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17068"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "REKKA S1E6",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17069"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "REKKA S1E7",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17070"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 8,
-        "episode_title": "REKKA S1E8",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17071"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 9,
-        "episode_title": "REKKA S1E9",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17072"
-      }
-    ],
-    "episode_count": 9,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/838?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507eb090>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 838
   },
   "Phone-X": {
@@ -1862,57 +1270,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=837",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Phone-X S1E1 - Memos",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17058"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Phone-X S1E2 - Directions",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17059"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Phone-X S1E3 - Trending",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17060"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Phone-X S1E4 - Block",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17061"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Phone-X S1E5 - Dislike",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17062"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Phone-X S1E6 - Match",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17063"
-      }
-    ],
-    "episode_count": 6,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/837?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507e0890>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 837
   },
   "Mismatch": {
@@ -2056,97 +1415,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=822",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Mismatch S1E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16934"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Mismatch S1E2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16936"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Mismatch S1E3",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16938"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Mismatch S1E4",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16940"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Mismatch S1E5",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16941"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Mismatch S1E6",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16943"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 1,
-        "episode_title": "Mismatch S2E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16945"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 2,
-        "episode_title": "Mismatch S2E2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16947"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 3,
-        "episode_title": "Mismatch S2E3",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16948"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 4,
-        "episode_title": "Mismatch S2E4",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16950"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 5,
-        "episode_title": "Mismatch S2E5",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16952"
-      }
-    ],
-    "episode_count": 11,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/822?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509b5590>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 822
   },
   "Hello!": {
@@ -2342,137 +1612,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=803",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Hello! S1E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16694"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Hello! S1E2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16695"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Hello! S1E3",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16696"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Hello! S1E4",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16697"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Hello! S1E5",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16698"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Hello! S1E6",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16699"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "Hello! S1E7",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16700"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 8,
-        "episode_title": "Hello! S1E8",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16701"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 1,
-        "episode_title": "Hello! S2E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16702"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 2,
-        "episode_title": "Hello! S2E2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16703"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 3,
-        "episode_title": "Hello! S2E3",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16704"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 4,
-        "episode_title": "Hello! S2E4",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16705"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 5,
-        "episode_title": "Hello! S2E5",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16706"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 6,
-        "episode_title": "Hello! S2E6",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16707"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 7,
-        "episode_title": "Hello! S2E7",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16708"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 8,
-        "episode_title": "Hello! S2E8",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16709"
-      }
-    ],
-    "episode_count": 16,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/803?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507ea7d0>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 803
   },
   "Taqdeer": {
@@ -2578,73 +1719,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=849",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Taqdeer S1E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17151"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Taqdeer S1E2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17152"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Taqdeer S1E3",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17153"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Taqdeer S1E4",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17155"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Taqdeer S1E5",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17156"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Taqdeer S1E6",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17157"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "Taqdeer S1E7",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17158"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 8,
-        "episode_title": "Taqdeer S1E8",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17160"
-      }
-    ],
-    "episode_count": 8,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/849?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507f6110>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 849
   },
   "Srikanto": {
@@ -2762,81 +1838,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=5570",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Srikanto S1E1 - Nostalgia",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=25809"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Srikanto S1E2 - Hallucination",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=25810"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Srikanto S1E3 - Reunion",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=25811"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Srikanto S1E4 - Passion",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=25812"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Srikanto S1E5 - Deceit",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=25813"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Srikanto S1E6 - Compassion",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=25814"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "Srikanto S1E7 - Disappearance",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=25815"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 8,
-        "episode_title": "Srikanto S1E8 - Confusion",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=25816"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 9,
-        "episode_title": "Srikanto S1E9 - Incomplete",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=25817"
-      }
-    ],
-    "episode_count": 9,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/5570?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507eaa50>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 5570
   },
   "Mohanagar": {
@@ -3041,145 +2044,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=823",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Mohanagar S1E1 - Ishaner Megh",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16954"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Mohanagar S1E2 - Chiching Faank",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16955"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Mohanagar S1E3 - Shape Bor",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16957"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Mohanagar S1E4 - Golar Kaanta",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16959"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Mohanagar S1E5 - Amabashyar Chaand",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16961"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Mohanagar S1E6 - Andher Joshthi",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16962"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "Mohanagar S1E7 - Goray Golod",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16963"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 8,
-        "episode_title": "Mohanagar S1E8 - Kistimaat",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16964"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 1,
-        "episode_title": "Mohanagar S2E1 - Kenche Gondush",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16965"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 2,
-        "episode_title": "Mohanagar S2E2 - Gokuler Shaanr",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16966"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 3,
-        "episode_title": "Mohanagar S2E3 - Dumurer Phool",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16967"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 4,
-        "episode_title": "Mohanagar S2E4 - Gur Khonja",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16968"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 5,
-        "episode_title": "Mohanagar S2E5 - Koto Dhaney Koto Chal",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16969"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 6,
-        "episode_title": "Mohanagar S2E6 - Shankher Kawrat",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16970"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 7,
-        "episode_title": "Mohanagar S2E7 - Damadol",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16971"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 8,
-        "episode_title": "Mohanagar S2E8 - Poya Baro",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16972"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 9,
-        "episode_title": "Mohanagar S2E9 - Bina Meghey Bawjropat",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16973"
-      }
-    ],
-    "episode_count": 17,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/823?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507e3150>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 823
   },
   "Mandaar": {
@@ -3257,49 +2123,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=819",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Mandaar S1E1 - Hell Is Murky",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16892"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Mandaar S1E2 - Blood Will Have Blood",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16897"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Mandaar S1E3 - The Way To Dusty Death",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16900"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Mandaar S1E4 - Life's But A Walking Shadow",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16905"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Mandaar S1E5 - Fair Is Foul, And Foul Is Fair",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16908"
-      }
-    ],
-    "episode_count": 5,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/819?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509d5610>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 819
   },
   "Mohomaya": {
@@ -3337,17 +2162,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=826",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Mohomaya S1E1 - Toe ring",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16982"
-      }
-    ],
-    "episode_count": 1,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/826?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507f7550>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 826
   },
   "Subharambha": {
@@ -3433,57 +2249,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=846",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Subharambha S1E1 - The Golden Opportunity",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17117"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Subharambha S1E2 - Veni, Vidi, Vici",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17118"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Subharambha S1E3 - A Complete Stranger",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17119"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Subharambha S1E4 - The Comeback",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17120"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Subharambha S1E5 - In Search of Sound",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17121"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Subharambha S1E6 - A New Beginning",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17122"
-      }
-    ],
-    "episode_count": 6,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/846?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507e3890>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 846
   },
   "Maradonar Juto": {
@@ -3572,57 +2339,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=829",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Maradonar Juto S1E1 - Kick Off",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16913"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Maradonar Juto S1E2 - Foul",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16916"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Maradonar Juto S1E3 - Yellow Card",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16917"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Maradonar Juto S1E4 - Off Side",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16921"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Maradonar Juto S1E5 - Penalty",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16923"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Maradonar Juto S1E6 - Goal",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16924"
-      }
-    ],
-    "episode_count": 6,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/829?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507ebad0>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 829
   },
   "Turu Love": {
@@ -3698,49 +2416,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=857",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Turu Love S1E1 - Biyer Paka Kotha",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17206"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Turu Love S1E2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17209"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Turu Love S1E3",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17212"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Turu Love S1E4",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17215"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Turu Love S1E5",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17218"
-      }
-    ],
-    "episode_count": 5,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/857?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507f8890>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 857
   },
   "Kavita Bhabhi": {
@@ -3866,73 +2543,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=813",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Kavita Bhabhi S1E1 - Kavita Bhabhi Ka Parichaye",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16778"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Kavita Bhabhi S1E2 - Gay Pati Ka Balatkaar",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16779"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 1,
-        "episode_title": "Kavita Bhabhi S2E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16780"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 2,
-        "episode_title": "Kavita Bhabhi S2E2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16781"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 3,
-        "episode": 1,
-        "episode_title": "Kavita Bhabhi S3E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16782"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 3,
-        "episode": 2,
-        "episode_title": "Kavita Bhabhi S3E2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16783"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 4,
-        "episode": 1,
-        "episode_title": "Kavita Bhabhi S4E1 - Part 1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16784"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 4,
-        "episode": 2,
-        "episode_title": "Kavita Bhabhi S4E2 - Part 2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16785"
-      }
-    ],
-    "episode_count": 8,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/813?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8507f7a90>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 813
   },
   "Damayanti": {
@@ -4030,65 +2642,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=795",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Damayanti S1E1 - Rahasya Sandhani",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16576"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Damayanti S1E2 - Bipod Sonket",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16580"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Damayanti S1E3 - Abhisar",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16583"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Damayanti S1E4 - Sholo Kola",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16586"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Damayanti S1E5 - Bonhi Potongo",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16589"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Damayanti S1E6 - Jobonika",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16592"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "Damayanti S1E7 - Unmochon",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16594"
-      }
-    ],
-    "episode_count": 7,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/795?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509a9ad0>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 795
   },
   "Tansener Tanpura": {
@@ -4223,89 +2778,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=848",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Tansener Tanpura S1E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17138"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Tansener Tanpura S1E1 - Swaralipi",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17139"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Tansener Tanpura S1E2 - Jog-Sutra",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17141"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Tansener Tanpura S1E3 - Pancham Baad",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17142"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Tansener Tanpura S1E4 - Tunabha Nali",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17143"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Tansener Tanpura S1E5 - Hangsadhwani",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17145"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "Tansener Tanpura S1E7 - Masitkhani Gat",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17146"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 8,
-        "episode_title": "Tansener Tanpura S1E8 - Nawabi Khanjar",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17147"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 9,
-        "episode_title": "Tansener Tanpura S1E9 - Snori Miyar Santan",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17148"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 2,
-        "episode": 1,
-        "episode_title": "Tansener Tanpura S2E1 - Shri'r Putro",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17150"
-      }
-    ],
-    "episode_count": 10,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/848?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff8509d4790>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 848
   },
   "Bonyo Premer Golpo": {
@@ -4404,65 +2878,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=780",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Bonyo Premer Golpo S1E1 - Majhraater Call",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16434"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Bonyo Premer Golpo S1E2 - Khali Parking Lot",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16435"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Bonyo Premer Golpo S1E3 - Amar Bhabhijaan",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16436"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Bonyo Premer Golpo S1E4 - Mukh, Mukhosh, O Mrittu",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16437"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Bonyo Premer Golpo S1E5 - Bidishar Nesha",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16438"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Bonyo Premer Golpo S1E6 - Shedin Dekha Hoyechilo",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16439"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "Bonyo Premer Golpo S1E7 - Onyo Premer Golpo",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16440"
-      }
-    ],
-    "episode_count": 7,
+    "links": [],
+    "_error": "ConnectTimeout: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/780?fields=episodes (Caused by ConnectTimeoutError(<HTTPSConnection(host='fmftp.net', port=443) at 0x7ff850801890>, 'Connection to fmftp.net timed out. (connect timeout=30)'))",
     "series_id": 780
   },
   "The Reunion": {
@@ -4591,89 +3008,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=854",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "The Reunion S1E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17181"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "The Reunion S1E2",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17182"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "The Reunion S1E3",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17183"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "The Reunion S1E4",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17184"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "The Reunion S1E5",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17185"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "The Reunion S1E6",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17186"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "The Reunion S1E7",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17187"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 8,
-        "episode_title": "The Reunion S1E8",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17188"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 9,
-        "episode_title": "The Reunion S1E9",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17189"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 10,
-        "episode_title": "The Reunion S1E10",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=17190"
-      }
-    ],
-    "episode_count": 10,
+    "links": [],
+    "_error": "ConnectionError: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/854?fields=episodes (Caused by NewConnectionError(\"HTTPSConnection(host='fmftp.net', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
     "series_id": 854
   },
   "Lalbazaar": {
@@ -4802,89 +3138,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=816",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Lalbazaar S1E1 - Sleepless in Kolkata",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16805"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Lalbazaar S1E2 - Mothers are Forever",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16806"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Lalbazaar S1E3 - An Intimate Murder",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16807"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Lalbazaar S1E4 - Justice Begins at Home",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16808"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Lalbazaar S1E5 - A Burning Memory",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16809"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Lalbazaar S1E6 - Return of the Prodigal Son",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16810"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "Lalbazaar S1E7 - An Off-Hand Reaction",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16811"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 8,
-        "episode_title": "Lalbazaar S1E8 - The Road to Death",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16812"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 9,
-        "episode_title": "Lalbazaar S1E9 - The Killer Net",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16813"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 10,
-        "episode_title": "Lalbazaar S1E10 - This is not ‘The End’",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16814"
-      }
-    ],
-    "episode_count": 10,
+    "links": [],
+    "_error": "ConnectionError: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/816?fields=episodes (Caused by NewConnectionError(\"HTTPSConnection(host='fmftp.net', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
     "series_id": 816
   },
   "Ekattor": {
@@ -4992,73 +3247,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=792",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Ekattor S1E1 - Shaape Neule",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16645"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 2,
-        "episode_title": "Ekattor S1E2 - Shokuner Agomon",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16646"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 3,
-        "episode_title": "Ekattor S1E3 - Ghar Shotru Bibhishon",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16647"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 4,
-        "episode_title": "Ekattor S1E4 - Bagher Ghore Ghoger Basha",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16648"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 5,
-        "episode_title": "Ekattor S1E5 - Khudhartho Hyena",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16649"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 6,
-        "episode_title": "Ekattor S1E6 - Phnaad",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16650"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 7,
-        "episode_title": "Ekattor S1E7 - Palta Aghat",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16651"
-      },
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 8,
-        "episode_title": "Ekattor S1E8 - Kalbela",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16652"
-      }
-    ],
-    "episode_count": 8,
+    "links": [],
+    "_error": "ConnectionError: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/792?fields=episodes (Caused by NewConnectionError(\"HTTPSConnection(host='fmftp.net', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
     "series_id": 792
   },
   "Mentalhood": {
@@ -5096,17 +3286,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=821",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Mentalhood S1E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16928"
-      }
-    ],
-    "episode_count": 1,
+    "links": [],
+    "_error": "ConnectionError: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/821?fields=episodes (Caused by NewConnectionError(\"HTTPSConnection(host='fmftp.net', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
     "series_id": 821
   },
   "Kashmakash Kya Sahi Kya Galat": {
@@ -5144,17 +3325,8 @@
       }
     ],
     "watch_page": "https://fmftp.net/watch?type=SERIES&id=812",
-    "links": [
-      {
-        "added": "2026-07-16",
-        "language": "Bangla Tv Series",
-        "season": 1,
-        "episode": 1,
-        "episode_title": "Kashmakash Kya Sahi Kya Galat S1E1",
-        "url": "https://fmftp.net/api/stream/video/stream?type=tv_shows&id=16777"
-      }
-    ],
-    "episode_count": 1,
+    "links": [],
+    "_error": "RetryError: HTTPSConnectionPool(host='fmftp.net', port=443): Max retries exceeded with url: /api/tv-shows/812?fields=episodes (Caused by ResponseError('too many 502 error responses'))",
     "series_id": 812
   },
   "Shobdo Jobdo": {
