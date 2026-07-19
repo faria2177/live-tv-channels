@@ -36,7 +36,7 @@
               "release_date": null,
               "still_path": null,
               "online_rating": 0.0,
-              "views": 359,
+              "views": 361,
               "watch_page": "https://fmftp.net/watch?type=SERIES&id=882&episode=17237"
             }
           ]
@@ -70,7 +70,7 @@
               "release_date": null,
               "still_path": null,
               "online_rating": 0.0,
-              "views": 104,
+              "views": 105,
               "watch_page": "https://fmftp.net/watch?type=SERIES&id=883&episode=18177"
             },
             {
@@ -369,7 +369,7 @@
       "watch_page": "https://fmftp.net/watch?type=SERIES&id=883"
     }
   },
-  "last_updated": "2026-07-17T02:31:59.342860Z",
+  "last_updated": "2026-07-19T02:33:14.514406Z",
   "expected_total": 2,
   "failed_pages": null
 }
