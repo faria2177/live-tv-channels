@@ -739,6 +739,20 @@
       }
     ]
   },
+  "Choddobeshi": {
+    "year": "2026",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/hXhgwtG3nMxWwKzfx4TIvNoLY01.jpg",
+    "links": [
+      {
+        "added": "2026-07-25",
+        "language": "Bangla",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Choddobeshi S1E1 - Tiktiki!",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Bangla/Choddobeshi/s01/Choddobeshi%202026%20S01e01%20Complete.mp4"
+      }
+    ]
+  },
   "Chokro": {
     "year": "2024",
     "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/azs5gFDWiHKh64NxMPHReuPgTnB.jpg",
@@ -4201,6 +4215,20 @@
     "year": "2019",
     "tvg_logo": "",
     "links": []
+  },
+  "Prem Shots": {
+    "year": "2026",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/aXn3wxUibvGlYmQLeTVJxfU65W3.jpg",
+    "links": [
+      {
+        "added": "2026-07-25",
+        "language": "Bangla",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Prem Shots S1E1",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Bangla/Prem%20Shots/s01/Prem.Shots.2026.S01e01.mkv"
+      }
+    ]
   },
   "Rahasya Romancha Series": {
     "year": "2019",

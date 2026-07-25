@@ -791,6 +791,20 @@
       }
     ]
   },
+  "Adarsh Baal Vidyalaya": {
+    "year": "2026",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/1XbcSqURUvhgu2nnoQRZ7cXmTsJ.jpg",
+    "links": [
+      {
+        "added": "2026-07-25",
+        "language": "Hindi",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Adarsh Baal Vidyalaya S1E1 - Illiterate Goldy",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Indian/Adarsh%20Baal%20Vidyalaya/s01/Adarsh%20Baal%20Vidyalaya%20s01e01.mp4"
+      }
+    ]
+  },
   "Agra Affair": {
     "year": "2025",
     "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/cH1jE9EEe24Yw7jiWChed3gNyB3.jpg",
@@ -12016,6 +12030,20 @@
         "episode": 7,
         "episode_title": "Paurashpur S1E7 - Vidroh – The Uprising",
         "url": "https://fmftp.net/data/disk-1/tvseries/Indian/Paurashpur/s01/s01e07.mkv"
+      }
+    ]
+  },
+  "Perfect Family": {
+    "year": "2025",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/4HZCp7StTidUMJvty4fZ2VJaQgm.jpg",
+    "links": [
+      {
+        "added": "2026-07-25",
+        "language": "Hindi",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Perfect Family S1E1 - Kidhar Hai Chot?",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Indian/Perfect%20Family/s01/Perfect%20Family2025%20S01e01%20Complete.mp4"
       }
     ]
   },
