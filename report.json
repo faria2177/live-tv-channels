@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-29T02:10:39.127338Z",
+  "generated_at": "2026-07-31T02:25:40.196576Z",
   "total_movies": 21008,
   "total_series": 1305,
-  "total_episodes": 22107,
+  "total_episodes": 22115,
   "grand_total": 22313,
   "movies": {
     "total": 21008,
@@ -12,8 +12,8 @@
         "category_id": "1",
         "file": "movies/Bollywood.json",
         "count": 2916,
-        "new": 0,
-        "updated": 2916,
+        "new": 1,
+        "updated": 2915,
         "total_episodes": null,
         "expected_total": 2920
       },
@@ -22,8 +22,8 @@
         "category_id": "2",
         "file": "movies/Hollywood.json",
         "count": 14106,
-        "new": 2,
-        "updated": 14104,
+        "new": 0,
+        "updated": 14106,
         "total_episodes": null,
         "expected_total": 14109
       },
@@ -52,10 +52,10 @@
         "category_id": "5",
         "file": "movies/Hindi_dubbed.json",
         "count": 1317,
-        "new": 0,
-        "updated": 1317,
+        "new": 1,
+        "updated": 1316,
         "total_episodes": null,
-        "expected_total": 1318
+        "expected_total": 1319
       },
       {
         "label": "Horror",
@@ -117,10 +117,10 @@
         "category_id": "10",
         "file": "series/Indian_Tv_Series.json",
         "count": 214,
-        "new": 0,
-        "updated": 214,
-        "total_episodes": 2025,
-        "expected_total": 214
+        "new": 1,
+        "updated": 213,
+        "total_episodes": 2033,
+        "expected_total": 215
       },
       {
         "label": "Korean TV Series",
