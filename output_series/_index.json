@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-08-02T14:17:49Z",
+  "built_at": "2026-08-03T04:15:08Z",
   "output_dir": "output_series",
   "files": [
     {
@@ -13,10 +13,10 @@
     {
       "file": "English_Tv_Series.json",
       "mode": "legacy",
-      "total_series": 909,
-      "series_with_episodes": 909,
+      "total_series": 912,
+      "series_with_episodes": 912,
       "series_with_errors": 0,
-      "total_episodes": 17990
+      "total_episodes": 18095
     },
     {
       "file": "Indian_Tv_Series.json",
@@ -43,6 +43,6 @@
       "total_episodes": 31
     }
   ],
-  "grand_total_series": 1311,
-  "grand_total_episodes": 22160
+  "grand_total_series": 1314,
+  "grand_total_episodes": 22265
 }
