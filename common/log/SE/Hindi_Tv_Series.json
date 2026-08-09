@@ -6211,6 +6211,20 @@
       }
     ]
   },
+  "Gurthukosthunnayi": {
+    "year": "2026",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/fQuKcQdlDEZNltcHCN83pYEnh6D.jpg",
+    "links": [
+      {
+        "added": "2026-08-09",
+        "language": "Hindi",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Gurthukosthunnayi S1E1 - First Wedding Card",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Indian/Gurthukosthunnayi/s01/Gurthukosthunnayi%20%20%20s01e01.mp4"
+      }
+    ]
+  },
   "Hai Junoon!": {
     "year": "2025",
     "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/xwVZ2pYgzAkkbWeBYSNs0431aub.jpg",
@@ -11023,6 +11037,20 @@
       }
     ]
   },
+  "Muthassi": {
+    "year": "2026",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/upghryFPaiUMjlzgmnHpwtnYJx3.jpg",
+    "links": [
+      {
+        "added": "2026-08-09",
+        "language": "Hindi",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Muthassi S1E1 - The House of Secrets",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Indian/Muthassi/s01/Muthassi%202026%20S01e01.mp4"
+      }
+    ]
+  },
   "Muthu Alias Kaattaan": {
     "year": "2026",
     "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/nOxTfnDo0tOKWKBsoTmJHYjOrme.jpg",
@@ -11634,6 +11662,20 @@
         "episode": 11,
         "episode_title": "Only For Singles S1E11 - Ghar Dhoondhe, Phir Ghar Dhoodhe!",
         "url": "https://fmftp.net/data/disk-1/tvseries/Indian/Only%20For%20Singles/s01/Only%20For%20Singles%202019%20S01%20E11.mp4"
+      }
+    ]
+  },
+  "Operation Safed Saga": {
+    "year": "2026",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/f56PHAGbUFPmHMRippWWNpRgSao.jpg",
+    "links": [
+      {
+        "added": "2026-08-09",
+        "language": "Hindi",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Operation Safed Saga S1E1 - Peace and War",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Indian/Operation%20Safed%20Saga/s01/Operation%20Safed%20Saga%20s01e01.mp4"
       }
     ]
   },
