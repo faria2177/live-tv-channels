@@ -73,7 +73,7 @@
         "Romance",
         "Drama"
       ],
-      "views": 728,
+      "views": 732,
       "links": [
         {
           "url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Blue Is The Warmest Color (2013)/Blue.Is.The.Warmest.Color.2013.720p.BluRay.x264-[YTS.AM].mp4",
@@ -131,7 +131,7 @@
         "Thriller",
         "Crime"
       ],
-      "views": 382,
+      "views": 385,
       "links": [
         {
           "url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Irreversible (2002)/Irreversible.2002.720p.BR.800MB.MkvCage.com.mkv",
@@ -188,7 +188,7 @@
         "Crime",
         "Drama"
       ],
-      "views": 40,
+      "views": 41,
       "links": [
         {
           "url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Close-Up (1992)/Close-Up.1990.720p.BluRay.x264.AAC-[YTS.MX].mp4",
@@ -208,7 +208,7 @@
       "stream_url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Close-Up (1992)/Close-Up.1990.720p.BluRay.x264.AAC-[YTS.MX].mp4"
     }
   },
-  "last_updated": "2026-08-11T01:37:47.568170Z",
+  "last_updated": "2026-08-13T01:56:14.204798Z",
   "expected_total": 7,
   "failed_pages": null
 }
