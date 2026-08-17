@@ -36,7 +36,7 @@
               "release_date": null,
               "still_path": null,
               "online_rating": 0.0,
-              "views": 406,
+              "views": 411,
               "watch_page": "https://fmftp.net/watch?type=SERIES&id=882&episode=17237"
             }
           ]
@@ -70,7 +70,7 @@
               "release_date": null,
               "still_path": null,
               "online_rating": 0.0,
-              "views": 113,
+              "views": 118,
               "watch_page": "https://fmftp.net/watch?type=SERIES&id=883&episode=18177"
             },
             {
@@ -80,7 +80,7 @@
               "release_date": null,
               "still_path": null,
               "online_rating": 0.0,
-              "views": 11,
+              "views": 12,
               "watch_page": "https://fmftp.net/watch?type=SERIES&id=883&episode=18182"
             },
             {
@@ -90,7 +90,7 @@
               "release_date": null,
               "still_path": null,
               "online_rating": 0.0,
-              "views": 2,
+              "views": 3,
               "watch_page": "https://fmftp.net/watch?type=SERIES&id=883&episode=18187"
             },
             {
@@ -100,7 +100,7 @@
               "release_date": null,
               "still_path": null,
               "online_rating": 0.0,
-              "views": 2,
+              "views": 3,
               "watch_page": "https://fmftp.net/watch?type=SERIES&id=883&episode=18192"
             },
             {
@@ -220,7 +220,7 @@
               "release_date": null,
               "still_path": null,
               "online_rating": 0.0,
-              "views": 0,
+              "views": 1,
               "watch_page": "https://fmftp.net/watch?type=SERIES&id=883&episode=18228"
             },
             {
@@ -369,7 +369,7 @@
       "watch_page": "https://fmftp.net/watch?type=SERIES&id=883"
     }
   },
-  "last_updated": "2026-08-15T01:18:19.741627Z",
+  "last_updated": "2026-08-17T01:18:25.277326Z",
   "expected_total": 2,
   "failed_pages": null
 }
