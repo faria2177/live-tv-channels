@@ -15,7 +15,7 @@
       "genre": [
         "Drama"
       ],
-      "views": 81,
+      "views": 82,
       "links": [
         {
           "url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Capernaum (2018)/Capernaum.2018.720p.BluRay.x264-[YTS.AM].mp4",
@@ -44,7 +44,7 @@
         "Comedy",
         "Drama"
       ],
-      "views": 214,
+      "views": 215,
       "links": [
         {
           "url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Cook Up a Storm (2017)/Cook.Up.A.Storm.2017.Chinese.1080p.BluRay.x264.AAC.5.1.ESub-YTS.mkv",
@@ -73,7 +73,7 @@
         "Romance",
         "Drama"
       ],
-      "views": 751,
+      "views": 754,
       "links": [
         {
           "url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Blue Is The Warmest Color (2013)/Blue.Is.The.Warmest.Color.2013.720p.BluRay.x264-[YTS.AM].mp4",
@@ -131,7 +131,7 @@
         "Thriller",
         "Crime"
       ],
-      "views": 395,
+      "views": 397,
       "links": [
         {
           "url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Irreversible (2002)/Irreversible.2002.720p.BR.800MB.MkvCage.com.mkv",
@@ -208,7 +208,7 @@
       "stream_url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Close-Up (1992)/Close-Up.1990.720p.BluRay.x264.AAC-[YTS.MX].mp4"
     }
   },
-  "last_updated": "2026-08-17T01:17:15.599814Z",
+  "last_updated": "2026-08-19T01:16:49.211908Z",
   "expected_total": 7,
   "failed_pages": null
 }
