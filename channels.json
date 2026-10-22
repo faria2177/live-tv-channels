@@ -350,6 +350,16 @@
     "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/tencrickethd.png\" group-title=\"IPTV\",Ten Cricket HD"
   },
   {
+    "name": "TSports",
+    "logo": "http://iptvidn.com/assets/images/tsports.jpg",
+    "group": "IPTV",
+    "url": "http://103.89.248.30:8082/T-SPORTS/tracks-a1/index.fmp4.m3u8?token=6dd24a463efcf17d5f3fcefb3178ebcdaff72514-9f23c1ba03569bbfbbaed4f9ab1bfb4b-1792701300-1792690500",
+    "source": "https://aboxbdix.web.app/tv/iptv.html",
+    "epg_id": "",
+    "epg_name": "",
+    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/tencrickethd.png\" group-title=\"IPTV\",Ten Cricket HD"
+  },
+  {
     "name": "P TV",
     "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/ptvsports.png",
     "group": "IPTV",
