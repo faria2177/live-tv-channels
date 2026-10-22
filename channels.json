@@ -40,96 +40,6 @@
     "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/atnnews.png\" group-title=\"IPTV\",ATN News"
   },
   {
-    "name": "Colors Bangla CM",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Colors_Bangla_Cinema.png",
-    "group": "IPTV",
-    "url": "https://iptv.aboxbdix-001.workers.dev/Colors-Bangla-CM/tnfd8y_3a35daa4f4984c90.m3u8",
-    "source": "https://aboxbdix.web.app/tv/iptv.html",
-    "epg_id": "",
-    "epg_name": "",
-    "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/8/8c/Colors_Bangla_Cinema.png\" group-title=\"IPTV\",Colors Bangla CM"
-  },
-  {
-    "name": "Colors Bangla",
-    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/Colors_Bangla.png",
-    "group": "IPTV",
-    "url": "https://iptv.aboxbdix-001.workers.dev/COLORS-BANGLA/tnfd91_36c1e776603fa2c3.m3u8",
-    "source": "https://aboxbdix.web.app/tv/iptv.html",
-    "epg_id": "",
-    "epg_name": "",
-    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/Colors_Bangla.png\" group-title=\"IPTV\",Colors Bangla"
-  },
-  {
-    "name": "Colors Bangla",
-    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/Colors_Bangla.png",
-    "group": "IPTV",
-    "url": "https://iptv.aboxbdix-001.workers.dev/nested.m3u8?url=GsSXkZyh0vO62eaRjiNhY3kfdPH__tZM2YKcTR9TGiJY4X5los1YuRtl29FXPn9IaVtwnYxx41GsuGXf5IgV-rX-Lw5dZsSdbnCZ67BHjXgspnK1_JRzT568rtSaUmILq4Bi_wY_VgkFWHIv1hqnH73fBq14&token=tnfd91_36c1e776603fa2c3",
-    "source": "https://aboxbdix.web.app/tv/iptv.html",
-    "epg_id": "",
-    "epg_name": "",
-    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/Colors_Bangla.png\" group-title=\"IPTV\",Colors Bangla"
-  },
-  {
-    "name": "ENTERR 10",
-    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/ENTERR_10.png",
-    "group": "IPTV",
-    "url": "https://iptv.aboxbdix-001.workers.dev/enter-10/tnfd97_ab9938453367d731.m3u8",
-    "source": "https://aboxbdix.web.app/tv/iptv.html",
-    "epg_id": "",
-    "epg_name": "",
-    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/ENTERR_10.png\" group-title=\"IPTV\",ENTERR 10"
-  },
-  {
-    "name": "Jalsha Movies",
-    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/jalshamovies.png",
-    "group": "IPTV",
-    "url": "https://iptv.aboxbdix-001.workers.dev/jalsha-movies/tnfd9c_314abf52ef16b253.m3u8",
-    "source": "https://aboxbdix.web.app/tv/iptv.html",
-    "epg_id": "",
-    "epg_name": "",
-    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/jalshamovies.png\" group-title=\"IPTV\",Jalsha Movies"
-  },
-  {
-    "name": "Sony Aath",
-    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/sony_aath.png",
-    "group": "IPTV",
-    "url": "https://iptv.aboxbdix-001.workers.dev/SONY-AATH/tnfd9h_1e967f076e222660.m3u8",
-    "source": "https://aboxbdix.web.app/tv/iptv.html",
-    "epg_id": "",
-    "epg_name": "",
-    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/sony_aath.png\" group-title=\"IPTV\",Sony Aath"
-  },
-  {
-    "name": "Star Jalsha",
-    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/starjalsha.png",
-    "group": "IPTV",
-    "url": "https://iptv.aboxbdix-001.workers.dev/STAR-JALSHA/tnfd9k_5269f4dd25ff7bcc.m3u8",
-    "source": "https://aboxbdix.web.app/tv/iptv.html",
-    "epg_id": "",
-    "epg_name": "",
-    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/starjalsha.png\" group-title=\"IPTV\",Star Jalsha"
-  },
-  {
-    "name": "Zee Bangla",
-    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/zeebangla.png",
-    "group": "IPTV",
-    "url": "https://iptv.aboxbdix-001.workers.dev/ZEE-BANGLA/tnfd9q_e96453eb66ae8792.m3u8",
-    "source": "https://aboxbdix.web.app/tv/iptv.html",
-    "epg_id": "",
-    "epg_name": "",
-    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/zeebangla.png\" group-title=\"IPTV\",Zee Bangla"
-  },
-  {
-    "name": "Zee Bangla Cinema",
-    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/Zee_bangla_cinema.png",
-    "group": "IPTV",
-    "url": "https://iptv.aboxbdix-001.workers.dev/Zee_bangla_cinema/tnfd9u_5baa1cd00b492406.m3u8",
-    "source": "https://aboxbdix.web.app/tv/iptv.html",
-    "epg_id": "",
-    "epg_name": "",
-    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/Zee_bangla_cinema.png\" group-title=\"IPTV\",Zee Bangla Cinema"
-  },
-  {
     "name": "Banglavision",
     "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/banglavision.png",
     "group": "IPTV",
@@ -1478,6 +1388,96 @@
     "epg_id": "",
     "epg_name": "",
     "extinf": "#EXTINF:-1 tvg-logo=\"https://s3.aynaott.com/storage/21992f5e8529a9d2a94b6edf917dbd8f\" group-title=\"News\",AccuWeather"
+  },
+  {
+    "name": "Colors Bangla CM",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Colors_Bangla_Cinema.png",
+    "group": "IPTV",
+    "url": "https://iptv.aboxbdix-001.workers.dev/Colors-Bangla-CM/tnfd8y_3a35daa4f4984c90.m3u8",
+    "source": "https://aboxbdix.web.app/tv/iptv.html",
+    "epg_id": "",
+    "epg_name": "",
+    "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/8/8c/Colors_Bangla_Cinema.png\" group-title=\"IPTV\",Colors Bangla CM"
+  },
+  {
+    "name": "Colors Bangla",
+    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/Colors_Bangla.png",
+    "group": "IPTV",
+    "url": "https://iptv.aboxbdix-001.workers.dev/COLORS-BANGLA/tnfd91_36c1e776603fa2c3.m3u8",
+    "source": "https://aboxbdix.web.app/tv/iptv.html",
+    "epg_id": "",
+    "epg_name": "",
+    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/Colors_Bangla.png\" group-title=\"IPTV\",Colors Bangla"
+  },
+  {
+    "name": "Colors Bangla",
+    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/Colors_Bangla.png",
+    "group": "IPTV",
+    "url": "https://iptv.aboxbdix-001.workers.dev/nested.m3u8?url=GsSXkZyh0vO62eaRjiNhY3kfdPH__tZM2YKcTR9TGiJY4X5los1YuRtl29FXPn9IaVtwnYxx41GsuGXf5IgV-rX-Lw5dZsSdbnCZ67BHjXgspnK1_JRzT568rtSaUmILq4Bi_wY_VgkFWHIv1hqnH73fBq14&token=tnfd91_36c1e776603fa2c3",
+    "source": "https://aboxbdix.web.app/tv/iptv.html",
+    "epg_id": "",
+    "epg_name": "",
+    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/Colors_Bangla.png\" group-title=\"IPTV\",Colors Bangla"
+  },
+  {
+    "name": "ENTERR 10",
+    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/ENTERR_10.png",
+    "group": "IPTV",
+    "url": "https://iptv.aboxbdix-001.workers.dev/enter-10/tnfd97_ab9938453367d731.m3u8",
+    "source": "https://aboxbdix.web.app/tv/iptv.html",
+    "epg_id": "",
+    "epg_name": "",
+    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/ENTERR_10.png\" group-title=\"IPTV\",ENTERR 10"
+  },
+  {
+    "name": "Jalsha Movies",
+    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/jalshamovies.png",
+    "group": "IPTV",
+    "url": "https://iptv.aboxbdix-001.workers.dev/jalsha-movies/tnfd9c_314abf52ef16b253.m3u8",
+    "source": "https://aboxbdix.web.app/tv/iptv.html",
+    "epg_id": "",
+    "epg_name": "",
+    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/jalshamovies.png\" group-title=\"IPTV\",Jalsha Movies"
+  },
+  {
+    "name": "Sony Aath",
+    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/sony_aath.png",
+    "group": "IPTV",
+    "url": "https://iptv.aboxbdix-001.workers.dev/SONY-AATH/tnfd9h_1e967f076e222660.m3u8",
+    "source": "https://aboxbdix.web.app/tv/iptv.html",
+    "epg_id": "",
+    "epg_name": "",
+    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/sony_aath.png\" group-title=\"IPTV\",Sony Aath"
+  },
+  {
+    "name": "Star Jalsha",
+    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/starjalsha.png",
+    "group": "IPTV",
+    "url": "https://iptv.aboxbdix-001.workers.dev/STAR-JALSHA/tnfd9k_5269f4dd25ff7bcc.m3u8",
+    "source": "https://aboxbdix.web.app/tv/iptv.html",
+    "epg_id": "",
+    "epg_name": "",
+    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/starjalsha.png\" group-title=\"IPTV\",Star Jalsha"
+  },
+  {
+    "name": "Zee Bangla",
+    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/zeebangla.png",
+    "group": "IPTV",
+    "url": "https://iptv.aboxbdix-001.workers.dev/ZEE-BANGLA/tnfd9q_e96453eb66ae8792.m3u8",
+    "source": "https://aboxbdix.web.app/tv/iptv.html",
+    "epg_id": "",
+    "epg_name": "",
+    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/zeebangla.png\" group-title=\"IPTV\",Zee Bangla"
+  },
+  {
+    "name": "Zee Bangla Cinema",
+    "logo": "https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/Zee_bangla_cinema.png",
+    "group": "IPTV",
+    "url": "https://iptv.aboxbdix-001.workers.dev/Zee_bangla_cinema/tnfd9u_5baa1cd00b492406.m3u8",
+    "source": "https://aboxbdix.web.app/tv/iptv.html",
+    "epg_id": "",
+    "epg_name": "",
+    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/ryvoxtb/image/refs/heads/main/tv-chanel-logo/Zee_bangla_cinema.png\" group-title=\"IPTV\",Zee Bangla Cinema"
   },
   {
     "name": "Sky News Weather",
