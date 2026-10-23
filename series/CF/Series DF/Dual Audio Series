@@ -1,8 +1,15 @@
 {
   "name": "Dual Audio Series",
   "parts": [
-    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/English_Tv_Series%20-0.json",
-    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/English_Tv_Series-1.json",
-    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/English_Tv_Series-2.json"
+    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/CF/Series%20DF/Dual%20Audio%20Series-part01.json",
+    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/CF/Series%20DF/Dual%20Audio%20Series-part02.json",
+    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/CF/Series%20DF/Dual%20Audio%20Series-part03.json",
+    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/CF/Series%20DF/Dual%20Audio%20Series-part04.json",
+    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/CF/Series%20DF/Dual%20Audio%20Series-part05.json",
+    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/CF/Series%20DF/Dual%20Audio%20Series-part06.json",
+    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/CF/Series%20DF/Dual%20Audio%20Series-part07.json",
+    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/CF/Series%20DF/Dual%20Audio%20Series-part08.json",
+    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/CF/Series%20DF/Dual%20Audio%20Series-part09.json",
+    "https://raw.githubusercontent.com/faria2177/live-tv-channels/refs/heads/main/series/CF/Series%20DF/Dual%20Audio%20Series-part10.json"
   ]
 }
