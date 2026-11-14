@@ -1,4 +1,18 @@
 {
+  "Ajeya: Special Task Force": {
+    "year": "2026",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/7paJxgC9cRf3YP6XtwUJ5sgSM1K.jpg",
+    "links": [
+      {
+        "added": "2026-10-30",
+        "language": "Bangla",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Ajeya: Special Task Force S1E1",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Bangla/Ajeya%20Special%20Task%20Force/s01/Ajeya%20Special%20Task%20Force%20s01e01.mp4"
+      }
+    ]
+  },
   "AKA": {
     "year": "2025",
     "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/ljy6fcxY3U5wCZ28sQmnPNMXj6Z.jpg",
@@ -10,6 +24,20 @@
         "episode": 1,
         "episode_title": "AKA S1E1 - Nulled",
         "url": "https://fmftp.net/data/disk-1/tvseries/Bangla/AKA/s01/s01e01.mp4"
+      }
+    ]
+  },
+  "Amanush": {
+    "year": "2026",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/atHIYGaFFxc9Eg70m4AGI1OLZDE.jpg",
+    "links": [
+      {
+        "added": "2026-11-09",
+        "language": "Bangla",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Amanush S1E1",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Bangla/Amanush/s01/Amanush%20s01e01.mp4"
       }
     ]
   },
@@ -1806,6 +1834,20 @@
         "episode": 7,
         "episode_title": "Eternal Gift S1E7 - The Meaning of Happiness",
         "url": "https://fmftp.net/data/disk-1/tvseries/Bangla/Eternal%20Gift/Season%201/S01%20E07.mp4"
+      }
+    ]
+  },
+  "Feu": {
+    "year": "2025",
+    "tvg_logo": "https://fmftp.net/content-images/tv-shows/posters/xIEoQcBq7dTkGOGlCvy7yvHVzLC.jpg",
+    "links": [
+      {
+        "added": "2026-11-09",
+        "language": "Bangla",
+        "season": 1,
+        "episode": 1,
+        "episode_title": "Feu S1E1",
+        "url": "https://fmftp.net/data/disk-1/tvseries/Bangla/Feu/s01/Feu%202025%20S01e01.mp4"
       }
     ]
   },
