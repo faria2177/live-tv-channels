@@ -440,6 +440,16 @@
     "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/jahid2177/Mydemoproject/main/logo/default-logo.png\" group-title=\"India\",Pardesi TV"
   },
   {
+    "name": "T Sports",
+    "logo": "https://github.com/faria2177/live-tv-channels/blob/main/series/images%20(1).jpeg",
+    "group": "sports",
+    "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8",
+    "source": "/home/runner/work/Mydemoproject/Mydemoproject/Movies/Bengali/Movies.m3u",
+    "epg_id": "",
+    "epg_name": "",
+    "extinf": "#EXTINF:-1 tvg-logo=\"https://raw.githubusercontent.com/jahid2177/Mydemoproject/main/logo/default-logo.png\" group-title=\"India\",Pardesi TV"
+  },
+  {
     "name": "FIFA+",
     "logo": "https://s3.aynaott.com/storage/dc25a8382341855cd9847537971d869c",
     "group": "Sports",
