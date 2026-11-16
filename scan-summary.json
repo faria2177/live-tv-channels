@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-14T02:47:14+00:00",
+  "generated_at": "2026-11-16T02:24:19+00:00",
   "validate_links": "advanced",
   "drop_invalid_links": true,
   "categories": 5,
-  "series_seen": 1356,
-  "series_written": 1354,
-  "links_seen": 23318,
-  "links_valid": 23315,
+  "series_seen": 1357,
+  "series_written": 1355,
+  "links_seen": 23319,
+  "links_valid": 23316,
   "links_invalid": 3,
   "changed_files": [
     "common/log/SE/English_Tv_Series.json",
