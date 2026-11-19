@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-17T06:17:04.327786Z",
+  "generated_at": "2026-11-19T05:42:30.588814Z",
   "total_movies": 21356,
   "total_series": 1355,
-  "total_episodes": 23230,
+  "total_episodes": 23237,
   "grand_total": 22711,
   "movies": {
     "total": 21356,
@@ -22,8 +22,8 @@
         "category_id": "2",
         "file": "movies/Hollywood.json",
         "count": 14226,
-        "new": 0,
-        "updated": 14226,
+        "new": 1,
+        "updated": 14225,
         "total_episodes": null,
         "expected_total": 14227
       },
@@ -107,9 +107,9 @@
         "category_id": "9",
         "file": "series/English_Tv_Series.json",
         "count": 924,
-        "new": 0,
-        "updated": 924,
-        "total_episodes": 18936,
+        "new": 1,
+        "updated": 923,
+        "total_episodes": 18943,
         "expected_total": 924
       },
       {

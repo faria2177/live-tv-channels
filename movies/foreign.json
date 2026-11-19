@@ -44,7 +44,7 @@
         "Comedy",
         "Drama"
       ],
-      "views": 237,
+      "views": 239,
       "links": [
         {
           "url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Cook Up a Storm (2017)/Cook.Up.A.Storm.2017.Chinese.1080p.BluRay.x264.AAC.5.1.ESub-YTS.mkv",
@@ -73,7 +73,7 @@
         "Romance",
         "Drama"
       ],
-      "views": 817,
+      "views": 818,
       "links": [
         {
           "url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Blue Is The Warmest Color (2013)/Blue.Is.The.Warmest.Color.2013.720p.BluRay.x264-[YTS.AM].mp4",
@@ -131,7 +131,7 @@
         "Thriller",
         "Crime"
       ],
-      "views": 428,
+      "views": 430,
       "links": [
         {
           "url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Irreversible (2002)/Irreversible.2002.720p.BR.800MB.MkvCage.com.mkv",
@@ -159,7 +159,7 @@
       "genre": [
         "Drama"
       ],
-      "views": 69,
+      "views": 70,
       "links": [
         {
           "url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Taste Of Cherry (1997)/Taste.Of.Cherry.1997.720p.BluRay.x264.AAC-[YTS.MX].mp4",
@@ -188,7 +188,7 @@
         "Crime",
         "Drama"
       ],
-      "views": 51,
+      "views": 52,
       "links": [
         {
           "url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Close-Up (1992)/Close-Up.1990.720p.BluRay.x264.AAC-[YTS.MX].mp4",
@@ -208,7 +208,7 @@
       "stream_url": "https://fmftp.net/data/disk-1/movies/foreigner movie/Close-Up (1992)/Close-Up.1990.720p.BluRay.x264.AAC-[YTS.MX].mp4"
     }
   },
-  "last_updated": "2026-11-17T06:33:57.804140Z",
+  "last_updated": "2026-11-19T05:58:58.743714Z",
   "expected_total": 7,
   "failed_pages": null
 }
