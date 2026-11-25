@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-23T05:29:12.635689Z",
-  "total_movies": 21376,
+  "generated_at": "2026-11-25T06:45:41.464367Z",
+  "total_movies": 21382,
   "total_series": 1356,
   "total_episodes": 23246,
-  "grand_total": 22732,
+  "grand_total": 22738,
   "movies": {
-    "total": 21376,
+    "total": 21382,
     "categories": [
       {
         "label": "Bollywood",
         "category_id": "1",
         "file": "movies/Bollywood.json",
         "count": 2961,
-        "new": 1,
-        "updated": 2960,
+        "new": 5,
+        "updated": 2956,
         "total_episodes": null,
         "expected_total": 2963
       },
@@ -21,11 +21,11 @@
         "label": "Hollywood",
         "category_id": "2",
         "file": "movies/Hollywood.json",
-        "count": 14231,
-        "new": 6,
-        "updated": 14225,
+        "count": 14235,
+        "new": 4,
+        "updated": 14231,
         "total_episodes": null,
-        "expected_total": 14234
+        "expected_total": 14237
       },
       {
         "label": "Animation",
@@ -51,11 +51,11 @@
         "label": "Hindi Dubbed",
         "category_id": "5",
         "file": "movies/Hindi_dubbed.json",
-        "count": 1487,
-        "new": 0,
-        "updated": 1487,
+        "count": 1489,
+        "new": 1,
+        "updated": 1488,
         "total_episodes": null,
-        "expected_total": 1490
+        "expected_total": 1491
       },
       {
         "label": "Horror",
@@ -107,8 +107,8 @@
         "category_id": "9",
         "file": "series/English_Tv_Series.json",
         "count": 924,
-        "new": 2,
-        "updated": 922,
+        "new": 0,
+        "updated": 924,
         "total_episodes": 18951,
         "expected_total": 924
       },
